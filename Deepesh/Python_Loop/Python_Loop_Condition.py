@@ -1,5 +1,4 @@
-# range(10)
-"""
+'''# range(10)
 for i in range(10):
     print(i)
 """
@@ -232,9 +231,9 @@ temp = 1
 #         break
 #     print(temp)
 #     temp = temp + 1
+'''
 
-
-
+'''
 # Program : Write a program to create a calculator which accepts the continue inputs.
 print("%%"*50)
 
@@ -260,14 +259,59 @@ while True:
         break
     print("_"*40)
 
+name = 'chakri'
+age = '25'
+city = 'kadiyam'
+
+a = "his name is "+name+"age is "+str(age)+" and living in " + city
+print(a)
+b = "his name is  {} age is {} he is living  in  {}".format(name, age, city)
+print(b)
+c = f"his name is {name} and age is {age} and he is living in {city}"
+print(c)
+
+#20). Write a program to find the first and last digits of a number using pythom.
+a = '2556'
+b = 0
+for i in range(len(a)):
+    if i == 0:
+        print(a[i])
+    elif i == len(a)-1:
+        print(a[i])
+
+
+#21). Write a program to find the sum of the first and last digits of a number using python.
+
+a = '2556'
+b = 0
+for i in range(len(a)):
+    if i == 0:
+        b = b + int(a[i])
+    elif i == len(a)-1:
+         b = b + int(a[i])
+print(b)
 
 
 
+#22). Write a program to calculate the sum of digits of a number using python.
+a = 1998
+b = str(a)
+c = 0
+for i in b:
+    if i.isnumeric():
+        c = c+int(i)
+print(c)
 
+a = int(input('enter any number to get table :'))
+for i in range(1,21):
+    print(a,'*',i,'=',i*a)
 
+for i in range(1,6):
+    print()
+    for k in range(i):
+        print(i,end=' ')
 
-
-
+'''
 
 
 

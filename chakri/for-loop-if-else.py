@@ -206,16 +206,39 @@ for i in range(len(b)):
     elif i == len(b)-1:
         total = total+int(b[-1])
 print(total)
-'''
+
 #22). Write a program to calculate the sum of digits of a number using python.
 a = '2556'
 b = 0
 for i in a:
     if i.isnumeric():
-        b = b+1
-print(b)
+        '''
 
 
+'''while True:
+    a = int(input('enter first value:'))
+    b = int(input('enter second value :'))
+    print("1. addition \n"
+          "2. multiplication \n"
+          "3. subtraction \n"
+          "4. divide\n"
+          "5. stop application")
+    c = int(input('enter your choice : '))
+    if c == 1:
+        print('addition :',a+b)
+    elif c == 2:
+        print('multiplication:',a*b)
+    elif c == 3 :
+        print('subtraction:', a-b)
+    elif c == 4 :
+        print('division:',a//b)
+    else:
+        break
+
+a = int(input('enter any number to find the table :'))
+for i in range(1,21):
+    print(a,'*',i,'=',i*a)
+'''
 
 
 
