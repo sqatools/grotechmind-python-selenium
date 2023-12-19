@@ -104,6 +104,102 @@ print("strh + :", strh[5:])
 print("strh - :", strh[-10:])
 # e problems
 
+print("_"*50)
+# Rule 4 : str[initial_index : last_index : difference of index]
+strb = "Good Morning, How are you"
+
+print(strb[2: 20: 1]) # od Morning, How ar
+
+print(strb[2: 20: 2]) # o onn,Hwa
+
+print(strb[-1: 20: -1]) # uoy
+
+print(strb[-1: 2: -1]) # uoy era woH ,gninroM duoy
+print(strb[2: -1: 2]) #
+
+# Rule5 str[:last_index:difference]
+# initial index will be zero if difference is positive and initial index will -1 if the different negative
+
+strc = "We are learning Python Programming"
+
+print(strc[:10:1])  # We are lea  # initial index is zero
+print(strc[:10:-1]) # gnimmargorP nohtyP gnin  # initial index will be -1
+print(strc[:10:-2]) #
+
+# Rule5 : str[::difference]
+# initial index will be zero and last index will be end of the string with positive difference
+# initial index will be -1 and begining of string will be end of the output with negative difference
+
+strj = "Have a nice day, hope you are doing good"
+print(strj[::1])  #Have a nice day, hope you are doing good
+print(strj[::2])  # Hv  iedy oeyuaediggo
+print(strj[::-1]) # doog gniod era uoy epoh ,yad ecin a evaH
+
+
+#####################################################
+print("_"*50)
+# program : Arrange the words as per expectation
+strk = "Python Programming"
+output = "gython ProgramminP"
+p_val = strk[0]
+g_val = strk[-1]
+rem_val = strk[1:-1]
+print(rem_val)
+print(g_val+rem_val+p_val)
+# gython ProgramminP
+
+# output = "Python Programming Python"
+strk = "Python Programming"
+var1= strk
+var2 = strk[:6]
+var3= var1+" "+ var2
+print(var3)
+
+
+################################################################
+print("_"*50)
+# get values from string using loop
+strl = "Made In India"
+for var in strl:
+    print(var)
+
+# apply loop with indexing
+str_len= len(strl)
+print("string_len :", str_len)
+for i in range(str_len):
+    print(i, strl[i])
+
+######################### String Methods ################################
+print("_"*50)
+print(dir(str))
+
+"""
+'capitalize', 'casefold', 'center', 'count', 'encode', 
+'endswith', 'expandtabs', 'find', 'format', 'format_map',
+ 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 
+ 'isdigit', 'isidentifier', 'islower', 'isnumeric', 
+ 'isprintable', 'isspace', 'istitle', 'isupper',
+  'join', 'ljust', 'lower', 'lstrip', 'maketrans', 
+  'partition', 'removeprefix', 'removesuffix', 
+  'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 
+  'rsplit', 'rstrip', 'split', 'splitlines', 'startswith',
+   'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill'
+"""
+
+
+num = 4
+fact = 1
+for i in range(num, 0, -1):
+    fact = fact * i
+
+print("factorial :", fact)
+
+
+
+
+
+
+
 
 
 
