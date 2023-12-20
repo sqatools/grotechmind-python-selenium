@@ -100,6 +100,9 @@ rhs = a**2 + b**2 + 2*a*b
 print("rhs :", rhs)
 
 
+strn = "programming language"
+
+print(strn [6])
 
 
 
