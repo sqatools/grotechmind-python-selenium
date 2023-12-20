@@ -196,6 +196,132 @@ print("factorial :", fact)
 
 
 
+tup1 = (4, 6, 8, 50, 'Hello', [4, 7, 8], 'a')
+
+print(tup1[4])
+print(tup1[4:5])
+
+str2 = "Programming"
+print(str2[4])
+print(str2[4:5])
+
+list2 = [4, 6, 8, 50, 'Hello', [4, 7, 8], 'a']
+print(list2[3])
+print(list2[3:7:1])
+
+print(list2.index('Hello'))
+
+
+###########################################################
+print("_"*50)
+# upper method
+str1 = "Hello Good Morning"
+print(str1.upper()) # HELLO GOOD MORNING
+
+# lower case
+print(str1.lower()) # hello good morning
+
+# check given string is upper or lower
+str2 = "python"
+print(str2.islower())  # True
+print(str2.isupper())  # False
+
+str3 = "PROGRAMMING"
+print("str3 :", str3.isupper())
+str4 = "Hello"
+print("str4: ", str4.islower()) # False
+print("str4 :", str4.isupper()) # False
+
+# swapcase method
+str5 = "Good Morning How Are You?"
+print("str5 :", str5.swapcase())
+# gOOD mORNING hOW aRE yOU?
+
+# title method
+str6 = "Tata motor is good vehicle company"
+print("str6 :", str6.title())
+# Tata Motor Is Good Vehicle Company
+
+# istitle method
+str7 = "Mahindra make good SUV cars"
+print("str7 :",str7.istitle()) # False
+
+str8 = "Tata Motor Is Good Vehicle Company"
+print("str8 :",str8.istitle()) # True
+
+# Index method : this method find the position of any character or substring in given sentence
+str8 = "Tata Motor Is Good Vehicle Company"
+print(str8.index('I')) # 11
+# print(str8.index('w'))
+# when char is not available
+# ValueError: substring not found
+print(str8.index("o")) # 6
+
+
+print("_"*50)
+str9 = "Tata Motor Is Good Vehicle Company"
+count = 0
+for i in range(len(str9)):
+    if str9[i] == 'o':
+        count = count+1
+        print(i, "count :", count)
+        if count == 4:
+            print(i)
+        else:
+            continue
+    else:
+        continue
+
+
+# find method : find method return the index position of char/substring
+# if it is available, or it will return -1 if not available
+str10 = "India lost second ODI"
+print("str10 :", str10.find('ODI')) # 18
+
+print("str10 :", str10.find('Win')) # -1
+
+print("str10 :", str10.find('O')) # 18
+print("str10 :", str10.find('D')) # 19
+print("str10 :", str10.find('o')) # 7
+
+
+# Split method : this method split the string from specific delimeters/char/substring
+# and return the output as list of substrings
+
+str11 = "Hello,Good,Morning"
+result11 = str11.split(",")
+print("result11:", result11) # result11: ['Hello', 'Good', 'Morning']
+print(str11.split("o")) # ['Hell', ',G', '', 'd,M', 'rning']
+
+stra = "Hope you are doing good"
+result = stra.split() # by default parameter is space
+print("result :", result)
+
+for word in result:
+    print(word, word[0])
+
+# count method
+print("stra :", stra.count("o")) # 5
+print("stra :", stra.count("doing")) # 1
+
+
+# Replace method :
+print(stra.replace('good', 'bad')) # Hope you are doing bad
+print(stra.replace('good', 'bad').replace('you', 'all'))
+#Hope all are doing bad
+print(stra.replace('good', 'bad').replace('you', 'all').count('a')) # 3
+print(stra.replace("H", "h")) # hope you are doing good
+
+print(dir(str))
+
+
+
+
+
+
+
+
+
 
 
 
