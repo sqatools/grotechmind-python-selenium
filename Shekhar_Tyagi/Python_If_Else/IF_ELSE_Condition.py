@@ -35,10 +35,20 @@ if marks<40:
 	print("marks: " , marks , ", Failed")
 
 elif marks>=40 and marks <=50:
-	print("marks : " , marks , "Grade C")
+	print("marks : " , marks , ", Grade C")
 
 elif marks >=50 and marks <= 60:
-	print("marks: ", marks , "Grade B")
+	print("marks: ", marks , ", Grade B")
+elif marks >=60 and marks <=70:
+	print("marks: ", marks , ", Grade A")
+elif marks >=70 and marks <=80:
+	print("marks: ", marks, ", Grade A+")
+elif marks >=80 and marks <=90:
+	print("marks: ", marks, ", Grade A++")
+elif marks >=90 and marks <=100:
+	print("marks:",marks, "Grade Excellent")
+else:
+	print("marks: ", marks, ": Invalid marks")
 
 
 

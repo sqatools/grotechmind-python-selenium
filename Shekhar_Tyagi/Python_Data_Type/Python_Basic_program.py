@@ -265,6 +265,11 @@ num1 = 12345
 rev = str(num1)
 print("rev:" , rev[::-1])
 
+# Or
+print("Or")
+
+num2 = "Python Programming"
+print("Out:", num2[::-1])
 # 25). Python program to get the Fibonacci series between 0 to 50.
 print("25). Python program to get the Fibonacci series between 0 to 50.")
 
