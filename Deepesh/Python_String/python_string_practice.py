@@ -308,15 +308,116 @@ print("stra :", stra.count("doing")) # 1
 # Replace method :
 print(stra.replace('good', 'bad')) # Hope you are doing bad
 print(stra.replace('good', 'bad').replace('you', 'all'))
-#Hope all are doing bad
+
+# Hope all are doing bad
 print(stra.replace('good', 'bad').replace('you', 'all').count('a')) # 3
 print(stra.replace("H", "h")) # hope you are doing good
 
 print(dir(str))
+print("Hello world")
+
+print("_"*40)
+# join, strip, isspace, isnumeric, isalpha, isalnum
+
+# Join Method:
+
+str2 = "Python"
+#P-y-t-h-o-n
+
+print("-".join(str2))
+print(" ".join(str2))
+print("^&^*&".join(str2))
 
 
+stra = "Python Programming"
+result = ''
+for i in range(len(stra)):
+    if i%3 == 0 and i != 0:
+        result = result + "-" + stra[i]
+    else:
+        result = result + stra[i]
+    print(result)
+
+print("Result :", result)
 
 
+# reverse the string
+
+stra = "Python Programming"
+output = ''
+for i in range(-1, -len(stra)-1, -1):
+    output = output + stra[i]
+    print(i, stra[i], output)
+
+print("Result :", output)
+
+####################
+# strip method : this method remove the trailing spaces from given string
+# space available before and after the string known as trailing space.
+print("_"*50)
+strb = " Hello Programming "
+print(strb)
+
+print(strb.strip()) # remove all trailing space
+print(strb.lstrip()) #
+print(strb.rstrip())
+
+##################################
+# isspace
+print("_"*50)
+strv = "Hello Program"
+
+result = ''
+for char in strv:
+    #print(char, ":", char.isspace())
+    if char.isspace():
+        result = result + "-"
+    else:
+        result = result + char
+
+print("result :", result)
+print(strv.replace(" ", "-"))
+
+
+# isnumeric method : This  method check the given string has only number
+stra = "python 123"
+print(stra.isnumeric())  # False
+strb = "543452345"
+print(strb.isnumeric())  # True
+
+# isalnum
+strc = "python123"
+print(strc.isalnum()) # true
+
+# isalpha
+strd = "Python"
+print(strd.isalpha()) # True
+
+stre = "Python Hello"
+print(stre.isalpha()) # False
+
+# isdigit
+strf = "4567336355"
+print("strf :", strf.isdigit())
+
+print("%".isdigit())
+print("%".isnumeric())
+
+print('H3ll0'.isdigit())
+print('%'.isdigit())
+print('45/2'.isnumeric())
+print('45^2'.isdigit())
+
+print("\u0668".isdigit())
+print("\u0668".isnumeric())
+
+val = "\u0668"
+print("val :", int(val), val)
+
+print('II'.isdigit())
+print('IX'.isnumeric())
+print('45^2'.isdigit())
+print('$300'.isnumeric())
 
 
 
