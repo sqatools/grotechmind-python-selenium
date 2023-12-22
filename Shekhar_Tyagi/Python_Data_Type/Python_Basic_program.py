@@ -222,46 +222,68 @@ F = P+(P/r)*t
 #F = 20000+(20000/12)*4
 print("Intrest:",F)
 
+# 21). Python program to print the current date in the given format.
+# Output: 2023 Jan 05
+# Note: Use the DateTime library
+print("21). Python program to print the current date in the given format.")
 
+#Current_Date = ("23 Dec 15")
+#print(Current_Date)
 
+import datetime
+date = datetime.datetime.now()
+print(date.strftime(" %y %b %d"))
 
+# 22). Python program to calculate days between 2 dates.
+# Input date : (2023, 1, 5) (2023, 1, 22)
+# Output: 17 days
+print("22). Python program to calculate days between 2 dates.")
 
+from datetime import date
+D1 = date(2023, 10, 29)
+D2 = date(2023, 11, 15)
+Result = (D2 - D1).days
+print(" Days b/w 2 dates: ", Result, "Days")
 
+# 23). Python program to get the factorial of the given number.
+print("23). Python program to get the factorial of the given number.")
 
-
-"""
-
-print("_"*50)
-
-num = 6
+num = n = 5 #int(input("Enter the value: "))
 fact = 1
-for i in range (num , 0 ,-1):
-    print(i)
-    fact = fact*i
-    print("fact:",fact)
+while  n > 0 :
+    fact =fact * n
+    n = n - 1
+    print("Value of Factorial=" , n , ":", fact)
+# Or
+print(" Or")
+print("Factorial = " , num , ":", fact)
 
-a = 0
-b = 1
+# 24). Python program to reverse a given number.
+print("24). Python program to reverse a given number.")
 
-for i in range (10):
-    print(b, end=" ")
-    a,b = b, a+b
+num1 = 12345
+rev = str(num1)
+print("rev:" , rev[::-1])
 
-
-print()
-
-
-print("__"*40)
-
-num = 11
-prime = True
-for i in range (2, num//2):
-    if num%i==0:
-        prime = False
-if prime:
-    print("This is prime value:" ,num)
-else:
-    print("this is not prime value:",num)
+# 25). Python program to get the Fibonacci series between 0 to 50.
+print("25). Python program to get the Fibonacci series between 0 to 50.")
 
 
-"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+# range method with default initial value is zero
+# and difference value is 1
+for i in (11)
+    print(i)

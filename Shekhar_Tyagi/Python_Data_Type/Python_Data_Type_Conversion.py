@@ -17,8 +17,8 @@
 5. Boolean
 '''
 
-#-------------- Integer --------------
-
+################# Integer ######################
+print("################# Integer ######################")
 print("#Integer-------")
 print('_'*7)
 int1 = 200
@@ -73,7 +73,8 @@ num = 0          #0 is null value
 bool1 = bool(num)
 print(bool1 , type(bool1))
 
-# ----------------- Float -------------------
+################# Float #####################
+print("################# Float #####################")
 
 num = 123.03
 
@@ -113,8 +114,8 @@ val2 = 0.00
 bol2 = bool(val2)
 print(bol2, type(bol2))
 
-#------------- String -----------------
-print("#-------String ---------")
+################# String #####################
+print("################# String #####################")
 print("__"*14)
 v1 = "abcde"
 print(v1, type(v1))
@@ -199,8 +200,8 @@ str4 = "Hello"
 bol1 = bool(str4)
 print(bol1 , type(bol1))
 
-#-------------Tuple ------------
-print("#-------------Tuple ------------")
+################ Tuple #####################
+print("################ Tuple #####################")
 
 # tuple -> int : conversion not possible
 # tuple -> float : conversion not possible
@@ -254,40 +255,167 @@ bol1 = bool(tup5)
 print(bol1 , type(bol1))
 
 # Or
-print()
+print("# or")
 
-
-T1 = ('0', )
-print(type(T1))
+T1 = ( )
 b1 = bool(T1)
 print(b1 , type(b1))
 
+################### List ######################
+print("################### List ######################")
+print("_"*50)
+# list -> int : conversion is possible
+# list -> float : conversion is possible
+print("""# list -> int : conversion is possible
+# list -> float : conversion is possible """)
 
-'''
-tupc = (0, )
-print(type(tupc))
-bool2 = bool(tupc)
-print(bool2, type(bool2))
-'''
+# list -> string----
+print("# list -> string----")
+li1 = [1,2,3,4,5,6]
+#li1 = ['a','b','c','d','e','f']
+print(type(li1))
+str1 = str(li1)
+print(str1 ,type(str1) ,str1[0] ,str1[4])
+
+# list -> tuple------
+print("# list -> tuple------")
+li2 = [1,2,3,4,5,6]
+tp1 = tuple(li2)
+print(tp1 , type(tp1) , tp1[0] , tp1[3])
+
+# list -> dict : conversion is not possible.
+print("# list -> dict : conversion is not possible.")
+# list -> set--------
+print("# list -> set--------")
+li3 = [1,2,3,4,5,6]
+st1 = set(li3)
+print(st1 , type(st1))
+
+# list ->  boolean------
+print("# list ->  boolean------")
+li4 = [1,2,3,4,5,6]
+bool1 = bool(li4)
+print(bool1 , type(bol1))
+
+# or
+print("# Or")
+
+li5 = []
+bl1 = bool(li5)
+print(bl1 , type(bl1))
+
+##################### Dictionary #################
+print("##################### Dictionary #################")
+
+# dict -> int : conversion is not possible
+# dict -> float : conversion is not possible
+
+print("""# dict -> int : conversion is not possible
+# dict -> float : conversion is not possible""")
+
+# dict -> string--------
+print("# dict -> string--------")
+
+dict1 = {"Name" : "SHekhar Tyagi" , "Age" : 27}
+str_1 = str(dict1)
+print(str_1 , type(str_1) , str_1[0] , str_1[3])
+
+# dict -> list-------
+print("# dict -> list-------")
+
+dict2 = {"Name" : "Shekhar Tyagi" , "Age" : 27}
+lis1 = list(dict2)
+print(lis1 , type(lis1) , lis1[0] , lis1[1])
+
+# dict -> tuple------
+print("# dict -> tuple------")
+
+dict3 = {"Name" : "Shekhar Tyagi" , "Age" : 27}
+tpl1 = tuple(dict3)
+print(tpl1, type(tpl1))
+
+# dict -> set------
+print("# dict -> set------")
+
+dict4 = {"Name" : "Shekhar Tyagi" , "Age" : 27}
+set2 = set(dict4)
+print(set2 , type(set2))
+
+
+# dict -> Boolean--------
+print("# dict -> Boolean--------")
+
+dict3 = {"Name" : "Shekhar Tyagi" , "Age" : 27}
+bool2 = bool(dict3)
+print(bool2 , type(bool2))
+
+
+# Or
+print("# Or")
+dict4 = {}
+bool3 = bool(dict4)
+print(bool3 , type(bool3))
+
+#################### set ##################
+print("#################### set ##################")
+
+# set ->  int : conversion is not possible
+# set -> float : conversion is not possible
+print("""# set ->  int : conversion is not possible
+# set -> float : conversion is not possible""")
+
+# set -> string--------
+print("# set -> string--------")
+
+set_1 = {1,2,3,4,'a','b'}
+st_1 = str(set_1)
+print(st_1 , type(st_1) , st_1[0] , st_1[4])
+
+# set -> list------------
+print("# set -> list------------")
+
+set_2 = {1,2,3,4,'a','b'}
+st_2 = list(set_2)
+print(st_2 , type(st_2))
+
+# set -> tuple--------
+print("# set -> tuple--------")
+
+set_3 = {1,2,3,4,'a','b'}
+tup_1 = tuple(set_3)
+print(tup_1 , type(tup_1))
+
+# set -> dict : conversion is not possible
+print("# set -> dict : conversion is not possible")
+
+# set -> boolean------
+print("# set -> boolean------")
+
+set_4 = {1,2,3,4,'a','b'}
+bool_1 = bool(set_4)
+print(bool_1, type(bool_1))
+
+# Or
+print("# Or")
+
+set_5 = { }
+bool_1 = bool(set_5)
+print(bool_1, type(bool_1))
 
 
 
-
-
-"""
 even_sum = 0
 odd_sum = 0
 
-for i in range(1,21):
+for i in range(1,5):
     if i%2==0:
         even_sum= even_sum+i
     else:
         odd_sum= odd_sum +i
-    print("even_sum :", i,"," , even_sum)
-    print("odd_sum :",i, "," ,odd_sum)
+print("even_sum :", i,"," , even_sum)
+print("odd_sum :",i, "," ,odd_sum)
 
 
-"""
 
 
 
