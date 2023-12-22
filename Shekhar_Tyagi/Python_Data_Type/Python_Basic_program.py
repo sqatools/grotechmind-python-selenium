@@ -195,7 +195,7 @@ print("(Area of cylinder:)",Area)
 # Example: 153 = 1*1*1 + 5*5*5 + 3*3*3
 print("19). Python program to check whether the given number is an Armstrong number or not.")
 
-num = a = 153
+num = a =  151  # int(input("enter the arm value: "))
 Rev = 0
 while a>0:
     skt = a%10
@@ -265,18 +265,67 @@ num1 = 12345
 rev = str(num1)
 print("rev:" , rev[::-1])
 
+# Or
+print("Or")
+
+num2 = "Python Programming"
+print("Out:", num2[::-1])
 # 25). Python program to get the Fibonacci series between 0 to 50.
 print("25). Python program to get the Fibonacci series between 0 to 50.")
 
+num1 = 0
+num2 = 1
+T_count = 1
+
+print("Sequence is:", end= " ")
+#for i in range (11):
+while T_count <11:
+    print( num2 , end=" ")
+    num1 , num2 = num2 ,num1 + num2
+    T_count = T_count+1
+
+print()
 
 
+# 26). Python program to check given number is palindrome or not.
+print("26). Python program to check given number is palindrome or not.")
 
+n = num = 121 #int(input("Enter the value: "))         # n = num = 121
+R1 = 0                                            # R1 = 0
+while n>0:                                        # 121 > 0
+    r1 = n%10                                     # r1 = 1
+    R1 = R1*10 + r1                               # R1 = 1
+    n = n//10                                     # n  = 12
+if num == R1:                                     # 121 == 1
+    print(" it is a palindrome ")
+else:
+    print(" it is not a palindrome")
 
+# 27). Python program to calculate compound interest.
+#  Formula = p*((1+r/100)**n)
 
+print(" 27). Python program to calculate compound interest.")
 
+p = 10000  # int(input("enter the principle amount: "))
+r = 5      # int(input("enter the intrest rate: "))
+n = 3      # int(input("enter no of years: "))
+f= p*((1 + r / 100) ** n)
+print("Compound intrest :" , f)
 
+#28). Python program to check the prime number.
+print("28). Python program to check the prime number.")
 
+num = 13      #int(input("enter the number : "))
 
+prime = True
+
+for i in range (2, num ):
+    if num%i ==0:
+        prime = False
+if prime:
+    print(f"{num} is a prime number")
+else:
+    print(f"{num} is not a prime number")
 
 
 
