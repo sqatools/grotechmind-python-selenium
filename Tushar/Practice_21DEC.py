@@ -77,4 +77,48 @@ print(result)
 
 #hello- programme
 
+# 15. Isnumeric method: used to check given string is numeric or not
+
+stra="I am learning isnumeric method to check given string is numeric or not"
+print(stra.isnumeric()) #False
+
+str1="123456789"
+print(str1.isnumeric()) #True
+
+str1a="Python automation course fee is 16000"
+print(str1a.isnumeric()) #False #if string have only digit then and then only true.
+
+#16.Isalnum method:
+
+str1="python"
+print(str1.isalnum()) #True
+
+str2="python 112"
+print(str2.isalnum()) #False
+
+str3="python112"
+print(str3.isalnum()) #True
+
+str4="Python automation course fee is 16000" #False
+print(str4.isalnum())
+
+###isalnum method used for to check given string is alphanumeric or not but if space is coming then it gives false
+
+#16.isalpha method:
+
+str1="tushar"
+print(str1.isalpha()) #True
+
+str2="tushar aher"
+print(str2.isalpha()) #False
+
+#17. isdigit method:
+
+str1="123"
+print(str1.isdigit()) #True
+
+str2="123 456"
+print(str2.isdigit()) #false
+
+
 
