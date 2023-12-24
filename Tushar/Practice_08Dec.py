@@ -74,7 +74,7 @@ else:
 
 
 ###programme for to print student grade as per mark
-
+"""
 marks=int(input("Please enter student marks:"))
 
 if marks<40:
@@ -91,20 +91,42 @@ elif marks>=90 and marks<=100:
     print("you are topper")
 else:
     print("plese enter marks between 1 to 100")
+    
+    """
 
 ##########################################################################################
 
 ###nested if condition###
+"""
+if cond1:
+      code
+      if cond2:
+          code
+       else:
+            code
+else:
+     code
 
 
+"""
+
+"""
+print("*"*100)
+
+round1="pass"
+round2="fail"
+
+if round1=="pass":
+    print("you cleared first round")
+    if round2=="pass":
+        print("you cleared second round")
+    else:
+        print("you have not cleared second round")
+else:
+    print("you have not cleared first round")
 
 
-
-
-
-
-
-
+"""
 
 
 

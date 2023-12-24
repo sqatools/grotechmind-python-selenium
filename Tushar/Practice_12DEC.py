@@ -20,7 +20,7 @@ for i in range (num,0,-1):
 a=0
 b=1
 for i in range (10):
-    print(b,end=" ")
+    print(b,end=" ") ##by default print fun have /n means it prints on next line so here used end " " to print op in single line
     a,b=b,a+b
 
 print("="*50)
