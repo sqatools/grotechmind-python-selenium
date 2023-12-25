@@ -419,39 +419,261 @@ else:
 # 18). Python program to check whether a student has passed the exam. If marks are greater than 35 students have passed the exam.
 # Input = Enter marks: 45
 # Output = Pass
+"""
+marks=int(input("please enter student marks:"))
+if marks>=35:
+    print("student is passed")
+else:
+    print("student is failed")
+    """
 
 
+# 19). Python program to check whether the given number is positive or not.
+# Input = 20
+# Output = True
+#A positive number is any number greater than 0
+"""
+num=int(input("please enter no:"))
+
+if num>0:
+    print("The given no is positive")
+else:
+    print("The given no is negative")
+  """
 
 
+# 20). Python program to check whether the given number is negative or not.
+# Input = -45
+# Output = True
+
+"""
+num=int(input("Please enter no:"))
+
+if num<0:
+    print("The given no is negative")
+else:
+    print("The given no is positive")
+"""
+
+# 21). Python program to check whether the given number is positive or negative and even or odd.
+# Input = 26
+# Output = The given number is positive and even
+"""
+num=int(input("Please enter number:"))
+
+if num>0:
+    if num%2==0:
+        print("The given no is positive and even")
+    else:
+        print("The given no is positive and odd")
+else:
+    if num%2==0:
+        print("The given no is negative and even")
+    else:
+        print("The given no is negative and odd")
+        
+        """
+
+# 22). Python program to print the largest number from two numbers.
+# Input:
+# 25, 63
+# Output = 63
+
+"""
+num1=int(input("please enter first no:"))
+num2=int(input("please enter second no:"))
+
+if num1>num2:
+    print("num1 is largest",num1)
+else:
+    print("num2 is largest",num2)
+
+"""
+#
+# 23). Python program to check whether a given character is uppercase or not.
+# Input = A
+# Output = The given character is an Uppercase
+"""
+str1=input("please enter string:")
+result=str1.isupper()
+print(result)
+"""
+"""
+char = input("Enter a character: ")
+if char.isupper():
+    print("True")
+else:
+    print("False")
+    
+    """
+
+# 24). Python program to check whether the given character is lowercase or not.
+# Input = c
+# Output = True
+"""
+char=input("please enter char:")
+result=char.islower()
+print(result)
+
+"""
+"""
+char=input("please enter char:")
+if char.islower():
+    print("true")
+else:
+    print("false")
+    
+    """
+
+# 25). Python program to check whether the given number is an integer or not.
+# Input = 54
+# Output = True
+
+# An integer is a whole number (not a fractional number) that can be positive, negative, or zero.
+# Examples of integers are: -5, 1, 5, 8, 97, and 3,043.
+# Examples of numbers that are not integers are: -1.43, 1 3/4, 3.14,
+
+#num=int(input("please enter no:"))
+"""
+num=3.4
+if type(num)==int:
+    print("The given no is integer")
+else:
+    print("The given no is not integer")
+    
+    """
+
+# 26). Python program to check whether the given number is float or not.
+# Input = 12.6
+# Output = True
+"""
+num=input("please enter no:")
+#num=4
+if type(num)==float:
+    print("The given no is float")
+else:
+    print("The given no is not float")
+"""
+
+# 27). Python program to check whether the given input is a string or not.
+# Input = ‘sqatools’
+# Output = True
+"""
+str1="sqatools"
+print(type(str))
+if type(str1)==str:
+    print("string",str1)
+else:
+    print("not string",str1)
 
 
+"""
+
+# 28). Python program to print all the numbers from 10-15 except 13
+# Output:
+# 10
+# 11
+# 12
+# 14
+
+"""
+for i in range(10,15):
+    if i!=13:
+        print(i)
+        
+        """
+
+# 29). Python program to find the electricity bill. According to the following conditions:
+# Up to 50 units rs 0.50/unit
+# Up to 100 units rs 0.75/unit
+# Up to 250 units rs 1.25/unit
+# above 250 rs 1.50/unit
+# an additional surcharge of 17% is added to the bill
+# Input = 350
+# Output = 438.75
+
+"""
+units=int(input("Please enter bill units:"))
+
+if units<=50:
+    print("Bill:",(units*0.50)+(units*0.50)*17/100)
+elif units<=100:
+    print("Bill:",(units*0.75)+(units*0.75)*17/100)
+elif units<=250:
+    print("Bill:",(units*1.25)+(units*1.25)*17/100)
+elif units>250:
+    print("Bill:",(units*1.50)+(units*1.50)*17/100)
+    
+    """
+
+"""
+
+total_unit = int(input("Total units Consumed="))
+bill_amount = 0
 
 
+for bill_unit in range(1, total_unit+1):
+    if bill_unit <= 50:
+        bill_amount = bill_amount + 0.50
+    elif bill_unit > 50 and bill_amount <= 100:
+        bill_amount = bill_amount + 0.75
+    elif bill_unit > 100 and bill_amount <= 250:
+        bill_amount = bill_amount + 1.25
+    elif bill_unit > 250:
+        bill_amount = bill_amount + 1.5
 
+bill_amount_sur = bill_amount + bill_amount * (17/100)
+print("Bill amount with surcharge :", bill_amount_sur)
 
+"""
 
+# 30). Python program to check whether a given year is a leap or not.
+# Input = 2000
+# Output = The given year is a leap year
 
+# What is a leap year? To be a leap year, the year number must be divisible by four –
+# except for end-of-century years, which must be divisible by 400.
+# This means that the year 2000 was a leap year, although 1900 was not. 2024, 2028, 2032 and 2036 are all leap years.
 
+"""
+Year=int(input("please enter year:"))
+if Year%4==0 and Year%400==0:
+    print("This is leap year")
+else:
+    print("This is not leap year")
+    
+    """
 
+"""
+year = int(input("Enter the year: "))
 
+if (year%100 != 0 or year%400 == 0) and year%4 == 0:
+    print("The given year is leap year.")
+else:
+    print("The given year is not leap year.")
+    
+    """
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 31). Python Python program to check whether the input number if a multiple of two print “Fizz” instead of the number
+# and for the multiples of three print “Buzz”. For numbers that are multiples of both two and three print “FizzBuzz”.
+# Input = 14
+# Output = Fizz
+# Input = 9
+# Output = Buzz
+# Input = 6
+# Output = FizzBuzz
+"""
+num=int(input("please enter no:"))
+if num%2==0 and num%3==0:
+    print("FizzBuzz")
+elif num%2==0:
+    print("Fizz")
+elif num%3==0:
+    print("Buzz")
+else:
+    print("Number is not multiple of 2 and 3")
+    
+"""
 
 
 
