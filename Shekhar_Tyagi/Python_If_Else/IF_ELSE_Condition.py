@@ -85,7 +85,7 @@ else:
 # 7). Python program to check given number is odd or even.
 print("7). Python program to check given number is odd or even.")
 
-num = int(input("enter the number:"))
+num =   97   # int(input("enter the number:"))
 if num%2 == 0:
 	print(f"{num} is a even number")
 else:
@@ -94,8 +94,56 @@ else:
 # 8). Python program to check a given number is part of the Fibonacci series from 1 to 10.
 print("8). Python program to check a given number is part of the Fibonacci series from 1 to 10.")
 
+"""
+f1=0
+f2=1
+for i in range(10):
+	print(f2 ,end=",")
+	f1,f2 = f2,f1+f2
+
+print()
+"""
+
+f1 = [1, 1, 2, 3, 5, 8, 13, 21, 34,55]
+
+f_num=  21 #int(input("enter the numver: "))
+if f_num in f1:
+	print(f"{f_num} is available in f1 list")
+else:
+	print(f"{f_num} is not available in f1 list")
 
 
+# 9). Python program to check authentication with the given username and password.
+print("9). Python program to check authentication with the given username and password.")
+
+name = "shekhar tyagi"  # input("Enter the User_Name: ")
+Pass = "shekhar tyagi"  # input("Enter the Password: ")
+if name == Pass:
+	print("User Name & Pass is Valied")
+else:
+	print("User Name & Pass is not valied")
+
+
+# 10). Python program to validate user_id in the list of user_ids.
+print("10). Python program to validate user_id in the list of user_ids.")
+
+user_ids = [1,2,3,4,5,6,7,8,9,10,"shekhartyagi112"]
+user_id =   4 #int(input("Enter the user_id: ")) #input("Enter the user_id: ")
+if user_id in user_ids:
+	print("It is valied user_id")
+else:
+	print("It is not a valied user_id")
+
+# 11). Python program to print a square or cube if the given number is divided by 2 or 3 respectively.
+print("11). Python program to print a square or cube if the given number is divided by 2 or 3 respectively.")
+
+num =  15   #int(input("Enter the value: "))
+if num%2==0:
+	print("it is Squar")
+elif num%3 ==0:
+	print("it is a cube")
+else:
+	print("it is not aplicable")
 
 
 
