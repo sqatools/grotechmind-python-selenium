@@ -68,7 +68,183 @@ for i in range(1,10):
         odd = odd+i
 print('sum of even numbers:',even)
 print('sum of odd number:',odd)
+
+
+
+#8). Write program that accepts a word from the user and converts all uppercases in the word to lowercase using python.
+input1 = input('enter any text to covert to lower case :')
+for char in input1:
+    if char.isupper():
+        print(char.lower(),end='')
+    else:
+        print(char,end='')
+
+
+
+#9). Python loops program that accepts a string and calculates the number of digits and letters using python.
+a = input('enter to know how many number and alphabets in input:')
+ls = 0
+ds = 0
+for i in a:
+    if i.isalpha():
+        ls = ls + 1
+    if i.isnumeric():
+        ds = ds + 1
+print('latters',ls)
+print('digits', ds)
+
+
+
+#11). Python Loops program to print all natural numbers from 1 to n using a while loop in python.
+n = int(input('enter any number:'))
+count = 1
+while count <= n:
+    print(count,end=' ')
+    count = count+1
+
+#12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python
+n = int(input('enter any number :'))
+for i in range(n,0,-1):
+    print(i,end='  ')
+
+
+#13). Python Loops program to print all alphabets from a to z using for loop
+#       Take chr method help to print characters with ASCII values
+#      chr(65) = ‘A’
+#     A-Z ASCII Range  65-90
+#    a-z ASCII Range  97-122
+import string
+print("a - z alphabets lower case")
+for letters in string.ascii_lowercase:
+    print(letters, end='  ')
+print('-'*50)
+print("A - Z alphabets upper case :")
+for letters in string.ascii_uppercase:
+    print(letters, end='  ')
+
+
+#14). Python Loops program to print all even numbers between 1 to 100 in python.
+for i in range(2,101,2):
+    print(i,end=' ')
+
+for i in range(1,10):
+    print('chakri i:',i)
+    for s in range(1,5):
+        print('sainath s :',s)
+    print('-'*20)
+
+for i in range(1,6):
+    print()
+    for j in range(i):
+        print('*',end=' ')
+
+num = 1
+while num <= 10:
+    print(num,end=' ')
+    num = num + 1
+
+for i in range(1,6):
+    print('*'*i)
+    if i >= 5:
+        for s in range(4,1,-1):
+            print('*'*s)
+
+#15). Python Loops program to print all odd numbers between 1 to 100 using python.
+for i in range(1,100,2):
+    print(i,end=' ')
+
+#16). Python Loops program to find the sum of all natural numbers between 1 to n using python.
+
+n = int(input('enter any number:'))
+san = 0
+for i in range(1,n+1):
+    san = san + i
+print(san)
+
+
+
+#17). Python program to find the sum of all even numbers between 1 to n using python.
+n = int(input('sum of all even numbers between 1 to n:'))
+sen = 0
+for i in range(1,n):
+    if i%2 == 0:
+        sen = sen+i
+print(sen)
+
+#18). Python Loops program to find the sum of all odd numbers between 1 to n using python.
+n = int(input('sum of all odd numbers between 1 to n :'))
+to = 0
+for i in range(1,n):
+    if i%2 != 0:
+        to = to + i
+print(to)
+
+#19). Write a program to count the number of digits in a number using python.
+n = '2hakri143'
+s = 0
+for i in n:
+    if i.isnumeric():
+        s = s+1
+print(s)
+
+#20). Write a program to find the first and last digits of a number using python.
+c = 123456789
+a = str(c)
+for i in range(len(a)):
+    if i == 0:
+        print(a[0])
+    elif i == len(a)-1:
+        print(a[-1])
+
+#21). Write a program to find the sum of the first and last digits of a number using python.
+a= 123456789
+b = str(a)
+total = 0
+for i in range(len(b)):
+    if i == 0:
+        total = total + int(b[0])
+    elif i == len(b)-1:
+        total = total+int(b[-1])
+print(total)
+
+#22). Write a program to calculate the sum of digits of a number using python.
+a = '2556'
+b = 0
+for i in a:
+    if i.isnumeric():
+        '''
+
+
+'''while True:
+    a = int(input('enter first value:'))
+    b = int(input('enter second value :'))
+    print("1. addition \n"
+          "2. multiplication \n"
+          "3. subtraction \n"
+          "4. divide\n"
+          "5. stop application")
+    c = int(input('enter your choice : '))
+    if c == 1:
+        print('addition :',a+b)
+    elif c == 2:
+        print('multiplication:',a*b)
+    elif c == 3 :
+        print('subtraction:', a-b)
+    elif c == 4 :
+        print('division:',a//b)
+    else:
+        break
+
+a = int(input('enter any number to find the table :'))
+for i in range(1,21):
+    print(a,'*',i,'=',i*a)
 '''
+
+
+
+
+
+
 
 
 

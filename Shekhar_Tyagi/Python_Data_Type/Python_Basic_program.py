@@ -195,7 +195,7 @@ print("(Area of cylinder:)",Area)
 # Example: 153 = 1*1*1 + 5*5*5 + 3*3*3
 print("19). Python program to check whether the given number is an Armstrong number or not.")
 
-num = a = 153
+num = a =  151  # int(input("enter the arm value: "))
 Rev = 0
 while a>0:
     skt = a%10
@@ -222,46 +222,117 @@ F = P+(P/r)*t
 #F = 20000+(20000/12)*4
 print("Intrest:",F)
 
+# 21). Python program to print the current date in the given format.
+# Output: 2023 Jan 05
+# Note: Use the DateTime library
+print("21). Python program to print the current date in the given format.")
 
+#Current_Date = ("23 Dec 15")
+#print(Current_Date)
 
+import datetime
+date = datetime.datetime.now()
+print(date.strftime(" %y %b %d"))
 
+# 22). Python program to calculate days between 2 dates.
+# Input date : (2023, 1, 5) (2023, 1, 22)
+# Output: 17 days
+print("22). Python program to calculate days between 2 dates.")
 
+from datetime import date
+D1 = date(2023, 10, 29)
+D2 = date(2023, 11, 15)
+Result = (D2 - D1).days
+print(" Days b/w 2 dates: ", Result, "Days")
 
+# 23). Python program to get the factorial of the given number.
+print("23). Python program to get the factorial of the given number.")
 
-
-"""
-
-print("_"*50)
-
-num = 6
+num = n = 5 #int(input("Enter the value: "))
 fact = 1
-for i in range (num , 0 ,-1):
-    print(i)
-    fact = fact*i
-    print("fact:",fact)
+while  n > 0 :
+    fact =fact * n
+    n = n - 1
+    print("Value of Factorial=" , n , ":", fact)
+# Or
+print(" Or")
+print("Factorial = " , num , ":", fact)
 
-a = 0
-b = 1
+# 24). Python program to reverse a given number.
+print("24). Python program to reverse a given number.")
 
-for i in range (10):
-    print(b, end=" ")
-    a,b = b, a+b
+num1 = 12345
+rev = str(num1)
+print("rev:" , rev[::-1])
 
+# Or
+print("Or")
+
+num2 = "Python Programming"
+print("Out:", num2[::-1])
+# 25). Python program to get the Fibonacci series between 0 to 50.
+print("25). Python program to get the Fibonacci series between 0 to 50.")
+
+num1 = 0
+num2 = 1
+T_count = 1
+
+print("Sequence is:", end= " ")
+#for i in range (11):
+while T_count <11:
+    print( num2 , end=" ")
+    num1 , num2 = num2 ,num1 + num2
+    T_count = T_count+1
 
 print()
 
 
-print("__"*40)
+# 26). Python program to check given number is palindrome or not.
+print("26). Python program to check given number is palindrome or not.")
 
-num = 11
+n = num = 121 #int(input("Enter the value: "))         # n = num = 121
+R1 = 0                                            # R1 = 0
+while n>0:                                        # 121 > 0
+    r1 = n%10                                     # r1 = 1
+    R1 = R1*10 + r1                               # R1 = 1
+    n = n//10                                     # n  = 12
+if num == R1:                                     # 121 == 1
+    print(" it is a palindrome ")
+else:
+    print(" it is not a palindrome")
+
+# 27). Python program to calculate compound interest.
+#  Formula = p*((1+r/100)**n)
+
+print(" 27). Python program to calculate compound interest.")
+
+p = 10000  # int(input("enter the principle amount: "))
+r = 5      # int(input("enter the intrest rate: "))
+n = 3      # int(input("enter no of years: "))
+f= p*((1 + r / 100) ** n)
+print("Compound intrest :" , f)
+
+#28). Python program to check the prime number.
+print("28). Python program to check the prime number.")
+
+num = 13      #int(input("enter the number : "))
+
 prime = True
-for i in range (2, num//2):
-    if num%i==0:
+
+for i in range (2, num ):
+    if num%i ==0:
         prime = False
 if prime:
-    print("This is prime value:" ,num)
+    print(f"{num} is a prime number")
 else:
-    print("this is not prime value:",num)
+    print(f"{num} is not a prime number")
 
 
-"""
+
+
+
+
+
+
+
+
