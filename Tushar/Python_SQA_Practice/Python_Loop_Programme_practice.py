@@ -205,7 +205,7 @@ print("lOWER:",output)
 # Output :
 # Letters 6
 # Digits 4
-
+"""
 str=input("please enter string:")
 
 # Take a word as input.
@@ -214,7 +214,7 @@ str=input("please enter string:")
 # Check whether the character is a letter or a digit using isaplha() and isnumeric().
 # Add 1 to the corresponding variable according to the type of the charater.
 # Print the output.
-"""
+
 digits=0
 letters=0
 
@@ -236,6 +236,48 @@ print("letters in string:",letters)
 # *       *
 # *       *
 #    ***
+
+"""
+for row in range(0, 7):
+        for column in range(0, 7):
+            # here in first and last row we want to three *
+            if (row == 0 or row == 6) and (1 < column < 5) :
+                print("*", end=' ')
+            # here from 2 to 6 row, * will print on 1 and 5 index only.
+            elif (0 < row <= 5) and (column ==1 or column ==5):
+                print("*", end=' ')
+            else:
+                print(" ", end=' ')
+        print()
+
+"""
+
+"""
+for row in range (0,7):
+        for column in range (0,7):
+            if (row==0 or row==6) and (1<column<5):
+               print("*",end=' ')
+            elif (0 < row <= 5) and (column==1 or column==5):
+                print("*",end=' ')
+            else:
+                print(" ",end=' ')
+        print()
+
+"""
+
+#11). Python Loops program to print all natural numbers from 1 to n using a while loop in python.
+
+"""
+n = int(input("Enter the last number: "))
+count = 1
+
+while count <= n:
+    print(count,end=" ")
+    count += 1
+"""
+
+
+
 
 
 
