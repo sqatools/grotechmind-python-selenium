@@ -84,7 +84,6 @@ print("$"*20)
 
 stra = "python programming"
 
-
 a="0"
 print(a.isnumeric())
 print(a.isdigit())
