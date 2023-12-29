@@ -336,7 +336,67 @@ if type(Inp_4) == str:
 else:
 	print("False")
 
+# 28). Python program to print all the numbers from 10-15 except 13.
+print("28). Python program to print all the numbers from 10-15 except 13")
+
+
+for i in range(10, 16):
+	if i != 13:
+		print(i)
+
+# 29). Python program to find the electricity bill. According to the following conditions:
+# Up to 50 units rs 0.50/unit
+# Up to 100 units rs 0.75/unit
+# Up to 250 units rs 1.25/unit
+# above 250 rs 1.50/unit
+# an additional surcharge of 17% is added to the bill
+# Input = 350
+print("29). Python program to find the electricity bill. According to the following conditions:")
+
+u1 = int(input("Enter the Units: "))
+Bill_Amount = 0
+
+for Bill_Unit in range (1 , u1+1):
+	if Bill_Unit <= 50:
+		Bill_Amount = Bill_Amount+0.50
+	elif Bill_Unit >50 and Bill_Amount <= 100:
+		Bill_Amount = Bill_Amount+0.75
+	elif Bill_Unit >100 and Bill_Amount <=250:
+		Bill_Amount = Bill_Amount + 1.25
+	elif Bill_Unit >250:
+		Bill_Amount = Bill_Amount + 1.50
+Bill_Amount_surcharge = Bill_Amount + Bill_Amount * (17/100)
+print("Total Bill amount with 17% surcharge: " , Bill_Amount_surcharge)
+
+
+# 30). Python program to check whether a given year is a leap or not.
+# Input = 2000
+print("30). Python program to check whether a given year is a leap or not.")
+
+y1 = int(input("Enter the year: "))
+if (y1%100 != 0 or y1%400 == 0) and y1%4 == 0:
+	print("It is a leap year")
+else:
+	print("It is not a leap year")
+
 """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
