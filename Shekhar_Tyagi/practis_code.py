@@ -61,7 +61,7 @@ else:
 
 # Python program to check given number is palindrome or not.              (Note:)
 
-n = num = 121 #int(input("Enter the value: "))         # n = num = 121
+n = num = 121    #int(input("Enter the value: "))         # n = num = 121
 R1 = 0                                            # R1 = 0
 while n>0:                                        # 121 > 0
     r1 = n%10                                     # r1 = 1
