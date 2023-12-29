@@ -94,8 +94,8 @@ for char in str1:
         if char_count>max_count:
             max_count=char_count
             max_rchar=char
-print(max_rchar)
-print(max_count)
+print("max repeated char:",max_rchar)
+print("max repeated char count:",max_count)
 
 
 
