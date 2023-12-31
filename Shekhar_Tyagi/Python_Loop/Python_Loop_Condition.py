@@ -50,9 +50,144 @@ for i in range(0,7):
 	if i != 3 and i != 6:
 		print(i, end=",")
 
-"""
 # 6). Write a program to get the Fibonacci series between 0 to 20 using python.
 print("6). Write a program to get the Fibonacci series between 0 to 20 using python.")
+num1 = 0
+num2 = 1
+count = 0
+while count < 20:
+	print(num1,end=",")         # 0,1 , 1, 2, 3, 5, 8, 13 .........
+	num1 , num2 = num2 , num1+num2
+	count= count+1
+
+# 7). Write a program that iterates the integers from 1 to 30 using python.
+# For multiples of three print “Fizz” instead of the number and for multiples of five print “Buzz”.
+# For numbers that are multiples of both three and five print “FizzBuzz”.
+
+print('''7). Write a program that iterates the integers from 1 to 30 using python. 
+For multiples of three print “Fizz” instead of the number and for multiples of five print “Buzz”.
+For numbers that are multiples of both three and five print “FizzBuzz”.''')
+
+for i in range (1, 31):
+	if i%3 == 0 and i%5 ==0:      # 15, 30
+		print("FizzBuzz")
+	elif i%3 == 0 :               # 3, 6, 9, 12, 18,21, 24,27,
+		print("Fizz")
+	elif i%5 == 0:                # 5 , 10, 20, 25
+		print("Buzz")
+
+
+# 8). Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.
+# Input : “SqaTOOlS”
+print("8). Write a program that accepts a word from the user and converts all uppercases in the word to lowercase using python.")
+
+User1 = input("Enter the value: ")
+result = " "
+for char in User1:
+	if char.isupper():
+		out1= char.lower()
+		print(out1, end="")
+	else:
+		print(char, end="")
+
+
+# 9). Python loops program that accepts a string and calculates the number of digits and letters using python.
+# Input : “python1234”
+print("9). Python loops program that accepts a string and calculates the number of digits and letters using python.")
+
+input = "python12345"
+digit = 0
+latters = 0
+
+for value in input:
+	if value.isalpha():
+		latters= latters+1
+	elif value.isnumeric():
+		digit= digit+1
+print("digit: ", digit)
+print("latters: ", latters)
+
+
+# 10). Python for loop program to print the alphabet pattern ‘O’ using python.
+print("10). Python for loop program to print the alphabet pattern ‘O’ using python.")
+
+for row in range(0,7):
+	for column in range(0,7):
+		if (row ==0 or row ==6) and ( 1 <column <5):
+			print("*", end="")
+
+		elif (0 < row <= 5) and (column ==1 or column ==5 ):
+			print("*", end="")
+
+		else:
+			print(" ", end="")
+	print()
+
+
+# 11). Python Loops program to print all natural numbers from 1 to n using a while loop in python.
+print("11). Python Loops program to print all natural numbers from 1 to n using a while loop in python.")
+
+n = int(input("Enter the number: "))
+m = 1
+while m <=n:
+	print(m,end=" ")
+	m = m+1
+
+# 12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.
+print("12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.")
+
+n1 = int(input("Enter the last number: "))
+count = n1
+while count !=0:
+	print(count, end=" ")
+	count = count-1
+
+# 13). Python Loops program to print all alphabets from a to z using for loop
+#         Take chr method help to print characters with ASCII values
+#         chr(65) = ‘A’
+#         A-Z ASCII Range  65-90
+#         a-z ASCII Range  97-122
+print(''' 13). Python Loops program to print all alphabets from a to z using 
+for loop Take chr method help to print characters with ASCII values.''')
+
+import string
+print("Alphabet from a-z:")
+for latter in string.ascii_lowercase:
+	print(latter, end=" ")
+print("\nAlphabet from A-Z:")
+for latter in string.ascii_uppercase:
+	print(latter, end=" ")
+
+# 14). Python Loops program to print all even numbers between 1 to 100 in python.
+print("14). Python Loops program to print all even numbers between 1 to 100 in python.")
+
+for i in range(1,101):
+	if i%2 ==0:
+		print(i, end=" ")
+
+# 15). Python Loops program to print all odd numbers between 1 to 100 using python.
+print("15). Python Loops program to print all odd numbers between 1 to 100 using python.")
+
+for odd in range(1,101):
+	if odd%2 != 0:
+		print(odd,end=" ")
+
+
+# 16). Python Loops program to find the sum of all natural numbers between 1 to n using python.
+print("16). Python Loops program to find the sum of all natural numbers between 1 to n using python.")
+
+N1 = 10 # int(input("Enter the last number: "))
+t1 = 0
+for i in range(1, N1+1):
+	t1 = t1+i
+print(t1)
+
+"""
+
+
+
+
+
 
 
 
