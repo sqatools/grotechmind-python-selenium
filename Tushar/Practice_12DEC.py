@@ -28,16 +28,16 @@ print("="*50)
 #prime number: the number which can divide by 1 or the number itself.
 ##1,2,3,5,7,11,13,17,19,23......
 
-num1=11
-prime=True
-for i in range (2,num1):  ###num1//2
-    #print("i:",i)
-    if num1%i==0:
-        prime= False
-        #break
-if prime:
-    print("This is prime number:",num1)
-else:
-    print("This is not prime number:",num1)
-
-print("+"*50)
+# num1=11
+# prime=True
+# for i in range (2,num1):  ###num1//2
+#     #print("i:",i)
+#     if num1%i==0:
+#         prime= False
+#         #break
+# if prime:
+#     print("This is prime number:",num1)
+# else:
+#     print("This is not prime number:",num1)
+#
+# print("+"*50)

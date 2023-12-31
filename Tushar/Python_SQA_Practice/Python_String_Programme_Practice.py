@@ -490,7 +490,48 @@ for word in list:
         new_list.append(word)
 print(new_list)
 """
+"""
+str=input("please enter string:")
 
+list=str.split()
+
+new_list=[]
+
+for word in list:
+    if word==word[::-1]:
+        new_list.append(word) #The append() method appends an element to the end of the list.
+print(new_list)
+
+"""
+'''
+str=input("please enter string:")
+
+lst=str.split()
+
+new_list=[]
+
+for word in lst:
+    if word==word[::-1]:
+        new_list.append(word)
+print(new_list)
+
+'''
+"""
+str=input("please enter string:")
+
+list=str.split()
+
+new_list=[]
+
+for word in list:
+    if word==word[::-1]:
+
+        new_list.append(word)
+print(new_list)
+
+"""
+
+"""
 str=input("please enter string:")
 
 list=str.split()
@@ -502,8 +543,168 @@ for word in list:
         new_list.append(word)
 print(new_list)
 
+"""
 
-hi
+
+
+
+# 19). Write a Python program to create a string with a given list of words.
+# Input = [“There”, “are”, “Many”, “Programming”, “Language”]
+# Output = There are many programming languages.
+
+"""
+
+list = ["my","name","is"]
+print("  ".join(list))
+"""
+
+"""
+#Input list
+list1 = ["There", "are", "Many", "Programming", "Language"]
+
+#Printing output
+print(" ".join(list1))
+
+"""
+
+
+
+# 20). Write a Python program to remove duplicate words from the string.
+# Input = “John jany sabi row john sabi”
+# output = “John jany sabi row”
+"""
+str=input("please enter string:")
+
+lst=str.split()
+
+new_list=[]
+for word in lst:
+    if word not in new_list:
+        new_list.append(word)
+print(" ".join(new_list))
+"""
+
+"""
+str=input("please enter string:")
+
+lst=str.split()
+
+new_list=[]
+
+for word in lst:
+    if word not in new_list:
+        new_list.append(word)
+print(' '.join(new_list))
+"""
+
+
+
+# 21). Write a Python to remove unwanted characters from the given string.
+# Input = “Prog^ra*m#ming”
+# Output = “Programming”
+#
+# Input = “Py(th)#@&on Pro$*#gram”
+# Output = “PythonProgram”
+
+
+# str=input("please enter string:")
+#
+# for word in str:
+#     if word.isalnum():
+#         print(' '.join(word))
+
+# str=input("please enter string:")
+
+# for word in str:
+#     if word.isalnum():
+#         print(" ".join(word),end="")
+
+
+# 22). Write a Python program to find the longest capital letter word from the string.
+# Input = “Learning PYTHON programming is FUN”
+# Output = “PYTHON”
+
+str=input("please enter string:")
+#
+
+# word=str.split()
+# int_len=0
+#
+# for word in str:
+#     if word.isupper():
+#         len_word=len(word)
+#         len_word>int_len
+#         int_len=len_word
+#         print(int_len)
+
+longest_word=''
+long_len=0
+
+word_list=str1.split()
+print(word_list)
+
+for word in word_list:
+    if word.isupper():
+      print(word,len(word))
+    word_len=len(word)
+    if word_len>long_len:
+        longest_word=word
+        print(longest_word)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
