@@ -620,40 +620,30 @@ print(' '.join(new_list))
 #         print(" ".join(word),end="")
 
 
-# 22). Write a Python program to find the longest capital letter word from the string.
-# Input = “Learning PYTHON programming is FUN”
-# Output = “PYTHON”
-
-str=input("please enter string:")
+# # 22). Write a Python program to find the longest capital letter word from the string.
+# # Input = “Learning PYTHON programming is FUN”
+# # Output = “PYTHON”
 #
-
-# word=str.split()
-# int_len=0
 #
-# for word in str:
-#     if word.isupper():
-#         len_word=len(word)
-#         len_word>int_len
-#         int_len=len_word
-#         print(int_len)
-
-longest_word=''
-long_len=0
-
-word_list=str1.split()
-print(word_list)
-
-for word in word_list:
-    if word.isupper():
-      print(word,len(word))
-    word_len=len(word)
-    if word_len>long_len:
-        longest_word=word
-        print(longest_word)
+#
+# #Importing re
+# import re
+#
+#
+# string=input("please enter string:")
+#
+# #Finding all capital letters words
+# word = re.findall(r"[A-Z]+", string)
+#
+# #Printing output
+# print(max(word, key=len))
 
 
-
-
+#
+# 23). Write a Python program to get common words from strings.
+# Input String1 = “Very Good Morning, How are You”
+# Input String1 = “You are a Good student, keep it up”
+# Output = “You Good are”
 
 
 
