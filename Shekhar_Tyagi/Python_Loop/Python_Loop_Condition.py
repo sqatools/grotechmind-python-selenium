@@ -182,7 +182,101 @@ for i in range(1, N1+1):
 	t1 = t1+i
 print(t1)
 
+# 17). Python program to find the sum of all even numbers between 1 to n using python.
+print("17). Python program to find the sum of all even numbers between 1 to n using python.")
+n = int(input("Enter the number: "))
+number = 0
+for i in range(1, n+1):
+	if i%2 == 0:         # 2,4,6,8,10
+		number = number+i
+		print(number, end=" ")
+print()
+print(number)
+
+
+# 18). Python Loops program to find the sum of all odd numbers between 1 to n using python.
+print("18). Python Loops program to find the sum of all odd numbers between 1 to n using python.")
+n1 = int(input("Enter the number: "))
+numbr = 0
+for i in range(1,n1+1):
+	if i%2 != 0:
+		numbr = numbr+i
+		print(numbr, end=" ")
+print()
+print(numbr)
+
+
+# 19). Write a program to count the number of digits in a number using python.
+print("19). Write a program to count the number of digits in a number using python.")
+
+num = "12345678910"
+count = 0
+for i in num:
+	count= count+1
+print(f"Total digits in {num}: ",count, end=" ")
+
+# 20). Write a program to find the first and last digits of a number using python.
+print("20). Write a program to find the first and last digits of a number using python.")
+
+num1 = 2345
+str1 = str(num1)
+print(len(str1))
+for i in range(len(str1)):
+	if i == 0:
+		print("First number in the gievn number: ",str1[i])
+	elif i == len(str1)-1:
+		print("Last number in the gievn number : ",str1[i])
+
+# 21). Write a program to find the sum of the first and last digits of a number using python.
+print("21). Write a program to find the sum of the first and last digits of a number using python.")
+
+num1 = "2345"
+#num1 = str(num)
+numbr1 = 0
+for i in range(len(num1)):
+	if i == 0:
+		numbr1 = numbr1+ int(num1[i])    # 0+2 = 2
+	elif i == len(num1)-1:
+		numbr1=numbr1+ int(num1[i])
+print(numbr1)
+
+
+# 22). Write a program to calculate the sum of digits of a number using python.
+print("22). Write a program to calculate the sum of digits of a number using python.")
+
+num1 = 2345
+number1 = 0
+while num1 > 0:
+	count = num1 % 10				   # 5,4,3,2
+	print("count:",count,",",end=" ")
+	number1 = number1+count            # 0+5= 5, 5+4=9, 9+3=12, 12+2=14
+	print("number1: ",number1)
+	num1= num1//10                     # 234 , 23, 2, 0
+	print(num1)
+print("Sum of digits of a number: ", number1)
+
+# 23). Write a program to calculate the product of digits of a number using python.
+print("23). Write a program to calculate the product of digits of a number using python.")
+
+num = int(input("Enter a number: "))
+product = 1
+while num > 0:
+	rem = num % 10
+	print(rem, end=" & ")            # 6 , 5
+	product = product * rem
+	print( product, end=" $ ")        # 6, 30
+	num = num // 10
+	print(num, end=" * ")          # 5 , 0
+print("\n Product of given number is: ",product)
+
 """
+
+
+
+
+
+
+
 
 
 
