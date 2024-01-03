@@ -9,6 +9,8 @@ for i in range (1500,2701):
     else:
         print("number is not divisible by 7 and multiple of 5",i)
 """
+import string
+
 """
 
 for i in range(1500,2701):
@@ -275,6 +277,83 @@ while count <= n:
     print(count,end=" ")
     count += 1
 """
+
+# 12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.
+"""
+n=int(input("please enter no:"))
+
+count=n
+
+while count!=0:
+    print(count,end=" ")
+    count=count-1
+"""
+"""
+n=int(input("please enter no:"))
+
+count=n
+
+while count!=0:
+    print(count,end=" ")
+    count=count-1
+    
+"""
+#
+# 13). Python Loops program to print all alphabets from a to z using for loop
+#         Take chr method help to print characters with ASCII values
+#         chr(65) = ‘A’
+#         A-Z ASCII Range  65-90
+#         a-z ASCII Range  97-122
+'''
+import string
+
+for letter in string.ascii_lowercase:
+    print(letter,end=" ")
+print("\nalphabet from A-Z:")
+for letter in string.ascii_uppercase:
+    print(letter,end=" ")
+'''
+#
+# for letter in string.ascii_lowercase:
+#
+#     print(letter,end=" ")
+# print("\n A_Z")
+# for letter in string.ascii_uppercase:
+#     print(letter,end=' ')
+
+# 14). Python Loops program to print all even numbers between 1 to 100 in python.
+'''
+
+for val in range (1,101):
+    if val%2==0:
+        print(val,end=" ")
+'''
+
+# 15). Python Loops program to print all odd numbers between 1 to 100 using python.
+
+'''
+for val in range (1,101):
+    if val%2!=0:
+        print(val,end=' ')
+'''
+
+
+
+# 16). Python Loops program to find the sum of all natural numbers between 1 to n using python.
+
+
+n=int(input("please enter n value:"))
+
+total=0
+for n in range (1,n+1):
+    total=total+n
+print(total)
+
+
+
+
+
+
 
 
 
