@@ -90,7 +90,7 @@ else:
 
 
 # Program to find out the factorial of any number.
-"""
+
 print("_"*50)
 numa = int(input("Please enter number to get factorial :"))
 #factorial: 4*3*2*1 : 24
@@ -108,7 +108,7 @@ print("factorial output :", result)
 # print("_"*40)
 # for i in range(10, 1, -1):
 #     print(i)
-"""
+
 
 
 # python program to get the sum all the numbers from 1 to 10
