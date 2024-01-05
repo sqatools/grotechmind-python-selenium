@@ -193,4 +193,125 @@ list.reverse()
 " ".join(list)
 print(list)
 
+# 16). Write a python program to get all the digits from the given string.
+Input = '''
+Sinak’s 1112 aim is to 1773 create a new generation of people who
+understand 444 that an organization’s 5324 success or failure is
+based on 555 leadership excellence and not managerial
+acumen
+'''
+
+print("16). Write a python program to get all the digits from the given string.")
+string = '''Sinak’s 1112 aim is to 1773 create a new generation of people who 
+ understand 444 that an organization’s 5324 success or failure is 
+ based on 555 leadership excellence and not managerial acumen '''
+list1 = string.split(" ")
+list2 = [ ]
+for val in list1:
+	if val.isdigit():
+		list2.append(val)
+print(list2)
+
+# 17). Write a python program to replace the words “Java” with “Python” in the given string.
+# Input = “JAVA is the Best Programming Language in the Market”
+print("17). Write a python program to replace the words “Java” with “Python” in the given string.")
+
+string = "Java is the Best Programming Language in the Market."
+list1 = string.split(" ")
+for val in list1:
+	#print(val, end=" ")
+	if val == "Java":
+		index = list1.index(val)
+		list1[index] = "Python"
+print(" ".join(list1))
+
+# 18). Write a Python program to get all the palindrome words from the string.
+# Input = “Python efe language aakaa hellolleh”
+print(" 18). Write a Python program to get all the palindrome words from the string.")
+
+string = "Python efe language aakaa hellolleh"
+list1 = string.split(" ")
+list2 = [ ]
+for val in list1:
+	if val == val[::-1]:
+		list2.append(val)
+print(list2)
+
+
+# 19). Write a Python program to create a string with a given list of words.
+# Input = [“There”, “are”, “Many”, “Programming”, “Language”]
+print("19). Write a Python program to create a string with a given list of words.")
+
+list1= ["There", "are", "Many", "Programming", "Language"]
+list2 = " ".join(list1)
+print(list2)
+
+# 20). Write a Python program to remove duplicate words from the string.
+# Input = “John jany sabi row john sabi”
+print("20). Write a Python program to remove duplicate words from the string.")
+
+string = "John jany sabi row John sabi"
+list = string.split(" ")
+list2 = [ ]
+for val in list:
+	if val not in list2:
+		list2.append(val)
+print(" ".join(list2))
+
 """
+
+# 21). Write a Python to remove unwanted characters from the given string.
+# Input = “Prog^ra*m#ming”
+print("21). Write a Python to remove unwanted characters from the given string.")
+
+string = "Prog^ra*m#ming"
+test_str= [ ]
+for latter in string:
+	if latter.isalnum():
+		test_str.append(latter)
+print("".join(test_str))
+print()
+
+string1 ="Py(th)#@&on Pro$*#gram"
+test_str= [ ]
+for latter in string1:
+	if latter.isalnum():
+		test_str.append(latter)
+print("".join(test_str))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# list1 = [1,2,3,4,5]
+# list2 = [6,7,8,9,10]
+# list3 =list1+list2
+# print(list3)
+#
+# list1 = [1,2,3,4]
+# list1.insert(4,(5,6,7,8))
+# list1.insert(5,[9,10])
+# list1.insert(12,{'name': "shekhar tyagi"})
+#
+# print(list1)
+
+# listd =  [4, 6, 8, 22, 14]
+# listd.insert(2, 500)
+# print("listd :", listd)
+# # [4, 6, 500, 8, 22, 14]
+# listd.insert(3, (4, 7, 8))
+# listd.insert(4, [6, 8, 9])
+# listd.insert(-1, {'name': 'rahul', 'age': 25})
+# print("listd :", listd)
