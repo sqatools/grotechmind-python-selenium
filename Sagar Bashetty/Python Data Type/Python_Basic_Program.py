@@ -49,3 +49,9 @@ print(list1)
 a = (len(list1))/2
 print("Median :",list1[int(a)])
 
+#7). Python program to print the square and cube of a given number.
+print("-"*50)
+print("enter the number")
+a=int(input())
+print(a**2)
+print(a**3)
