@@ -271,6 +271,28 @@ print("\n Product of given number is: ",product)
 
 """
 
+# 22). Write a Python program to find the longest capital letter word from the string.
+# Input = “Learning PYTHON programming is FUN”
+# Output = “PYTHON”
+
+str1 = "Learning PYTHON programming is FUN HJKHJKHJKHJKS"
+long_word = ''
+max_len = 0
+
+word_list = str1.split()
+
+for word in word_list:
+    word_len = len(word)
+    if word_len > max_len and word.isupper():
+        max_len = word_len
+        long_word = word
+
+
+print("long word capital word :", long_word)
+
+
+
+
 
 
 
