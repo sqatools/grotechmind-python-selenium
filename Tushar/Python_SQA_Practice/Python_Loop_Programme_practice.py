@@ -341,14 +341,14 @@ for val in range (1,101):
 
 # 16). Python Loops program to find the sum of all natural numbers between 1 to n using python.
 
-
+"""
 n=int(input("please enter n value:"))
 
 total=0
 for n in range (1,n+1):
     total=total+n
 print(total)
-
+"""
 
 
 
