@@ -22,9 +22,9 @@ print("str1:",str1[-3:15:-1]) #itamotua muineles no
 
 str1="im learning Python selenium automation"
 
-print(str1[:10:1]) #im learnin # diff is positive so initial indesx is zero  print from right to left
+print(str1[:10:1]) #im learnin # diff is positive so initial indesx is zero  print from left to right
 
-print(str1[:10:-1]) #noitamotua muineles nohtyP  ##diff is negative so initial index is -1 . so print from left to right
+print(str1[:10:-1]) #noitamotua muineles nohtyP  ##diff is negative so initial index is -1 . so print from right to left
 
 
 #Rule.6

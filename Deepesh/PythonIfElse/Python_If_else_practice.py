@@ -206,4 +206,3 @@ vara = 51
 output = "even" if vara%2 == 0 else "odd"
 print("output :", output)
 
-

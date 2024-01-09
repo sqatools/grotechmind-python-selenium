@@ -88,6 +88,54 @@ print(str12.split(" ")) # ['I', 'am', 'learning', 'split', 'method', '']
 str13="I Like SQL,Python and Testing"
 print(str13.split(",")) #['I Like SQL', 'Python and Testing']
 
+print(str13.split("t")) #['I Like SQL,Py', 'hon and Tes', 'ing']
 
 
+stra="Hope you are doing good"
+print(stra.split()) #['Hope', 'you', 'are', 'doing', 'good']
+#by default parameter is space
+
+stra="Hope you are doing good"
+result=(stra.split())
+print(result)
+
+for word in result:
+    print(word , word[0])
+
+# Hope H
+# you y
+# are a
+# doing d
+# good g
+
+#10. count method: used to count of occurances of char or substring
+
+str14="I am learning count method to count occurance of char or substring"
+
+print(str14.count('c')) #6
+
+print(str14.count('count')) # 2
+
+print("="*100)
+
+#11. Replace method
+
+str15="I am learning replace method to replace any substring"
+print(str15.replace('replace','translate'))
+#I am learning translate method to translate any substring
+
+print(str15.replace('replace','translate').replace('I am','WE are').count('a'))
+
+
+
+##################################################
+
+msg="clcoding"
+s=list(msg[:4])[::-1]
+#print(s)
+
+s=list(msg[:4]) [::-1]
+print(s)
+
+#['o', 'c', 'l', 'c']
 
