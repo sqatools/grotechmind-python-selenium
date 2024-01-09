@@ -54,7 +54,7 @@ result=str1.split('be')
 print(result)"""
 
 #find method return index value and if value is not avaliable then -1
-stri1="Happy new year"
+"""stri1="Happy new year"
 result=stri1.find('new')
 print(result)
 
@@ -64,5 +64,38 @@ print("stri1 :", stri1.find('Happy'))
 print("stri1 :", stri1.find('O'))
 print("stri1 :", stri1.find('D'))
 print("stri1 :", stri1.find('o'))
+"""
+
+
+
+
+
+#fruits = ["apple", "banana", "cherry"]
+"""for x in fruits:
+  print(x)
+  if x == "banana":"""
+
+
+"""name_string= "Happy New Year"
+name_string= "Happy New Year" [0::-1]
+print(print(name_string))"""
+
+######################################################################################
+"""list2 = [5,6,8,9,10]
+#without indexing
+for val in list2:
+    print(val)"""
+############################################
+"""list3 = [5,6,8,9,10]
+#with indexing
+for i in range(len(list3)):
+    print(i,"i",list3[i])"""
+####################################################################
+
+list3 = [5,6,8,9,10]
+#with indexing
+
+for i in range(len(list3)):
+    print(i,"i",list3[[i][3]])
 
 
