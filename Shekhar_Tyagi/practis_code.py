@@ -8,6 +8,7 @@
 *****
 
 """
+"""
 for i in range ( 1,6):
     print()
     for j in range (i):
@@ -87,6 +88,30 @@ stra = "python programming"
 a="0"
 print(a.isnumeric())
 print(a.isdigit())
+"""
+
+strng = "Learning Python Programing"
+str1 = strng.split(" ")
+output1 = { }
+for val in str1:
+	first_char = val[0]
+	seccond_char = val[-1]
+	result = first_char+seccond_char
+	output1[result] =val
+print(output1)
+
+
+strng = "Learning Python Programing"
+str1 = strng.split(" ")
+output1 = { }
+for val in str1:
+	first_char = val[0]
+	seccond_char = val[-1]
+	result = first_char + seccond_char
+	rev_word = val[::-1]
+	output1[result] = rev_word
+print(output1)
+
 
 
 
