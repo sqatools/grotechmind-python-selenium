@@ -32,4 +32,7 @@ for i in p:
 print("*"*20)
 for i in range(0,10):
     print(i)
-    
+
+# reverse the string
+abc = "mynameis"
+print(abc[::-1])
