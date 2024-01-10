@@ -44,13 +44,27 @@ list2 = [1, 6, 5, 2]
 str1 = "We are learning Python Programming"
 output =  {'W2' : 'wE', 'a3' : 'ARE', 'l8' : 'LEARNING', 'P6': 'pYTHON', 'P11': 'pROGRAMMING'}
 """
--> get word 
+-> get word list : split method
 -> get first char
 -> get length of each word 
 -> combine both length and first char
 -> change the lower character upper and upper to lower.
 -> Add both values in dict output
 """
+output = {}
+word_list = str1.split()
+for word in word_list:
+    first_char = word[0]
+    word_len = len(word)
+    swap_case_val = word.swapcase()
+    #output[f"{first_char}{word_len}"] =  swap_case_val
+    output[first_char+str(word_len)] = swap_case_val
+
+print("output :", output)
+
+
+
+
 
 
 
