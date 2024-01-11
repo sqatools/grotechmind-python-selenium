@@ -8,7 +8,7 @@ print(var2, type(var2))
 """
 # Python Data Type
 """
-1.  Numbers
+1  Numbers
     a).  Integer
     b).  Float
     c). Complex Number
@@ -16,7 +16,7 @@ print(var2, type(var2))
 2.  Sequencial data type
     d). String
     e). Tuple
-    f). List
+    f). List.
     
 3. Dictionary 
 
