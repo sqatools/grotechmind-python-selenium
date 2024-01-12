@@ -123,14 +123,14 @@ else:
 
 #13). Python program to determine whether a given number is available in the list of numbers or not.
 
-# user_input=int(input("please enter no:"))
-#
-# lst=[1,2,3,4,5]
-#
-# if user_input  not in lst:
-#     print("number is not available in list")
-# else:
-#     print("num is  available in list")
+user_input=int(input("please enter no:"))
+
+lst=[1,2,3,4,5]
+
+if user_input  not in lst:
+    print("number is not available in list")
+else:
+    print("num is  available in list")
 
 
 
