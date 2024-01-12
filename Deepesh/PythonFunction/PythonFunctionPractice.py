@@ -133,3 +133,64 @@ print(str1[-1:-3:-1])
 
 for i in range(len(str1) - 1, -1, -1):
     print(i, str1[i])
+
+
+#  use of *args parameters
+print("_"*40)
+def function8(var1, *args):
+    print("var1 :", var1)
+    print(args)
+    for val in args:
+        print(val)
+
+
+#function8(4, 6, 8, 23, 55, 77,'Hello', 2.7, [4, 7, 9])
+
+# use of **kwargs parameter
+# kwargs accept the values in the form for key value format
+
+def function9(**kwargs):
+    print(kwargs)
+    for val in kwargs.items():
+        print(val)
+
+    for key, value in kwargs.items():
+        print(value)
+
+#function9(name='Rahul', age=40, address='Mumbai')
+
+
+def login(**user_input):
+    db_username = 'Admin'
+    db_password = 'Admin@123'
+
+    if user_input['username'] == db_username and user_input['password'] == db_password:
+        print("Login Successful")
+    else:
+        print("Invalid username and password")
+
+
+login(username='Admin', password='Admin@123')
+login(username='Admin1', password='Admin@123')
+
+var1 = input("Please enter username :")
+var2 = input("Please enter password :")
+login(username=var1, password=var2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
