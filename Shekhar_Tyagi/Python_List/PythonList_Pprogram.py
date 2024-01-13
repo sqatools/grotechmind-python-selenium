@@ -151,11 +151,24 @@ for i in range(len(list1)):
 					list2.append(j)
 print("Combination of 2 element: ", list2)
 
+
+# 9). Python program to print squares of all even numbers in a list.
+print("9). Python program to print squares of all even numbers in a list.")
+
+list1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+list2 = [ ]
+for val in list1:
+	if val%2==0:
+		list2.append(val)
+print(list2)
+
 """
 
+# 10). Python program to split the list into two-part, the left side all odd values and the right side all even values.
+# Input = [5, 7, 2, 8, 11, 12, 17, 19, 22]
+print("10). Python program to split the list into two-part, the left side all odd values and the right side all even values.")
 
-
-
+list1 = [5, 7, 2, 8, 11, 12, 17, 19, 22]
 
 
 
