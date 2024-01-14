@@ -220,6 +220,8 @@ while num1 >= 0:
 	list1 = (list0[num1])
 	print(list1,end=" ")
 	num1 -=1
+print()
+
 # 14). Python program to reverse a list using index slicing.
 print("14). Python program to reverse a list using index slicing.")
 
@@ -293,7 +295,7 @@ list1 = [3,5,-8,0,-20,-55,23,-10]
 for val in list1:
 	if val>= 0:
 		print(val, end=" ")
-
+print()
 
 # 20). Python program to get a list of all elements which are divided by 3 and 7.
 print("20). Python program to get a list of all elements which are divided by 3 and 7.")
@@ -332,25 +334,21 @@ list1  = []
 for char in string1:
 	for word in char:
 
-		if word =="1" or word=="e" or word=="i" or word=="o" or word=="u" or word=="A" or word=="E" or word=="I" or word=="O" or word=="U":
+		if (word =="1" or word=="e" or word=="i" or word=="o" or word=="u"
+			or word=="A" or word=="E" or word=="I" or word=="O" or word=="U"):
 			list1.append(char)
 			break
 print(list1)
-
-"""
 
 # 23). Python program to add 2 lists with extend method.
 print("23). Python program to add 2 lists with extend method.")
 
 list1 = [4, 5, 7, 9, 2, 1]
 list2 = [2, 5, 8, 3, 4, 7]
-list3 = []
-for val in list1:
-	if val not in list2:
-		list3.append(val)
-		list1.extend(list3)
+list1.extend(list2)
 print(list1)
 
+"""
 
 
 
