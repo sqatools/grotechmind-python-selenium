@@ -170,12 +170,46 @@ else:
 # print("listd :", listd)
 
 string1 = "Hello World"
-conv1 = string1.split()
-result = " "
-val_len =0
 
-for i in conv1:
+result = " "
+
+for i in string1:
+	if 'A'<= i <= 'Z':
+		result= result+ chr(ord(i)+32)
+
+	elif 'a' <= i <='z':
+		result= result+chr(ord(i)-32)
+	else:
+		result=result + i
+print(result)
+
+
+string1 = "Hello World"
+char = string1.split()
+result = " "
+
+for i in char:
 	if i.isupper():
+		result = result+ i.lower()
+	elif i.islower():
+		result = result + i.upper()
+	else:
+		result = result + i
+
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
