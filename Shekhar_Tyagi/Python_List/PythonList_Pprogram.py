@@ -71,7 +71,95 @@ for val in list1:
 print()
 print("sum of element: ", ele)
 
+# 4). Python program to find a product of all elements from a given list.
+print("4). Python program to find a product of all elements from a given list.")
+
+list1 = [3,9,4,8]
+result = 1
+
+for val in list1:
+	result = result * val
+print(result)
+
+# or
+
+list1 = [3,9,4,8]
+
+result = 1
+count = 0
+while count < len(list1):            # 0<4, 1<4,2<4,3<4
+	result = result * list1[count]   # 3,27,108,864
+	count=count+1
+print(result)
+
+
+# 5). Python program to find the minimum and maximum elements from the list.
+print("5). Python program to find the minimum and maximum elements from the list.")
+
+print("Method 1 : Sorting and indexing")
+
+list1 = [2,3,9,4,8,23,21]
+list1.sort()
+print(list1)
+print(list1[0])
+print(list1[-1])
+
+print("Method 2 : Using in-built function")
+
+list1 = [26,32,90,14,28,23,21]
+print(min(list1))
+print(max(list1))
+
+# 6). Python program to differentiate even and odd elements from the given list.
+print("6). Python program to differentiate even and odd elements from the given list.")
+
+list1 = [26,32,90,14,28,23,21]
+Even = []
+Odd = []
+
+for val in list1:
+	if val%2 ==0:
+		Even.append(val)
+	else:
+		Odd.append(val)
+print("Even Value: ",Even)
+print("Odd value: ",Odd)
+
+# 7). Python program to remove all duplicate elements from the list.
+print("7). Python program to remove all duplicate elements from the list.")
+
+list1 = [26,32,90,14,32,14,28,23,22]
+
+result = []
+
+for val in list1:
+	if val not in result:
+		result.append(val)
+print("Result : ", sorted(result))
+
+# 8). Python program to print a combination of 2 elements from the list whose sum is 10.
+print("8). Python program to print a combination of 2 elements from the list whose sum is 10.")
+import itertools
+list1 = [2,4,6,5,7,8,9,1,14]
+val = 10
+list2 =[ ]
+list3 = []
+
+for i in range(len(list1)):
+	for j in itertools.combinations(list1,i):
+			if sum(j) == val:
+					list2.append(j)
+print("Combination of 2 element: ", list2)
+
 """
+
+
+
+
+
+
+
+
 
 
 
