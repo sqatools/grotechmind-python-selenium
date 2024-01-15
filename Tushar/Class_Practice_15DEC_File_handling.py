@@ -22,5 +22,6 @@ def append_file(text1,content):
     data = obj1.write(content)
     print(data)
 #append_file("text1.txt","my name is tushar")
+append_file("text2.txt","my name is tushar")
 
 
