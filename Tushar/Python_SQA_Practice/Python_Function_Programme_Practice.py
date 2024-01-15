@@ -433,6 +433,123 @@ def fibo(num):
     print(c)
 fibo(11)
 """
+# 21). Python function program to check whether a combination of two numbers has a sum of 10 from the given list.
+# Input : [2, 5, 6, 4, 7, 3, 8, 9, 1]
+# Output : True
+"""
+def check_sum(nums, k):
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if nums[i] + nums[j] == k:
+                return True
+    return False
+print(check_sum([2, 5, 6, 4, 7, 3, 8, 9, 1], 10))
+"""
+#
+# 22). Python function program to get unique values from the given list.
+# Input : [4, 6, 1, 7, 6, 1, 5]
+# Output : [4, 6, 7, 5]
+"""
+def unique():
+    new_lst=set(lst)
+    print(new_lst)
+lst=[4,6,1,7,6,1,5]
+unique()
+"""
+
+# 23). Python function program to get the duplicate characters from the string.
+# Input: Programming
+# Output: {‘g’,’m’,’r’}
+"""
+def duplicate():
+    lst=[]
+    for char in str:
+        if str.count(char)>1:
+            lst.append(char)
+    print(set(lst))
+str="programming"
+duplicate()
+"""
+
+
+# 24). Python function program to get the square of all values in the given dictionary.
+# Input = {‘a’: 4, ‘b’ :3, ‘c’ : 12, ‘d’: 6}
+# Output = {‘a’: 16, ‘b’ : 9, ‘c’: 144, ‘d’, 36}
+"""
+def square(dict1):
+    dict2={}
+    for key, val in dict1.items():
+        value=val**2
+        dict2[key]=value
+    print(dict2)
+dict1= {'a': 4, 'b' :3, 'c' : 12, 'd': 6}
+square(dict1)
+"""
+
+# 25). Python function program to create dictionary output from the given string.
+# Note: Combination of the first and last character from each word should be
+# key and the same word will the value in the dictionary.
+# Input = “Python is easy to Learn”
+# Output = {‘Pn’: ‘Python’, ‘is’: ‘is’, ‘ey’: ‘easy’, ‘to’: ‘to’, ‘Ln’: ‘Learn’}
+
+"""
+def dicttostr(str):
+    dict={}
+    word=str.split()
+    for char in word:
+       dict[char[0]+char[-1]]=char
+    print(dict)
+str='Python is easy to Learn'
+dicttostr(str)
+
+"""
+
+# 26). Python function program to print a list of prime numbers from 1 to 100.
+"""
+def prime1to100():
+    for num in range(1,100):##1#2##4
+        count=0
+        for i in range(1,num+1):##1,2#1,2,3##1,2,3,4,5
+           if num%i==0:
+            count=count+1
+        if count==2:
+           print(i,end=' ')
+prime1to100()
+
+"""
+
+# 27). Python function program to get a list of odd numbers from 1 to 100
+"""
+def odd1to100():
+    for num in range(1,100):
+        if num%2!=0:
+           print(num,end=' ')
+odd1to100()
+
+"""
+# 28). Python function program to print and accept login credentials.
+"""
+def auth():
+    name='admin'
+    password='admin123'
+    print('login succesfully')
+auth()
+
+"""
+
+# 29). Python function program to get the addition with the return statement.
+"""
+def addition(a,b):
+    total=a+b
+    return total
+result=addition(10,222)
+print(result)
+
+"""
+def addition(a,b):
+    total=a+b
+    print(total)
+addition(10,20)
 
 
 
@@ -442,21 +559,108 @@ fibo(11)
 
 
 
+# 30). Python function program to create a Fruitshop Management system.
+# Create a function fruit.
+# Use the def keyword to define the function.
+# Pass three parameters i.e. fruit name, fruit price, and fruit quantity.
+# Print the fruit name, fruit price, and fruit quantity.
+# Calculate the total bill by multiplying fruit price and fruit quantity.
+# Print the bill.
+# Pass the fruit name, fruit price, and fruit quantity to the function while calling the function.
+
+"""
+def fruit(fruit_name,fruit_price,fruit_quantity):
+    fruit_name='apple'
+    fruit_price=100
+    fruit_quantity=5
+    bill=fruit_price*fruit_quantity
+    print(bill)
+fruit('apple',200,5)
+
+"""
+"""
+def fruit(fname,fprice,quantity):
+    print("Fruit name: ",fname)
+    print("Fruit price: ",fprice)
+    print("Fruit quantity in kg: ",quantity)
+    print("Bill : ",fprice*quantity)
+fruit("Apple",10,2)
+"""
+
+# 31). Python function program to check whether the given year is a leap year.
+"""
+def leap(year):
+    if year%400==0 and  year%4==0:
+        print("leap year")
+    else:
+        print("not leap year")
+leap(2000)
+"""
+
+
+# 32). Python function program to reverse an integer
+"""
+def rev(num):
+    print(str(num)[::-1])
+rev(254)
+"""
+"""
+def rev(num):
+    rev=0
+    while num>0:
+        r=num%10
+        rev=(rev*10)+r
+        num=num//10
+    print(rev)
+rev(789)
+"""
+"""
+def rev(num):
+    rev=0
+    while num>0:
+        r=num%10
+        rev=(rev*10)+r
+        num=num//10
+    print(rev)
+rev(456)
+
+"""
+
+
+# 33). Python function program to create a library management system.
+
+# Create a function library.
+# Use the def keyword to define the function.
+# Pass two parameters i.e. book name and customers name.
+# Print the book name and customer name.
+# Pass the book name and customer name to the function while calling the function.
+"""
+def library(book_name,cust_name):
+    print("book_name:",book_name)
+    print("customer_name:",cust_name)
+library('python','tushar')
+"""
+
+# 5- write a program which takes the name of the user as input and print the index of character 'a' in the string.
+# write a program which takes the name of the user as input and print the index of character 'a' in the string.
+# if 'a' is not there then return -1.
+
+# str='tushr'
+# # x=str.index('a')
+# # print(x)
+#
+# y=str.find('a')
+# print(y)
+
+# 6-  Display the number of letters in the below string
+# my_word = "antidisestablishmentarianism"
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+# str='ggggggggggsssss'
+# x=str.count('g')
+# print(x)
 
 
 
