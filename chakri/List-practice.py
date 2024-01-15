@@ -97,7 +97,7 @@ list1 = [1,2,3,4,55]
 #Using for loop
 for i in range(len(list1)-1,-1,-1):
     print(list1[i], end=" ")
-'''
+
 #14). Python program to reverse a list using index slicing.
 a = [4, 5, 7, 9, 2, 1]
 print(a[-1::-1])
@@ -105,6 +105,148 @@ print(a[-1::-1])
 print(list(reversed(a)))
 a.reverse()
 print(a)
+
+#16). Python program to copy or clone one list to another list.
+a = [4, 5, 7, 9, 2, 1]
+b = [2, 5, 8, 3, 4, 7]
+c = []
+print(a)
+print(b)
+for i in a:
+    c.append(i)
+print(c)
+
+#17). Python program to return True if two lists have any common member.
+a = [4, 5, 7, 9, 2, 1]
+b = [2, 5, 8, 3, 4, 7]
+c = []
+for i in a:
+    if i in b:
+        c.append(i)
+print(c)
+#18). Python program to print a specific list after removing the 1st, 3rd, and 6th elements from the list.
+a = [4, 5, 7, 9, 2, 1]
+for i in a:
+    if a.index(i) == a[0]:
+        a.remove(i)
+        print(a)
+#19). Python program to remove negative values from the list.
+a = [4, 5, 7, -9, 2, -1]
+b = []
+for i in a:
+    if i >= 0:
+        b.append(i)
+print(b)
+#20). Python program to get a list of all elements which are divided by 3 and 7.
+b = [2, 5, 8, 3, 4, 7, 56, 70, 80, 68, 21 ]
+c = []
+for i in b:
+    if i%3 == 0 and i%7 == 0:
+        print(i,'divided 3 and 7',end= ' ')
+    else:
+        print(i,'is not divided 3 and 7')
+
+
+#22). Python Program to get a list of words which has vowels in the given string.
+a = 'www Student ppp are qqqq learning Python vvv'
+#Output : [‘Student’, ‘are’, ‘learning’, ‘Python’]
+a = a.split()
+b = 'aeiou'
+c = []
+for word in a:
+    for char in word:
+        if char.lower() in b:
+            if word not in c:
+                c.append(word)
+print(c)
+
+#23). Python program to add 2 lists with extend method.
+a = [4, 5, 7, 9, 2, 1]
+print(a)
+b = [2, 5, 8, 3, 4, 7]
+a.extend(b)
+print(a)
+
+#24). Python program to sort list data, with the sort and sorted method.
+a = [4, 5, 7, 9, 2, 1, 2, 5, 8, 3, 4, 7]
+a.sort()
+print(a)
+print(set(sorted(a)))
+
+#25). Python program to remove data from the list from a specific index using the pop method.
+a = [4, 5, 7, 9, 2, 1, 2, 5, 8, 3, 4, 7]
+a.pop(0)
+print(a)
+#26). Python program to get the max, min, and sum of the list using in-built functions.
+a = [4, 5, 7, 9, 2, 1, 2, 5, 8, 3, 4, 7]
+print(max(a))
+print(min(a))
+print(sum(a))
+#27). Python program to check whether a list contains a sublist.
+a = [4, 5, 9, 2, 1, 2, 8, 3, 7,5, 7]
+b = [5,8,4,7]
+c = 0
+for i in set(a):
+    for k in b:
+        if i == k :
+            c = c+1
+if c == len(b):
+    print('b is sublist of a')
+else:
+    print('b is not a sublist a')
+print(c)
+print(len(b))
+#29). Python program to find the second largest number from the list.
+a = [4, 5, 9, 2, 1, 2, 8, 3, 7,5, 7]
+b = sorted(a)
+print(b[-2])
+#30). Python program to find the second smallest number from the list.
+a = [4, 5, 9, 2, 1, 2, 8, 3, 7,5]
+a.sort()
+print(a[1])
+#31). Python program to merge all elements of the list in a single entity using a special character.
+a = ['4', '5']
+print("$".join(a))
+#32). Python program to get the difference between two lists
+a = [22,44,66,99,0,45,76,89]
+b = [45,6,7,88,99,0,76]
+c = []
+for i in a:
+    if i not in b:
+        c.append(i)
+
+for k in b:
+    if k not in a:
+        c.append(k)
+print(c)
+#33). Python program to reverse each element of the list.
+a = ['Sqa', 'Tools', 'Online', 'Learning', 'Platform']
+b = []
+#output = [‘aqS’, ‘slooT’, ‘enilno’, ‘gninraeL’, ‘mroftalP’]
+for i in a:
+    if i == str(i):
+        b.append(i[::-1])
+print(b)'''
+#34). Python program to combine two list elements as a sublist in a list.
+x = [3, 5, 7, 8, 9]
+y = [1, 4, 3, 6, 2]
+#Output = [[3, 1], [5, 4], [7, 3], [8, 6], [9, 2]]
+c = []
+d = []
+for (a,b) in zip(x,y):
+    c.append((list(a,b)))
+print(c)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

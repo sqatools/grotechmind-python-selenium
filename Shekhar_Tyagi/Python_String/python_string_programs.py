@@ -258,7 +258,6 @@ for val in list:
 		list2.append(val)
 print(" ".join(list2))
 
-"""
 
 # 21). Write a Python to remove unwanted characters from the given string.
 # Input = “Prog^ra*m#ming”
@@ -278,40 +277,27 @@ for latter in string1:
 	if latter.isalnum():
 		test_str.append(latter)
 print("".join(test_str))
+"""
+
+# 22). Write a Python program to find the longest capital letter word from the string.
+# Input = “Learning PYTHON programming is FUN”
+# Output = “PYTHON”
+print("22). Write a Python program to find the longest capital letter word from the string.")
+
+str1 = "Learning PYTHON programming is FUN "
+long_word = ''
+max_len = 0
+
+word_list = str1.split()
+
+for word in word_list:
+    word_len = len(word)
+    if word_len > max_len and word.isupper():
+        max_len = word_len
+        long_word = word
+print("long word capital word :", long_word)
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# list1 = [1,2,3,4,5]
-# list2 = [6,7,8,9,10]
-# list3 =list1+list2
-# print(list3)
-#
-# list1 = [1,2,3,4]
-# list1.insert(4,(5,6,7,8))
-# list1.insert(5,[9,10])
-# list1.insert(12,{'name': "shekhar tyagi"})
-#
-# print(list1)
-
-# listd =  [4, 6, 8, 22, 14]
-# listd.insert(2, 500)
-# print("listd :", listd)
-# # [4, 6, 500, 8, 22, 14]
-# listd.insert(3, (4, 7, 8))
-# listd.insert(4, [6, 8, 9])
-# listd.insert(-1, {'name': 'rahul', 'age': 25})
-# print("listd :", listd)
