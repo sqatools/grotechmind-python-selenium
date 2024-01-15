@@ -1,0 +1,12 @@
+Python offers many choices for web development:
+Frameworks such as Django and Pyramid.
+Micro-frameworks such as Flask and Bottle.
+Advanced django content management systems such
+as Plone and django CMS.
+Python's standard library supports
+many Internet protocols:
+HTML and XML
+JSON
+E-mail processing.
+Support for FTP, IMAP, and other Internet django protocols.
+Easy-to-use socket interface.Grotech Mind LearningGrotech Mind Learning

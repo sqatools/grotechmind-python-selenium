@@ -88,7 +88,7 @@ stra = "python programming"
 a="0"
 print(a.isnumeric())
 print(a.isdigit())
-"""
+
 
 strng = "Learning Python Programing"
 str1 = strng.split(" ")
@@ -111,6 +111,107 @@ for val in str1:
 	rev_word = val[::-1]
 	output1[result] = rev_word
 print(output1)
+
+
+def fizz_buzz(number):
+    if number % 3 == 0 and number % 5 == 0:
+        return "FizzBuzz"
+    elif number % 3 == 0:
+        return "Fizz"
+    elif number % 5 == 0:
+        return "Buzz"
+    else:
+        return str(number)
+
+def main():
+    for num in range(1, 16):
+        print(fizz_buzz(num))
+
+if __name__ == "__main__":
+    main()
+
+if __name__ == '__main__':
+	n = 24
+if n%2 or 6 <= n <= 20:
+    print('Weird')
+else:
+    print('Not Weird')
+
+n = int(input("Enter the num: "))
+if n % 2==0:
+    print("Weird")
+elif 2 <= n <= 5:
+    print("Not Weird")
+elif 6 <= n <= 20:
+    print("Weird")
+else:
+    print("Not Weird")
+"""
+
+# list1 = [1,2,3,4,5]
+# list2 = [6,7,8,9,10]
+# list3 =list1+list2
+# print(list3)
+#
+# list1 = [1,2,3,4]
+# list1.insert(4,(5,6,7,8))
+# list1.insert(5,[9,10])
+# list1.insert(12,{'name': "shekhar tyagi"})
+#
+# print(list1)
+
+# listd =  [4, 6, 8, 22, 14]
+# listd.insert(2, 500)
+# print("listd :", listd)
+# # [4, 6, 500, 8, 22, 14]
+# listd.insert(3, (4, 7, 8))
+# listd.insert(4, [6, 8, 9])
+# listd.insert(-1, {'name': 'rahul', 'age': 25})
+# print("listd :", listd)
+
+string1 = "Hello World"
+
+result = " "
+
+for i in string1:
+	if 'A'<= i <= 'Z':
+		result= result+ chr(ord(i)+32)
+
+	elif 'a' <= i <='z':
+		result= result+chr(ord(i)-32)
+	else:
+		result=result + i
+print(result)
+
+
+string1 = "Hello World"
+char = string1.split()
+result = " "
+
+for i in char:
+	if i.isupper():
+		result = result+ i.lower()
+	elif i.islower():
+		result = result + i.upper()
+	else:
+		result = result + i
+
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
