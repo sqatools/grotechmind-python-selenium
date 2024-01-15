@@ -17,12 +17,3 @@ def append_content_to_the_file(filename , content):
 	file.write(content)
 	file.close()
 append_content_to_the_file("write_file.txt" ," Hello , Good Morning brother")
-
-
-def read_file(test_file):
-	obj1 = open(test_file,'r')
-	data = obj1.read()
-	print(data)
-
-
-read_file("test_file.txt")
