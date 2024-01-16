@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71031346-0578-4b75-a051-b7ace7d7e9a7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Shekhar_Tyagi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Shekhar_Tyagi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Data_Type/Python_Basic_program.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Data_Type/Python_Basic_program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_File_Handdling/Python_File_Hanndling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_File_Handdling/Python_File_Hanndling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_File_Handdling/write_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Python_File_Handdling/write_file.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,17 +23,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Python_File_Hanndling.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/GrowTechMind/GitRepos",
+    "last_opened_file_path": "D:/GrowTechMind",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-7a29c1521ef0-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.11799.298" />
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
       </set>
     </attachedChunks>
   </component>

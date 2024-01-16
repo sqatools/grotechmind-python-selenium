@@ -200,7 +200,7 @@ print(b)
 a = {4: 16, 5: 125, 6: 36, 2: 4, 1: 1, 7: 343, 11: 1331}
 a.clear()
 print(a)
-'''
+
 #9). Python Dictionary program to remove duplicate values from Dictionary.
 a = {'a': 12, 'b': 2, 'c': 12, 'd': 5, 'e': 35, 'f': 5}
 #Output :{‘a’: 12, ‘b’: 2, ‘d’: 5, ‘e’: 35}
@@ -211,15 +211,22 @@ for k,v in a.items():
         b.append(v)
         c.setdefault(k,v)
 print(c)
-
 for k1,v1 in a.items():
     if v1 not in a.values():
         c.setdefault(k1,v1)
         #c[k1] = v1
-
 print(c)
 
-
+#10). Python Dictionary program to create a dictionary from the string.
+a = 'SQATools'
+#Output = {‘S’: 1, ‘Q’: 1, ‘A’: 1, ‘T’: 1, ‘o’: 2, ‘l’: 1, ‘s’: 1}
+b = {}
+for i in a:
+    if i not in b.keys():
+        c = a.count(i)
+        b.setdefault(i,c)
+print(b)
+'''
 
 
 

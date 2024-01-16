@@ -341,12 +341,18 @@ for char in string1:
 print(list1)
 
 # 23). Python program to add 2 lists with extend method.
-print("23). Python program to add 2 lists with extend method.")
+print("23). Python program to add 2 lists with extend method but don't repeat a common value.")
 
 list1 = [4, 5, 7, 9, 2, 1]
 list2 = [2, 5, 8, 3, 4, 7]
-list1.extend(list2)
-print(list1)
+#list1.extend(list2)
+list3 = list1+list2
+print(sorted(list3))
+output = []
+for val in list3:
+	if val not in output:
+		output.append(val)
+print(sorted(output))
 
 """
 

@@ -72,10 +72,13 @@ print(stringa,type(stringa))'''
 Num = int(StringI)
 print(Num,type(Num),Num*4)'''
 
-#String to List
-Str="Happy Learning"
-var=list(Str)
-print(var,type(var),var[7])
+## Pyramid of horizontal tables of numbers
+"""rows = 100
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(i * j, end=' ')
+    print()
+"""
 
 #String to Tuple
 
@@ -85,6 +88,25 @@ git add . (to add all avaliable file changes done by me
 git commint -m "file added"
 git push '''
 
+"""x=100
+for i in range(100):
+    print(i)
+"""
 
+"""for num in range(10, 14):
+   for i in range(2, num):
+       if num%i == 1:
+          print(num)
+          break"""
 
+"""Enter_number1=input("Enter Number 1:")
+Enter_number2=input("Enter Number 2: ")
+result = int(Enter_number1)+int(Enter_number2)
+print("Sum =",result)"""
 
+#//////////////////////////////////////////////////////////
+number = input("Enter Two digit number for Addition :")
+first_digit=number[0]
+second_digit=number[1]
+result=int(first_digit)+int(second_digit)
+print(result)
