@@ -16,4 +16,27 @@ def append_content_to_the_file(filename , content):
 	file = open(filename,'a')
 	file.write(content)
 	file.close()
-append_content_to_the_file("write_file.txt" ," Good Morning brother")
+append_content_to_the_file("write_file.txt" ," Hello , Good Morning brother")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
