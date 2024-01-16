@@ -1,0 +1,7 @@
+1. Python offers many choices for web development:
+2. Frameworks such as Django and Pyramid.
+3. Micro-frameworks such as Flask and Bottle.
+4. Advanced django content management systems such
+5. as Plone and django CMS.
+6. Python's standard library supports
+7. many Internet protocols
