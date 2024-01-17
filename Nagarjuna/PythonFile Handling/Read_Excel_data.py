@@ -17,3 +17,5 @@ print("@"*20)
 for i in range(1, 4):
     val = read_excel_file(file_path, i, 1)
     print(val)
+
+print("%"*30)
