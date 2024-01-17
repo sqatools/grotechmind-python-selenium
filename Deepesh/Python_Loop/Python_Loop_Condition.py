@@ -30,7 +30,7 @@ for i in range(1, 20):
 num = 7
 
 for i in range(1, 11):
-    print(num,"*",i, ":", i*num)
+   p
 
 
 # write a program to find out all the number which are divible by 3
