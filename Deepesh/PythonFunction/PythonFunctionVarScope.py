@@ -66,4 +66,17 @@ def outer_function():
 #outer_function.inner_function2()
 #outer_function().inner_function2()
 
-outer_function()
+#outer_function()
+
+
+def addition(num1, num2):
+    return num1+num2
+
+def multiplication(a, b, c):
+    add = addition(a, b)
+    result = add*c
+    print("result :", result)
+
+
+multiplication(40, 50, 3)
+
