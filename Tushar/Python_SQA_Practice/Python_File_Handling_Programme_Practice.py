@@ -182,15 +182,97 @@ print(max_word)
 """
 
 # 10). Python file program to get the count of a specific word in a file.
-
+"""
 obj=open('emp.txt','r')
 data=obj.read()
 word_list=data.split()
 count=0
 for word in word_list:
-    if word=='to':
+    if word=='Language':
         count=count+1
 print(count)
+"""
+
+
+# 11). Python file program to read a random line from a file.
+"""
+def read_specific_lines(filename,line_num):
+    with open(filename, "r") as file:
+        for i in range(line_num):
+            data1 = file.readline()
+            print(data1, end="")
+
+read_specific_lines("emp.txt", 5)
+"""
+
+
+# 12). Python file program to copy the file’s contents to another file after converting it to lowercase.
+
+# First read the first file in the reading mode using with open(‘ReadContent.txt’, ‘r’) as data_file.
+# Inside the above statement use another statement to read the second file in appending mode using with
+# open(‘Writecontent.txt’, ‘a’) as output_file.
+# Use a for loop to iterate over lines in the first file.
+# Add each line to the second file by using write() after converting the characters in the line to the lowercases using lower()
+"""
+with open ('emp.txt','r') as data_file:
+  with open ('lower_emp','a') as output_file:
+      for lines in data_file:
+          output_file.write(lines.lower())
+"""
+
+# 13). Python file program to copy the file’s contents to another file after converting it to uppercase.
+"""
+with open ('emp.txt','r') as data_file:
+    with open ('upper.txt','a') as output_file:
+        for lines in data_file:
+            output_file.write(lines.upper())
+
+"""
+
+# 14). Python file program to count all the words from a file.
+"""
+with open ('emp.txt','r') as data_file:
+    word_list=data_file.read().split()
+    count=0
+    for word in word_list:
+        count=count+1
+print(count)
+"""
+
+
+# 15). Python file program to sort all the lines File as per line length size.
+
+# Open file in read mode with context manager
+with open("emp.txt", "r") as file:
+    # Read list of lines.
+    FileLines = file.readlines()
+    # Initial for loop to start picking each line one by one
+    for i in range(len(FileLines)):
+        # Initial for loop to compare all remaining line with previous one.
+        for j in range(i+1, len(FileLines)):
+            # compare each line length, swap small len line with long len line.
+            if len(FileLines[i]) > len(FileLines[j]):
+                temp = FileLines[i]
+                FileLines[i] = FileLines[j]
+                FileLines[j] = temp
+            else:
+                continue
+
+# re-write all the line one by one to the file
+with open('ReadContent.txt', "w") as file:
+    # Combine all the sequentially arrange lines with join method.
+    all_lines = ''.join(FileLines)
+    # overwrite all the existing lines with new one
+    file.write(all_lines)
+
+
+
+
+
+
+
+
+
 
 
 

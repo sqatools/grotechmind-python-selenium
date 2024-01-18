@@ -8,6 +8,7 @@ print("_"*50)
 for i in range (1,21):
     print(i)
 """
+"""
 print("_"*50)
 for i in range (0,11,2):
     print(i)
@@ -23,3 +24,11 @@ num=2
 for i in range(1,11):
     print(num, "*", i,":" ,i*num)
 
+"""
+print("_"*50)
+num=6
+fact=1
+for i in range(num,0,-1):
+    print(i)
+    fact=fact*i
+    print(fact)
