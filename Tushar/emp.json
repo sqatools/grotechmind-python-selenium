@@ -1,0 +1,8 @@
+{
+  "emp_id": 101,
+  "Name": "Steven",
+   "Dept": "IT",
+  "Salary": 10000,
+  "Mgr_name":"King"
+
+}
