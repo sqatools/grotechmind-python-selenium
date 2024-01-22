@@ -22,8 +22,9 @@ polymorphism
 abstraction
 """
 
+
 class ABC:
-    country = "India" # class variable
+    country = "India"  # class variable
 
     def __init__(self, a, b):  # constructor
         print("Initializing the memory")
@@ -43,17 +44,16 @@ class ABC:
 
     def show_city_name(self, city_name):
         print("city_name :", city_name)
-        print(" c variable",  self.c_val)
+        print(" c variable", self.c_val)
 
 
 # obj = ABC(50, 60)
-#obj.greeting(100, 200)
-#obj.show_city_name("Mumbai")
+# obj.greeting(100, 200)
+# obj.show_city_name("Mumbai")
 
-#ABC.show_city_name("Bangalore", "Mumbai")
+# ABC.show_city_name("Bangalore", "Mumbai")
 
 # obj1 = ABC(100, 300)
-
 
 
 """
@@ -66,8 +66,8 @@ print(type(str1))
 
 
 class car:
+    country = "India"  # class variable
 
-    country = "India" # class variable
     def __init__(self, car_name, comp_name, car_price):
         self.car_name = car_name
         self.company_name = comp_name
@@ -109,8 +109,6 @@ if __name__ == '__main__':
 # obj = car("Swift", "Maruti", "8 Lac")
 # obj.show_car_name()
 # print(obj.__module__)
-
-
 
 
 # Assignment
