@@ -52,6 +52,7 @@ print("output:", output)
 # Check given folder is available on target path or not
 """
 folder_path = "E:\\Filesdata\\new_dir\\BI10\\testfolder"
+
 folder_path2 = "E:\\Filesdata\\new_dir\\BI10\\testfolder1"
 output = os.path.isdir(folder_path)
 print("output:", output) # True
