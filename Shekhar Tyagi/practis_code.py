@@ -146,7 +146,7 @@ elif 6 <= n <= 20:
     print("Weird")
 else:
     print("Not Weird")
-"""
+
 
 # list1 = [1,2,3,4,5]
 # list2 = [6,7,8,9,10]
@@ -198,11 +198,29 @@ for i in char:
 
 print(result)
 
+"""
+
+# Create a class structure for a IT Company.
+# Create a class structure for a school Institute.
 
 
 
+class ITCompany:
+    def __init__(self, company_name):
+        self.company_name = company_name
+        #self.departments = []
 
+    # def add_department(self, department):
+    #     self.departments.append(department)
 
+    def display_info(self):
+        print(f"Company Name: {self.company_name}")
+        # print("Departments:")
+        # for department in self.departments:
+        #     department.display_info()
+if __name__ == "__main__":
+	it_company = ITCompany("GrowTechMind")
+	it_company.display_info()
 
 
 
