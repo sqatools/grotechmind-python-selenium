@@ -9,12 +9,12 @@ def read_excel(filepath, row, col):
 
 
 filepath = r"C:\GitPrograms\grotechmind-python-selenium\Ankita Verma\AV1\read_python.xlsx"
-
-# val1 = read_excel(filepath, 1,6)#?????
+#filepath= "read_python.xlsx"
+# val1 = read_excel(filepath, ,6)#?????
 # print(val1)
 
 
 
 for i in range(1,6):
-    val1 = read_excel(filepath, i, 6)
+    val1 = read_excel(filepath, i, 1)
     print(val1)

@@ -32,7 +32,7 @@ var1="Hi this this python trainning class"
 write_file("test.txt","Hello are you in ")
 write_file("test2.txt","Newly created file")
 write_file("test1.txt", var1)
-
+import openpyxl
 #File Append Mode
 #1.if file is not avaliable then it will add the content end of file
 #2.If file does not exist then it will create and add the content
