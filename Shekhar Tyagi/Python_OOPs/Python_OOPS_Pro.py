@@ -8,7 +8,7 @@ class Employee:
         print(f"Employee ID: {self.employee_id}, Name: {self.name}, Position: {self.position}")
 
 
-class Department:
+class Department(Employee):
     def __init__(self, department_id, name):
         self.department_id = department_id
         self.name = name
@@ -24,7 +24,7 @@ class Department:
             employee.display_info()
 
 
-class ITCompany:
+class ITCompany(Department):
     def __init__(self, company_name):
         self.company_name = company_name
         self.departments = []
