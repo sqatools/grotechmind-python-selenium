@@ -18,7 +18,11 @@ def append_content_to_the_file(filename , content):
 	file.close()
 append_content_to_the_file("write_file.txt" ," Hello , Good Morning brother")
 
-
+def read_file_data(fileName, char):
+	with open(fileName, 'r') as file:
+		data = file.read()
+		print(data)
+read_file_data("test_file.txt", 5)
 
 
 

@@ -123,15 +123,15 @@ else:
 
 #13). Python program to determine whether a given number is available in the list of numbers or not.
 
-user_input=int(input("please enter no:"))
-
-lst=[1,2,3,4,5]
-
-if user_input  not in lst:
-    print("number is not available in list")
-else:
-    print("num is  available in list")
-
+# user_input=int(input("please enter no:"))
+#
+# lst=[1,2,3,4,5]
+#
+# if user_input  not in lst:
+#     print("number is not available in list")
+# else:
+#     print("num is  available in list")
+#
 
 
 #
@@ -200,10 +200,111 @@ else:
 #             print("*")
 
 
-for i in range(6):
-    print(i*"*")
-for i in range(4,0,-1): #4 3 2 1
-    print(i*"*")
+# for i in range(6):
+#     print(i*"*")
+# for i in range(4,0,-1): #4 3 2 1
+#     print(i*"*")
+#
+#
+# print("*"*40)
 
 
-print("*"*40)
+
+
+
+# 1). Python Program How to read a file in reading mode.
+
+
+# def read_file(file_name):
+#     with open(file_name,'r') as data_file:
+#         data=data_file.read()
+#         return data
+# result=read_file('text1.txt')
+# print(result)
+
+# 2). Python file program to overwrite the existing file content.
+
+# def overwrite_existing_file(file_name):
+#     with open(file_name,'w') as data_file:
+#         data=data_file.write("happy new year")
+#         return data
+# result=overwrite_existing_file("text1.txt")
+# print(result)
+
+
+# 3). Python file program to append data to an existing file.
+
+# def append_existing_file(file_name):
+#     with open(file_name,'a') as data_file:
+#         data=data_file.write("happy new year 2024")
+#         return data
+# result=append_existing_file("text1.txt")
+# print(result)
+
+# 4). Python file program to get the file’s first three and last three lines.
+
+#def read_no_of_line(file_name,start,end):
+# with open('text1.txt','r') as data_file:
+#     line_list=data_file.readlines()
+#     print(line_list)
+#     for i in (line_list[:3]):
+#         print(i,end='')
+#
+#     for i in (line_list[-3:]):
+#             print(i,end='')
+
+
+# def read_lines_list_specific_range(filename, start, end):
+#     with open(filename, "r") as file:
+#         lines_list = file.readlines()
+#         #print(lines_list[start-1:end])
+#         for i in range(start-1, end):
+#             print(lines_list[i], end="")
+#
+#
+# #read_lines_list_specific_range("text1.txt", 1, 3)
+#
+# read_lines_list_specific_range("text1.txt", -1, 3)
+
+
+# def read_lines_list_specific_range(filename, start, end):
+#     with open(filename, "r") as file:
+#         lines_list = file.readlines()
+#
+#         for i in (lines_list[:3]):
+#          print(i,end='')
+#
+#     for i in (lines_list[-3:]):
+#              print(i,end='')
+
+
+# read_lines_list_specific_range("text1.txt", 1, 5)
+
+#read_lines_list_specific_range("text1.txt", -1, 3)
+
+
+
+
+#read_no_of_line('text1.txt',1,3)
+
+
+
+# Open the file by using open(“file name”,”r”).
+# Where file name is the name of the file and r is the reading mode.
+# Read the lines in the file using readlines().
+# Use a for loop to iterate over lines in the file.
+# Using indexing print the first 3 and last 3 lines of the file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

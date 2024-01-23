@@ -130,43 +130,137 @@ for row in result_matrix:
 
 print()
 
+# 15). Python tuple program to create a tuple having squares of the elements from the list.
+print("15). Python tuple program to create a tuple having squares of the elements from the list.")
 
+tup = (1,5,7,3,6)
 
+list1 =list(tup)
+list2 =[]
 
+for i in list1:
+	square= i**2
+	(list2.append(square))
+print(list2)
+res = tuple(sorted(list2))
+print(res)
 
+# 16). Python tuple program to multiply adjacent elements of a tuple.
+print("16). Python tuple program to multiply adjacent elements of a tuple.")
 
+tup = (1,2,3,4)
+list1 =[]
 
+for ele1 , ele2 in zip(tup,tup[1:]):
+	print(ele1,ele2)
+	multip = ele1*ele2
+	list1.append(multip)
+print(tuple(list1))
 
+# 17). Python tuple program to join tuples if the initial elements of the sub-tuple are the same.
+print("17). Python tuple program to join tuples if the initial elements of the sub-tuple are the same.")
 
+list_tup = [(3,6,7),(7,8,4),(7,3),(3,0,5)]
 
+# Not Solve
 
+# 18). Python tuple program to convert a list into a tuple and multiply each element by 2.
+print("18). Python tuple program to convert a list into a tuple and multiply each element by 2.")
 
+list1 = [12,65,34,77]
+list2 = []
+for tup in list1:
+	tup2 = tup*2
+	list2.append(tup2)
+print(tuple(list2))
 
+# 19). Python tuple program to remove an item from a tuple.
+print("19). Python tuple program to remove an item from a tuple.")
 
+tup = ('p','y','t','h','o','n')
+remove_item = 'h'
+result = tuple(element for element in tup if element != remove_item)
+print(result, end=" ")
+print()
 
+# Or
+print("#"*40)
 
+tup = ('p','y','t','h','o','n')
+print("Original Result: ", tup)
+list1 = list(tup)
+list1.remove("h")
+remove_result = tuple(list1)
+print("Remove_Result:", remove_result)
 
+# 20). Python tuple program to slice a tuple.
+print("20). Python tuple program to slice a tuple.")
 
+tup =(5,7,3,4,9,0,2)
+print(tup[:3])
+print(tup[2:5])
+print(tup[5:])
 
+# 21). Python tuple program to find an index of an element in a tuple.
+print("21). Python tuple program to find an index of an element in a tuple.")
 
+tup = ('s','q','a','t','o','o','l','s')
+# Index of a?
 
+result_of_index = tup.index('a')
+print(result_of_index)
 
+# 22). Python tuple program to find the length of a tuple.
+print("22). Python tuple program to find the length of a tuple.")
 
+tup =('v','i','r','a','t')
+lenght_of_tup = len(tup)
+print(lenght_of_tup)
 
+# 23). Python tuple program to convert a tuple into a dictionary.
+print("23). Python tuple program to convert a tuple into a dictionary.")
 
+tup =(('Name','Shekhar'),('contact',9760939256))
+dict1 = dict(tup)
+print(dict1)
 
+# 24). Python tuple program to reverse a tuple.
+print("24). Python tuple program to reverse a tuple.")
 
+tup = ( 4, 6, 8, 3, 1)
+rev_tup = reversed(tup)
+print(tuple(rev_tup))
 
+# 25). Python tuple program to convert a list of tuples in a dictionary.
+print("25). Python tuple program to convert a list of tuples in a dictionary.")
 
+list1 = [ ('s', 2), ('q', 1), ('a', 1), ('s', 3), ('q', 2), ('a', 4)]
 
+dict1 = { }
+dicts = dict(list1)
+for ele1 , ele2 in list1:
+	dict1.setdefault(ele1,[]).append(ele2)
+print("dicts:",dict1)
 
+# 26). Python tuple program to pair all combinations of 2 tuples.
+print("26). Python tuple program to pair all combinations of 2 tuples.")
 
+from itertools import product
+A = (2,6)
+B = (3,4)
 
+result = list(product(A,B)) + list(product(B,A))
+print("Pairs:",result)
 
+# 27). Python tuple program to remove tuples of length i.
+print("27). Python tuple program to remove tuples of length i.")
 
-
-
-
+list1 = [(2, 5, 7), (3, 4), ( 8, 9, 0, 5)]
+i=2
+for tup in list1:
+	if len(tup) == 2:
+		list1.remove(tup)
+print(list1)
 
 
 

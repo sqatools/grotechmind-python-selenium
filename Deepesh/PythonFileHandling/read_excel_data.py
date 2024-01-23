@@ -11,6 +11,7 @@ def read_excel_file(filepath, row, col):
 
 file_path = r"E:\Trainings\GroTechMind_PS1_28Nov23\GitRepo\grotechmind-python-selenium\Deepesh\PythonFileHandling\test_data.xlsx"
 #val = read_excel_file(file_path, 2, 1)
+
 #print(val)
 
 """
