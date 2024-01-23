@@ -23,34 +23,36 @@ abstraction
 """
 
 
-class ABC:
-    country = "India"  # class variable
-
-    def __init__(self, a, b):  # constructor
-        print("Initializing the memory")
-        self.a_val = a  # instance variable
-        self.b_val = b  # instance variable
-        self.c_val = 50
-        self.show_city_name("Bangalore")
-
-    # instance method / object method.
-    def greeting(self, var1, var2):
-        print("Good Morning")
-        print("value of a:", self.a_val)
-        print("value of b:", self.b_val)
-        print("var 1:", var1)
-        print("var 2:", var2)
-        print("country name :", self.country)
-
-    def show_city_name(self, city_name):
-        print("city_name :", city_name)
-        print(" c variable", self.c_val)
-
-
+# class ABC:
+#     country = "India"  # class variable
+#
+#     def __init__(self, a, b):  # constructor
+#         print("Initializing the memory")
+#         self.a_val = a  # instance variable
+#
+#         self.b_val = b  # instance variable
+#
+#         self.c_val = 50
+#         self.show_city_name("Bangalore")
+#
+#     # instance method / object method.
+#     def greeting(self, var1, var2):
+#         print("Good Morning")
+#         print("value of a:", self.a_val)
+#         print("value of b:", self.b_val)
+#         print("var 1:", var1)
+#         print("var 2:", var2)
+#         print("country name :", self.country)
+#
+#     def show_city_name(self, city_name):
+#         print("city_name :", city_name)
+#         print(" c variable", self.c_val)
+#
+#
 # obj = ABC(50, 60)
 # obj.greeting(100, 200)
 # obj.show_city_name("Mumbai")
-
+#
 # ABC.show_city_name("Bangalore", "Mumbai")
 
 # obj1 = ABC(100, 300)
@@ -97,14 +99,14 @@ class car:
 # in python each default module name is main (__main__)
 
 if __name__ == '__main__':
-    # obj = car("Swift", "Maruti", "8 Lac")
-    # obj.show_car_name()
+     obj = car("Swift", "Maruti", "8 Lac")
+     obj.show_car_name()
     # print(obj.__module__)   # __main__
     # obj.show_car_country()
     # obj.show_car_milege(20)
 
-    car.show_car_milege(25)
-    car.show_car_name()
+    # car.show_car_milege(25)
+    # car.show_car_name()
 
 # obj = car("Swift", "Maruti", "8 Lac")
 # obj.show_car_name()
