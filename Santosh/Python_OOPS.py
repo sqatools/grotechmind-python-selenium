@@ -23,37 +23,37 @@ abstraction
 """
 
 
-# class ABC:
-#     country = "India"  # class variable
-#
-#     def __init__(self, a, b):  # constructor
-#         print("Initializing the memory")
-#         self.a_val = a  # instance variable
-#
-#         self.b_val = b  # instance variable
-#
-#         self.c_val = 50
-#         self.show_city_name("Bangalore")
-#
-#     # instance method / object method.
-#     def greeting(self, var1, var2):
-#         print("Good Morning")
-#         print("value of a:", self.a_val)
-#         print("value of b:", self.b_val)
-#         print("var 1:", var1)
-#         print("var 2:", var2)
-#         print("country name :", self.country)
-#
-#     def show_city_name(self, city_name):
-#         print("city_name :", city_name)
-#         print(" c variable", self.c_val)
-#
-#
-# obj = ABC(50, 60)
-# obj.greeting(100, 200)
-# obj.show_city_name("Mumbai")
-#
-# ABC.show_city_name("Bangalore", "Mumbai")
+class ABC:
+    country = "India"  # class variable
+
+    def __init__(self, a, b):  # constructor
+        print("Initializing the memory")
+        self.a_val = a  # instance variable
+
+        self.b_val = b  # instance variable
+
+        self.c_val = 50
+        self.show_city_name("Bangalore")
+
+    # instance method / object method.
+    def greeting(self, var1, var2):
+        print("Good Morning")
+        print("value of a:", self.a_val)
+        print("value of b:", self.b_val)
+        print("var 1:", var1)
+        print("var 2:", var2)
+        print("country name :", self.country)
+
+    def show_city_name(self, city_name):
+        print("city_name :", city_name)
+        print(" c variable", self.c_val)
+
+
+obj = ABC(50, 60)
+obj.greeting(100, 200)
+obj.show_city_name("Mumbai")
+
+ABC.show_city_name("Bangalore", "Mumbai")
 
 # obj1 = ABC(100, 300)
 

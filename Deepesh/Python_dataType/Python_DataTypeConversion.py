@@ -142,7 +142,7 @@ strc= "Good Morning"
 dict1 = dict(strc)
 print(dict1, type(dict1))
 # ValueError: dictionary update sequence element #0 has length 1; 2 is required
-"""
+"""1
 import json
 
 strf = '{"Name" : "John", "age" : 25, "mobile": 876865788}'
