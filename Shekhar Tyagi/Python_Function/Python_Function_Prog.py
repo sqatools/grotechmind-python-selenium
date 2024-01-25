@@ -283,6 +283,21 @@ def fibo():
 		count = count +1   # 1,2,3,4,5,6,7,8,9
 fibo()
 
+print()
 
+# 21). Python function program to check whether a combination of two numbers has a sum of 10 from the given list.
+print("21). Python function program to check whether a combination of two numbers has a sum of 10 from the given list.")
+
+# Input : [2, 5, 6, 4, 7, 3, 8, 9, 1]
+def check_sum(num):
+	for i in range(len(num)): # 0 1 2 3 4 5 6 7 8
+		for j in range( i+1, len(num)):
+			if num[i] +num[j] ==10:
+				return  True
+	return False
+
+list1 = [2, 5, 6, 4, 7, 3, 8, 9, 1]
+result= check_sum(list1)
+print(result)
 
 

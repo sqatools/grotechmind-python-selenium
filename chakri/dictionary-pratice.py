@@ -227,8 +227,10 @@ for i in a:
         b.setdefault(i,c)
 print(b)
 '''
-
-
+#11). Python Dictionary program to sort a dictionary using keys.
+a = {'d' : 21, 'b' : 53,  'a': 13, 'c': 41}
+for k,v in a.items():
+    print((k,v))
 
 
 
