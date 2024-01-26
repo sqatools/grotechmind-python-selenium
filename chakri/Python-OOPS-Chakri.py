@@ -180,4 +180,63 @@ a = Son('chakri',25,'krishna','pulsar','farmer','2bhk','parvathi','house wife')
 a.son_age()
 a.b.mother_name()
 a.father_details()
+
+#13). Python Class with Method Overloading
+
+class Number:
+    def __init__(self,v1,v2):
+        self.v1 =v1
+        delf.v2 = v2
+    def multiplication(self):
+        print('multipilcation :',v1*v2)
+    def addition(self):
+        print('addition:',v1+v2)
+
+#13). Python Class with Method Overloading
+
+class Greeting:
+    def wish (self,a,b=None):
+        if b is None:
+            print(a)
+        else:
+            print(a,' ',b)
+
+obj = Greeting()
+obj.wish('hello')
+obj.wish('hello','chakri')
+
+#14). Python Class with Method Overriding.
+class Number:
+    def __init__(self,v1,v2):
+        self.v1 =v1
+        self.v2 = v2
+    def multiplication(self):
+        print('multipilcation :',self.v1*self.v2)
+    def addition(self):
+        print('addition:',self.v1+self.v2)
+class Num(Number):
+    def __init__(self, v3, v4, v1, v2):
+        super().__init__(v1, v2)
+        self.v3 =v3
+        self.v4=v4
+    def multiplication(self):
+        print('multipilcation :',self.v4*self.v3)
+ # this child method override parent methode when we have two methods in
+ # two classes with same name.
+
+
+a = Num(v1=3,v2=5,v3=8,v4=9)
+a.addition()
+a.multiplication()
 '''
+
+
+
+
+
+
+
+
+
+
+
