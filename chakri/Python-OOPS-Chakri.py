@@ -1,4 +1,4 @@
-#1 1). Python oops program to create a class with the constructor.
+# 1 1). Python oops program to create a class with the constructor.
 
 '''class Chakri:
     def __init__(self,name):
@@ -71,7 +71,7 @@ a = Village(234,560)
 if __name__ == '__main__':
     a.female_voter()
     a.male_voter()
-'''
+
 
 #9). Python class with Single Inheritance.
 class Father:
@@ -124,42 +124,60 @@ a = Son('chakri','krishna','pulsar','swift','2BHK','bhvani','tpalem','10th')
 a.father_details()
 a.family_members()
 a.father_bike()
+a.father_name()
+
+# 10). Python Class with Multiple Inheritance.
+
+class Father:
+    def __init__(self, fname, fbike, fjob, fhouse):
+        self.fname = fname
+        self.fbike = fbike
+        self.fjob = fjob
+        self.fhouse = fhouse
+
+    def father_name(self):
+        print('father name:', self.fname)
+
+    def father_bike(self):
+        print('father bike:', self.father_bike)
+
+    def father_job(self):
+        print('father job:', self.fjob)
+
+    def father_house(self):
+        print('fther house:', self.fhouse)
+
+    def father_details(self):
+        print('father name:', self.fname)
+        print('father bike:', self.fbike)
+        print('father job:', self.fjob)
+        print('father house:', self.fhouse)
 
 
+class Mother:
+    def __init__(self, mname, mjob):
+        self.mname = mname
+        self.mjob = mjob
+
+    def mother_name(self):
+        print('mother name:', self.mname)
+
+    def mother_job(self):
+        print('mother job:', self.mjob)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class Son(Father, Mother):
+    def __init__(self, sname, sage, fname, fbike, fjob, fhouse, mname, mjob):
+        super().__init__(fname, fbike, fjob, fhouse)
+        self.sname = sname
+        self.sage = sage
+        self.b = Mother(mname, mjob)
+    def son_name(self):
+        print('son name:',self.sname)
+    def son_age(self):
+        print('sone age:',self.sage)
+a = Son('chakri',25,'krishna','pulsar','farmer','2bhk','parvathi','house wife')
+a.son_age()
+a.b.mother_name()
+a.father_details()
+'''
