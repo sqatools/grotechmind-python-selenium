@@ -230,6 +230,73 @@ a.addition()
 a.multiplication()
 '''
 
+#15). Write a Python Class Program with an Abstract method.
+
+'''class Chakri:
+    def display_name(self):
+        print('my name is chakri')
+
+
+class Sainath(Chakri):
+    def display_name(self):
+        print('my name is sainath')
+
+class Ramu(Chakri):
+    def display_name(self):
+        print('my name is ramu')
+
+a = Sainath()
+a.display_name()
+b =  Ramu()
+b.display_name()
+#16). Write a Python Class program to create a class with data hiding.
+
+class Person:
+  def __init__(self,pname,pjob,phouse):
+      self.pname = pname
+      self.pjob = pjob
+      self.phouse = phouse
+
+  def display_name(self):
+      print('person name:',self.pname)
+  def _display_job(self):
+      print('person name:',self.pjob)
+  def __display_house(self):
+      print('person house:',self.phouse)
+
+
+a = Person('chakri','manual tester','2BHK')
+a.display_name()
+a._display_job()
+a.__display_house()'''
+#17). Python Class Structure for School Management System.
+
+class School:
+    def __init__(self,name):
+        self.school = name
+        self.students = []
+        self.teachers =[]
+        self.courses = []
+    def school_name(self):
+         print(self.school)
+    def add_student(self,student):
+        self.students.append(student)
+    def remove_student(self,student):
+        if student in self.students:
+            self.students.remove(student)
+    def add_t(self,tname):
+        self.teachers.append(tname)
+    def remove_t(self,tname):
+        if tname in self.teachers:
+            self.teachers.remove(tname)
+    def addc(self,cname):
+        self.courses.append(cname)
+    def removec(self,cname):
+        if cname in self.courses:
+            self.courses.remove(cname)
+    def students(self):
+        print(self.students)
+
 
 
 
