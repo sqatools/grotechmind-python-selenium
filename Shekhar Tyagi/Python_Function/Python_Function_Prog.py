@@ -300,4 +300,135 @@ list1 = [2, 5, 6, 4, 7, 3, 8, 9, 1]
 result= check_sum(list1)
 print(result)
 
+# 22). Python function program to get unique values from the given list.
+print("22). Python function program to get unique values from the given list.")
+
+# Input : [4, 6, 1, 7, 6, 1, 5]
+
+def unique_val(list1):
+	list2 = []
+	for val in list1:
+		if val not in list2:
+			list2.append(val)
+	print(sorted(list2))
+num = [4, 6, 1, 7, 6, 1, 5]
+unique_val(num)
+
+# or
+print("%"*50)
+def unique(num):
+	result = set(num)
+	print(list(result))
+inp = [4, 6, 1, 7, 6, 1, 5]
+unique(inp)
+
+# 23). Python function program to get the duplicate characters from the string.
+print("23). Python function program to get the duplicate characters from the string.")
+
+# Input: Programming
+def unique_char(string):
+	list1 =""
+	for char in string:
+		if string.count(char) >1:
+			list1 = list1+char
+			#list1.append(char)
+	print(set(list1))
+inp = 'Programming'
+unique_char(inp)
+
+# 24). Python function program to get the square of all values in the given dictionary.
+print("24). Python function program to get the square of all values in the given dictionary.")
+
+# Input = {‘a’: 4, ‘b’ :3, ‘c’ : 12, ‘d’: 6}
+
+def square(val):
+	dict1 = {}
+	for key,value in val.items():
+		dict1[key] = value**2
+	return dict1
+item = {'a': 4, 'b' :3, 'c' : 12, 'd': 6}
+#result= square(item)
+print(square(item))
+
+# or
+
+def square(val):
+	dict1 = {}
+	for key,value in val.items():
+		dict1[key] = value**2
+	print(dict1)
+item = {'a': 4, 'b' :3, 'c' : 12, 'd': 6}
+square(item)
+
+# 25). Python function program to print a list of prime numbers from 1 to 100.
+print("26). Python function program to print a list of prime numbers from 1 to 100.")
+
+def prime(lower , upper):
+
+	for num in range(lower , upper+1):
+		count = 0
+		for i in range(1, num + 1):
+			if num%i == 0:
+				count = count+1
+		if count ==2 :
+			print(i, end=" ")
+prime(1, 100)
+
+# 27). Python function program to get a list of odd numbers from 1 to 100.
+print("27). Python function program to get a list of odd numbers from 1 to 100.")
+
+def odd_even(min_num , max_num):
+	even = []
+	odd = []
+	for num in range(min_num, max_num+1):
+		if num % 2 ==0:
+			even.append(num)
+		else:
+			odd.append(num)
+	print("Even:", even)
+	print("Odd:",odd)
+odd_even(1, 100)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
