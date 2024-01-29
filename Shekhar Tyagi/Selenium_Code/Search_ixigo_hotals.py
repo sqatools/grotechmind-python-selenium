@@ -42,7 +42,7 @@ driver.find_element(By.XPATH,"//option[@value='2']").click()
 time.sleep(2)
 driver.find_element(By.XPATH,"//button[normalize-space()='Done']").click()
 driver.find_element(By.XPATH,"//div[contains(@class,'flex items-center gap-5 font-medium')]").click()
-time.sleep(2)
+time.sleep(1)
 
 
 
