@@ -196,11 +196,11 @@
 # print(A)
 # print("*"*60)
 #
-# str2="i am santosh"
-# a=''
-# for i in str2:
-#     a=a+i
-# print(a)
+str2="i am santosh"
+a=''
+for i in str2:
+    a=a+i
+print(a)
 #
 # print("*"*60)
 #
