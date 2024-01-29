@@ -2,8 +2,6 @@
 # 1). Python oops program to create a class with the constructor.
 print("1). Python oops program to create a class with the constructor.")
 
-
-
 class MyClass:
 	def __init__(self, name):
 		self.name = name
@@ -47,14 +45,6 @@ print("4). Python oops program to create a class with class variables.")
 class MyClass:
 	class_var = "Hello, I'm Shekhar Tyagi"
 print(MyClass.class_var)
-
-
-
-
-
-
-
-
 
 
 
