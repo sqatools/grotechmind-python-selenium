@@ -1,0 +1,31 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import  By
+import  time
+
+driver = webdriver.Chrome()
+driver.maximize_window()
+driver.implicitly_wait(20)
+driver.get("https://automationbysqatools.blogspot.com/2021/05/dummy-website.html")
+driver.find_element(By.NAME,"birthday").send_keys("1996-08-03")
+driver.find_element(By.ID,"female").click()
+driver.find_element(By.ID,value="admorepass")
+driver.find_element(By.ID,value="oneway").click()
+driver.find_element(By.ID,value="fromcity").send_keys("Canada")
+driver.find_element(By.ID,value="destcity").send_keys("India")
+driver.find_element(By.ID,value="departdate").send_keys("2024-01-29")
+driver.find_element(By.ID,value="returndate").send_keys("2024-02-29")
+driver.find_element(By.ID,value="visadate").send_keys("2024-02-02")
+#driver.find_element(By.ID,value="email").click()
+driver.find_element(By.ID,value="billing_name").send_keys("Darani")
+driver.find_element(By.ID,value="billing_phone").send_keys("182940498")
+driver.find_element(By.ID,value="billing_email").send_keys("darani@122.com")
+driver.find_element(By.ID,value="billing_address").send_keys("302,1414")
+driver.find_element(By.ID,value="billing_email").send_keys("billing_address")
+driver.find_element(By.ID,value="billing_country").send_keys("India")
+driver.find_element(By.ID,value="postcode").send_keys("50082")
+driver.find_element(By.ID,value="postcode").send_keys("Hello")
+driver.find_element(By.ID,value="street_address1").send_keys("rue cambly")
+driver.find_element(By.ID,value="street_address2").send_keys("rue quevellon")
+time.sleep(5)
+
+driver.close()

@@ -3,29 +3,27 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.select import Select
-#Opetion is use for stop the chrome page after complete script, it will not close automatically.
 
+#Opetion is use for stop the chrome page after complete script, it will not close automatically.
 options = Options()
 options.add_experimental_option("detach",True)
 
 #Webdriver.Chrome is for launch the chrome browser.
-
 driver = webdriver.Chrome(options = options)
 
 #driver.maximize_window is for maximize the browser page.
-
 driver.maximize_window()
 
-#driver.get is for launch & navegate the site Url.
-
-driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 
 #implicity_wait is use for given the time for load the perticular browser or navegation page successfully.
-
 driver.implicitly_wait(5)
-#driver.find_element(By.ID,"checkBoxOption1").click()    #Click on Check-Box
-time.sleep(2)
-#driver.find_element(By.LINK_TEXT,"Free Access to InterviewQues/ResumeAssistance/Material").click()  #click on link
+
+#driver.get is for launch & navegate the site Url.
+driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+
+
+# select any check-box
+driver.find_element(By.ID,"checkBoxOption2").click()    #Click on Check-Box
 time.sleep(2)
 
 #it is for select the radio button.
@@ -41,11 +39,16 @@ driver.find_element(By.XPATH,"//*[@value='radio2' and @name='radioButton']").cli
 #it is use for enter the text or value.
 Name= driver.find_element(By.XPATH,"//*[@id='name']")
 Name.send_keys("Shekhar")
+time.sleep(2)
 
 #it is use for clear the text or value from text box.
 Name.clear()
-Name.send_keys(" Shekhar Tyagi")
+time.sleep(2)
 
+Name.send_keys(" Shekhar Tyagi")
+time.sleep(2)
+
+# it is used for print any title.
 Alert= driver.find_element(By.XPATH,"//legend[normalize-space()='Switch To Alert Example']")
 Alert1= Alert.text
 print(Alert1)
@@ -80,7 +83,8 @@ drop= driver.find_element(By.XPATH,"//option[@value='option2']").click()
 links= driver.find_element(By.CLASS_NAME,"blinkingText")
 print(links.get_attribute("href"))
 
-
+driver.find_element(By.LINK_TEXT,"Free Access to InterviewQues/ResumeAssistance/Material").click()  #click on link
+time.sleep(2)
 
 
 
