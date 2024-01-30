@@ -1,5 +1,4 @@
 
-"""
 # 1). Write a Python loops program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
 # Input1:1500
 print("1). Write a Python loops program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).")
@@ -22,7 +21,7 @@ for i in range(4, -1,-1):
 # Input: “python”
 print("3). Python Loops program that will add the word from the user to the empty string using python.")
 
-W1 = input("Enter the word: ")
+W1 = 'shekhar'         # input("Enter the word: ")
 S1 = " "
 for i in range(len(W1)):
 	S1 = S1+W1[i]
@@ -127,7 +126,7 @@ for row in range(0,7):
 # 11). Python Loops program to print all natural numbers from 1 to n using a while loop in python.
 print("11). Python Loops program to print all natural numbers from 1 to n using a while loop in python.")
 
-n = int(input("Enter the number: "))
+n = 9          # int(input("Enter the number: "))
 m = 1
 while m <=n:
 	print(m,end=" ")
@@ -136,7 +135,7 @@ while m <=n:
 # 12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.
 print("12). Write a program to print all natural numbers in reverse (from n to 1) using a while loop in python.")
 
-n1 = int(input("Enter the last number: "))
+n1 = 7              # int(input("Enter the last number: "))
 count = n1
 while count !=0:
 	print(count, end=" ")
@@ -184,7 +183,7 @@ print(t1)
 
 # 17). Python program to find the sum of all even numbers between 1 to n using python.
 print("17). Python program to find the sum of all even numbers between 1 to n using python.")
-n = int(input("Enter the number: "))
+n = 5            # int(input("Enter the number: "))
 number = 0
 for i in range(1, n+1):
 	if i%2 == 0:         # 2,4,6,8,10
@@ -196,7 +195,7 @@ print(number)
 
 # 18). Python Loops program to find the sum of all odd numbers between 1 to n using python.
 print("18). Python Loops program to find the sum of all odd numbers between 1 to n using python.")
-n1 = int(input("Enter the number: "))
+n1 = 7      # int(input("Enter the number: "))
 numbr = 0
 for i in range(1,n1+1):
 	if i%2 != 0:
@@ -258,7 +257,7 @@ print("Sum of digits of a number: ", number1)
 # 23). Write a program to calculate the product of digits of a number using python.
 print("23). Write a program to calculate the product of digits of a number using python.")
 
-num = int(input("Enter a number: "))
+num = 9     # int(input("Enter a number: "))
 product = 1
 while num > 0:
 	rem = num % 10
@@ -269,7 +268,6 @@ while num > 0:
 	print(num, end=" * ")          # 5 , 0
 print("\n Product of given number is: ",product)
 
-"""
 
 
 

@@ -225,11 +225,32 @@ if __name__ == "__main__":
 
 
 
+print("&"*40)
 
+def func(*args):
+	for num in args:
+		result = num**3
+		print("Result : " , result)
+func(5,6,8,7)
+print("%"*40)
 
+try:
+	num1 = 40
+	num2 = 20
 
+	result = num1 / num2
 
+	if result >= 0:
+		print("Result is positive or zero:", result)
+	else:
+		print("Result is negative:", result)
 
+except ZeroDivisionError:
+	print("Error: Division by zero!")
+except ValueError:
+	print("Error: Please enter valid numbers!")
+except Exception as e:
+	print("An unexpected error occurred:", e)
 
 
 

@@ -1,4 +1,4 @@
-"""
+
 ''' 1). Write a Python program to get a string made of the first and the last 2 chars from a given string.
 If the string length is less than 2, return instead of the empty string.
 '''
@@ -277,7 +277,7 @@ for latter in string1:
 	if latter.isalnum():
 		test_str.append(latter)
 print("".join(test_str))
-"""
+
 
 # 22). Write a Python program to find the longest capital letter word from the string.
 # Input = “Learning PYTHON programming is FUN”
@@ -291,10 +291,10 @@ max_len = 0
 word_list = str1.split()
 
 for word in word_list:
-    word_len = len(word)
-    if word_len > max_len and word.isupper():
-        max_len = word_len
-        long_word = word
+	word_len = len(word)
+	if word_len > max_len and word.isupper():
+		max_len = word_len
+		long_word = word
 print("long word capital word :", long_word)
 
 

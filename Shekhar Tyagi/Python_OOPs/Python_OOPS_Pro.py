@@ -1,3 +1,66 @@
+
+# 1). Python oops program to create a class with the constructor.
+print("1). Python oops program to create a class with the constructor.")
+
+class MyClass:
+	def __init__(self, name):
+		self.name = name
+	def display_name(self):
+		print("Name: ", self.name)
+
+obj = MyClass('Shekhar Tyagi')
+obj.display_name()
+
+# 2). Python oops program to create a class with an instance variable.
+print("2). Python oops program to create a class with an instance variable.")
+
+class MyClass:
+	def __init__(self):
+		self.instance_var = 1996
+
+obj = MyClass()
+print(obj.instance_var)
+
+# 3). Python oops program to create a class with Instance methods.
+print("3). Python oops program to create a class with Instance methods.")
+
+class MyClass:
+	def __init__(self, name):
+		self.name= name
+	def display_name(self):
+		print("Name:", self.name)
+
+	def New_Name(self, New_Name):
+		self.name = New_Name
+
+obj = MyClass("Shekhar")
+obj.display_name()
+
+obj.New_Name("SHekhar Tyagi")
+obj.display_name()
+
+# 4). Python oops program to create a class with class variables.
+print("4). Python oops program to create a class with class variables.")
+
+class MyClass:
+	class_var = "Hello, I'm Shekhar Tyagi"
+print(MyClass.class_var)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 class Employee:
     def __init__(self, employee_id, name, position):
         self.employee_id = employee_id
@@ -57,3 +120,5 @@ if __name__ == "__main__":
     it_company.add_department(testing_department)
 
     it_company.display_info()
+
+"""
