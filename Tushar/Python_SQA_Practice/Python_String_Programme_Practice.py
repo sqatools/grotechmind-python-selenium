@@ -652,10 +652,133 @@ print(' '.join(new_list))
 
 
 
+# 104). Write a program to print each character on a new line using python.
+# Input = ‘python’
+# Output:
+# p
+# y
+# t
+# h
+# o
+# n
+"""
+str='python'
+def each_char():
+    for char in str:
+      print(char)
+each_char()
+
+"""
+
+# 103). Write a program to print a string 3 times using python.
+# Input = ‘sqatools’
+# Output = ‘sqatoolssqatoolssqatools’
+"""
+str='sqatols'
+def multistring():
+    print(str*3)
+multistring()
+"""
+
+# 102). Write a program to remove repeated characters in a string and replace it with a single letter using python.
+# Input = ‘aabbccdd’
+# Output = ‘cabd’
+"""
+str='aabbccdd'
+
+str2=[]
+
+for char in str:
+    if char not in str2:
+        str2.append(char)
+print(str2)  #['a', 'b', 'c', 'd']
+"""
+"""
+str='aabbccdd'
+print(set(str))  #{'c', 'b', 'a', 'd'}
+print(''.join (set(str))) #cbad
+"""
 
 
+# 101). Write a program to swap cases of a given string using python.
+# Input = ‘Learning Python’
+# Output = ‘lEARNING pYTHON’
+"""
+str="Learning Python"
+
+print(str.swapcase())
+"""
+
+# 100). Write a program to find the first repeated character in a string and its index.
+# Input = ‘sqatools’
+# Output = (s,0)
+"""
+#Input string
+str = "sqatools"
+#                           s q a t o o l s
+for i in range(len(str)): # 0 1 2 3 4 5 6 7
+#                                  s q a t o o l s
+    for j in range(i+1,len(str)): #1 2 3 4 5 6 7 8
+        if str[i] == str[j]:
+            print(f"({str[i]},{str.index(str[i])})")
+    break
+"""
+"""
+str='happyy'
+
+for i in range(len(str)):
+    for j in range(i+1,len(str)):
+        if str[i]==str[j]:
+            print(str[i],str.index(str[i]))
+    break
+    """
 
 
+# 99). Write a program to print the index of each character in a string.
+# Input =  ‘sqatools’
+# Output :
+# Index of s is 0
+# Index of q is 1
+# Index of a is 2
+# Index of t is 3
+# Index of o is 4
+# Index of o is 5
+# Index of l is 6
+# Index of s is 7
+
+
+str='sqatools'
+"""
+for char in str:
+    print(f"index of {char} is {str.index(char)}")
+    
+    """
+
+#
+# 98). Write a program to reverse words in a string using python.
+# Input = ‘string problems’
+# Output = ‘problems string’
+"""
+str='tushar aher'
+lst=(str.split())
+nlst=lst[1]+ ' ' +lst[0]
+print(nlst)
+"""
+"""
+#Input string
+str1 = "string problems"
+
+#Input string
+print(str1.split())
+print(" ".join(reversed(str1.split(" "))))
+"""
+"""
+str='i am tushar'
+lst=str.split()
+print(lst)
+var='@'.join(lst)
+print(var)
+"""
 
 
 
