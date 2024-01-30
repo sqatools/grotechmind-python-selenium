@@ -14,3 +14,29 @@ class Lion(animal):
 
     def animal_voice(self):
         print("Roar")
+obj = Lion()
+obj.animal_voice()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
