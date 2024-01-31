@@ -13,7 +13,7 @@ driver.implicitly_wait(6)
 
 driver.get("https://automationbysqatools.blogspot.com/2021/05/dummy-website.html")
 time.sleep(1)
-"""
+
 driver.find_element(By.XPATH,"(//input[@value='radio_558'])[1]").click()
 time.sleep(1)
 
@@ -73,7 +73,7 @@ time.sleep(1)
 
 driver.find_element(By.ID,"street_address1").send_keys("H/s No 18, Road no-NH-24, Connaught Place, New Delhi")
 time.sleep(1)
-"""
+
 driver.find_element(By.ID,"street_address2").send_keys("Near India Gate")
 time.sleep(1)
 
