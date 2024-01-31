@@ -25,11 +25,18 @@ for i in range(1,num):
 
 #Python program to calculate the sum of all numbers from 1 to a given number.
 # Python program to calculate the sum of all the odd numbers within the given range.
-odd_range=100
+"""odd_range=100
 sum=0
 for i in range(odd_range):
     if i%2!=0:
       print("odd numbers",i)
       sum=i+
-      print("Sum of odd number",sum)
+      print("Sum of odd number",sum)"""
 
+#print(type(10/2))
+
+num=int(input("Enter number of rows"))
+for i in range(num):
+    for j in range(num):
+       print('&', end='')
+    print()

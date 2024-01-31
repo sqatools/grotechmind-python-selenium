@@ -12,15 +12,12 @@ class institute_I:
         self.stu_roll=stu_roll
 
 
-def student():
-def course():
-
 class student_i:
      def __init__(self,bca,mca,mtech,cs):
-           self.bca=Bca
-           self.mca=Mca
-           self.mtech=mtech
-            self.CS=CS
+         self.bca=bca
+         self.mca=mca
+         self.mtech=mtech
+         self.cs=cs
 
 class faculty_i:
       def __init__(self,f_Name,f_Qualificatin,f_assigned):
