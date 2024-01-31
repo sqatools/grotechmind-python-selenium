@@ -1,1 +1,21 @@
-Hello Good Morning : Deepesh
+tup1 = (5, 7, 2, 8, 'Hello',[4, 6, 7],8 , (33, 55, 77))
+print(type(tup1), tup1)
+
+
+what is out of below print statment?
+print(tup1[4])
+print(tup1[4:5])
+
+
+#########################################################
+
+print("_"*50)
+
+#        0   1   2     3
+list1 = [5, 2.5, 55, 'Hello']
+#       -4  -3   -2   -1
+
+print(type(list1))
+
+print(list1[3])
+print(list1[-4:1])

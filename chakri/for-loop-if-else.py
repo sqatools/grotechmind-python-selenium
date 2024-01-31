@@ -239,7 +239,10 @@ a = int(input('enter any number to find the table :'))
 for i in range(1,21):
     print(a,'*',i,'=',i*a)
 '''
-
+a = int(input('enter number, the table you want :'))
+b = int(input('enter range of your table:'))
+for i in range(1,b+1):
+    print(a,'*',i,'=',i*a)
 
 
 
