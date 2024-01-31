@@ -19,6 +19,13 @@ driver.get("https://automationbysqatools.blogspot.com/2021/05/dummy-website.html
 driver.find_element(By.ID,"firstname").send_keys("Ankita")
 driver.find_element(By.ID,"LastName").send_keys("Verma")
 driver.find_element(By.ID,"male").click()
-driver.find_element(By.ID,"birthday").send_keys("01.09.2024")
+driver.find_element(By.ID,"birthday").send_keys("01.09.1995")
+driver.find_element(BY.ID,"admorepass").send_keys(" Add 2 more passenger (200%) ")
+driver.find_element(BY.ID,"")
 time.sleep(10)
+driver.find_element(By.ID,"")
+driver.maximize_window()
+
+
+
 driver.close()
