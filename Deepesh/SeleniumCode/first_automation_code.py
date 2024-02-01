@@ -10,6 +10,7 @@ import time
 
 # initiating the browser driver
 driver = webdriver.Edge()
+driver.
 
 # maximizing the browser window
 driver.maximize_window()
