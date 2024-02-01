@@ -16,6 +16,33 @@ xpath :
      iii) multiple element with same attribute : (//tagname[@attribute='value'])[1]
           (//input[@name='firstname'])[2]
 
+    XPATH Methods:
+
+    1) Text method.  :  //tagname[text()='text value']
+                        //h1[text()=' Dummy Ticket Booking Website']
+                        //span[text()='Hotels']
+                        //span[text()='Dummy ticket for visa application - $200 ']
+                        //a[text()='Pytest Framework']
+                        //*[text()='Pytest Framework']
+
+    2) Contains Method :
+                     //tagname[contains(text(), "partial text value")]
+                     //a[contains(text(), 'Pytest')]
+                     //h1[contains(text(), 'Dummy')]
+                     //span[text()='SEARCH FLIGHTS']
+
+
+                     //tagname[contains(@attribute, 'partial attribute value')]
+                     //*[contains(@id, 'from')]
+                     //input[contains(@fdprocessedid,'3c96zt')]
+
+    3) AND & OR
+               //tagname[@attribute1 ='value' and @attribute2 = 'value']
+               //input[@name='fromcity' and @id='fromcity']
+               //input[@name='firstname' and @id='firstname' and @fdprocessedid="2xcfae"]
+
+               //tagname[@attribute1 ='value' or @attribute2 = 'value']
+               //input[@name='firstname' or @id='fromcity']
 
 
 """
