@@ -63,7 +63,7 @@ print("*"*60)
 #38). Python file program to count the total number of vowels in a file.
 
 
-f1=open("first txt file.txt",'r')
+f1=open("../first txt file.txt", 'r')
 data=f1.read()
 vowel=("a","A","e","E","i","I","o","O","U","u")
 if data in vowel:

@@ -1,5 +1,4 @@
-from Python_OOPS import car
-from OOPS_Inheritance import son
+from Santosh.python_oops.OOPS_Inheritance import son
 
 # obj= car("Nexon", "TATA", "10 Lac")
 #
