@@ -81,4 +81,3 @@ check_box = driver.find_elements(By.XPATH,"//input[@value= 'checkbox']")
 for box in check_box:
     if check_box.index(box)+1 == 7 :        #  > 6 < 7:
         box.click()
-

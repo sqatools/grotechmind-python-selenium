@@ -5,7 +5,7 @@ class Atm:
     self.balance=0
 
     def menu(self):
-     self.menu()
+
 
     def menu(self):
          user_input=("""Hello! HOw would you like to Processed
@@ -23,8 +23,8 @@ class Atm:
     elif user_input==4:
       print("Check Balance")
     else:
-        user_input==5:
-        print("Bye")
+      user_input==5:
+      print("Bye")
  def create_pin(self):
      self.pin=input("Enetr Your Pin")
       Print("Pin Set Successfully")
