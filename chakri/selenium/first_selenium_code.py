@@ -42,7 +42,6 @@ driver.find_element(By.ID,"billing_address").send_keys("main road,k.savaram")
 driver.find_element(By.ID,"billing_country").send_keys("india")
 driver.find_element(By.ID,"postcode").send_keys("533126")
 time.sleep(30)
-'''
 
 
 from selenium import webdriver
@@ -70,23 +69,59 @@ driver.find_element(By.XPATH,"//*[@id='billing_name']").send_keys("Chakri siraga
 driver.find_element(By.XPATH,"//*[@id='billing_phone']").send_keys("9154660350")
 driver.find_element(By.XPATH,"//*[@id='billing_email']").send_keys("Chakri21@gmail.comm")
 driver.find_element(By.XPATH,"//*[@id='billing_address']").send_keys("main road, near mahalakshmi temple")
-driver.find_element(By.XPATH,"//*[@id='billing_country']").click()
+driver.find_element(By.XPATH,"//*[@id='billing_country']").send_keys('india')
 driver.find_element(By.XPATH,"//*[@id='postcode']").send_keys("533126")
 driver.find_element(By.XPATH,"//*[@id='street_address1']").send_keys("3-247,main road")
 driver.find_element(By.XPATH,"//*[@id='street_address2']").send_keys("near mahalakshmi temple")
 driver.find_element(By.XPATH,"//*[@id='cities']/tbody/tr[6]/td[1]/input").click()
 #driver.get_screenshot_as_file('Chakri@selenium.png')
-driver.get_screenshot_as_base64()
 time.sleep(20)
+'''
+
+'''from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+driver.get("https://www.amazon.in/ref=nav_logo")
+driver.find_element(By.XPATH,"//*[@id='nav-link-accountList']/div')]").click()
+driver.implicitly_wait(10)
+driver.find_element(By.XPATH,"//span[@id='continue']").click()
+driver.find_element(By.XPATH,"//input[@name='email']").send_keys("9154660350")
+driver.find_element(By.XPATH,"//span[@id='continue']").click()
+driver.find_element(By.XPATH,"//input[@name='password']").send_keys("Chakri@180")
+driver.find_element(By.XPATH,"//input[@id='signInSubmit']").click()
+time.sleep(10)
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+d = webdriver.Chrome()
+d.maximize_window()
+d.get('https://www.google.com/')
+d.find_element(By.XPATH,"//a[text()='Gmail']").click()
+d.find_element(By.XPATH,"((//span[text()='Create an account'])[1]").click()
+d.find_element(By.XPATH,"//input[contains(@aria-label,'First name')]").send_keys('chakri')
+d.find_element(By.XPATH,"//input[contains(@aria-label,'Last name (optional)')]").send_keys("siragam")
+d.find_element(By.XPATH,"//*[text()='Next']").click()
 
 
+time.sleep(10)
+'''
+from selenium import webdriver
+from selenium.webdriver.common.by import  By
+import time
 
-
-
-
-
-
-
+'''d = webdriver.Chrome()
+d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+d.implicitly_wait(10)
+d.find_element(By.XPATH,"//input[@name='username']").send_keys("Admin")
+d.implicitly_wait(5)
+d.find_element(By.XPATH,"//input[@type='password']").send_keys("admin123")
+d.implicitly_wait(5)
+d.find_element(By.XPATH,"//button[@type='submit']").click()
+time.sleep(10)
+'''
 
 
 
