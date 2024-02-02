@@ -182,7 +182,7 @@ print("str4 : ",str4.isupper()) #True
 
 # swapcase method
 # swapcase Method converts the string upper to lower and lower to upper
-str5 = "Python For Selenium is MORE"
+str5 = "Python For Selenium_practice is MORE"
 print("str5 : ",str5.swapcase()) # pYTHON fOR sELENIUM IS more
 
 # Title method
@@ -198,7 +198,7 @@ str7 ="Now A Days It Is Not Easy For Seeking A Good Job"
 print("str7 : ",str7.istitle()) # True
 
 # Index method : this method find the position of any character or substring in given sentence
-str8 = "Python For Selenium is MORE"
+str8 = "Python For Selenium_practice is MORE"
 print("str8 : ",str8.index('S')) # 11
 # when char is not available
 # ValueError: substring not found
