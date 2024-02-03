@@ -1,6 +1,7 @@
-from Selenium import webdriver
-from Selenium.webdriver.common.by import By
-import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+
 
 driver = webdriver.Chrome()
 driver.maximize_window()
@@ -17,7 +18,3 @@ driver.find_element(By.ID,"billing_phone").send_keys("934454363532")
 driver.find_element(By.ID,"billing_email").send_keys("naga@gmail.com")
 driver.find_element(By.ID,"billing_address").send_keys("bangalore")
 driver.find_element(By.ID,"billing_country").click()
-
-#time.sleep(5)
-driver.close()
-
