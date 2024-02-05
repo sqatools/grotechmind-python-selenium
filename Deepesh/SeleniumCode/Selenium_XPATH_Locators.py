@@ -45,7 +45,6 @@ xpath :
                //input[@name='firstname' or @id='fromcity']
 
 
-"""
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -62,4 +61,4 @@ driver.find_element(By.XPATH, "(//input[@name='firstname'])[2]").send_keys("Gupt
 
 time.sleep(5)
 
-driver.close()
+driver.close()'''
