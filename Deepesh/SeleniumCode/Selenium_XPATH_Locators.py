@@ -67,6 +67,7 @@ xpath :
             //tagname[@child_Attrib='value']//ancestor::tagname[@parent_atrribute='value']
             //input[@id='male']//preceding::input
 
+"""
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -83,4 +84,4 @@ driver.find_element(By.XPATH, "(//input[@name='firstname'])[2]").send_keys("Gupt
 
 time.sleep(5)
 
-driver.close()'''
+driver.close()
