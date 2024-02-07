@@ -22,11 +22,17 @@
 
 #----------Python program to check the given number divided by 3 and 5.
 
-for i in range(1,31):
-    if i%3==0:
-        print(i,"number is divisible by 3")
-    elif i%7==0:
-        print(i,"number is divisible by 5")
+# for i in range(1,31):
+#     if i%3==0:
+#         print(i,"number is divisible by 3")
+#     elif i%7==0:
+#         print(i,"number is divisible by 5")
+
+
+str="i am sanntosh"
+
+var="-".join(str)
+print(var)
 
 
 
