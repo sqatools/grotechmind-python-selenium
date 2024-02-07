@@ -122,7 +122,12 @@ d.implicitly_wait(5)
 d.find_element(By.XPATH,"//button[@type='submit']").click()
 time.sleep(10)
 '''
-
+from selenium import webdriver
+from selenium.webdriver.common.by import  By
+import time
+d = webdriver.Chrome()
+d.get("https://www.flipkart.com/")
+d.implicitly_wait(5)
 
 
 
