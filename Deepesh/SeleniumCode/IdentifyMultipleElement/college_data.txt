@@ -1,0 +1,30 @@
+#1, IIT Indore - Indian Institute of Technology - [IITI], Indore  2,33,900
+#2, Institute of Engineering and Technology, Devi Ahilya University - [IET -DAVV], Indore  82,961
+#3, Acropolis Institute of Technology & Research - [AITR], Indore  73,600
+#4, SAGE University, Indore  1,25,000
+#5, Oriental University - [OU], Indore  35,000
+#6, Medi-Caps University, Indore  1,10,000
+#7, Acropolis Group of Institutions, Indore  73,600
+#8, Shri Govindram Seksaria Institute of Technology and Science- [SGSITS], Indore  75,550
+#9, Indore Institute of Science and Technology - [IIST], Indore  60,000
+#10, Sanghvi Institute of Management and Science - [SIMS], Indore  40,000
+#11, Malwa Institute of Science and Technology - [MIST], Indore  38,500
+#12, Shivajirao Kadam Group of Colleges, Indore  60,000
+#13, Renaissance University - [RU], Indore  80,000
+#14, Malwa Institute of Technology - [MIT], Indore  64,200
+#15, Swami Vivekanand College of Engineering - [SVCE], Indore  58,500
+#16, Patel College of Science and Technology - [PCST], Indore  54,000
+#17, Sushila Devi Bansal College, Indore  30,000
+#18, Symbiosis University of Applied Sciences- [SUAS], Indore  2,85,000
+#19, Vikrant Group of Institutions - [VGI], Indore  45,000
+#20, Chameli Devi Group of Institution, Indore  35,000
+#21, Mandsaur Institute of Technology- [MIT], Indore  68,400
+#22, Sri Aurobindo Institute of Technology - [SAIT], Indore  30,000
+#23, Lord Krishna College of Technology - [LKCT], Indore  48,600
+#24, Lakshmi Narain College of Technology & Science - [LNCTS], Indore  58,000
+#25, Prestige Institute of Engineering Management and Research - [PIEMR], Indore  68,600
+#26, Swami Vivekanand Group of Institutions, Indore  57,000
+#27, Lakshmi Narain College of Technology - [LNCTI], Indore  1,19,400
+#28, Sagar Institute of Research & Technology - [SIRT], Indore  50,000
+#29, IPS Academy, Indore  85,000
+#30, Vindhya Institute of Technology & Science - [VITS], Indore  48,000
