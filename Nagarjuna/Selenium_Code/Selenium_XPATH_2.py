@@ -12,9 +12,13 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 driver.implicitly_wait(10)
 driver.get("https://www.goibibo.com/")
+time.sleep(2)
+driver.find_element(By.XPATH,"//span[@role='presentation']").click()
 time.sleep(1)
-
-
+driver.find_element(By.XPATH,"//span[text()='From']//following-sibling::p[text()='Enter city or airport']").send_keys("hyderabad")
+# time.sleep(2)
+#driver.find_element((By.XPATH,"//span[text()='From']//following-sibling::input[@type='text']")).send_keys("Hyderabad")
+time.sleep(2)
 
 
 

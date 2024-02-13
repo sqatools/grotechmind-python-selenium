@@ -121,15 +121,22 @@ d.find_element(By.XPATH,"//input[@type='password']").send_keys("admin123")
 d.implicitly_wait(5)
 d.find_element(By.XPATH,"//button[@type='submit']").click()
 time.sleep(10)
-'''
+
 from selenium import webdriver
 from selenium.webdriver.common.by import  By
 import time
 d = webdriver.Chrome()
 d.get("https://www.flipkart.com/")
 d.implicitly_wait(5)
-
-
+d.find_element(By.XPATH,"(//a[@title='Login'])[1]").click()
+d.implicitly_wait(5)
+d.find_element(By.XPATH,"//span//parent::div//input").send_keys("9154660350")
+d.implicitly_wait(5)
+d.find_element(By.XPATH,"//button[text()='Request OTP']").click()
+d.implicitly_wait(30)
+d.find_element(By.XPATH,"//div//parent::button[text()='Verify']").click()
+d.implicitly_wait(30)
+'''
 
 
 

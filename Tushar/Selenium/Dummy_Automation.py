@@ -9,8 +9,14 @@ driver.implicitly_wait(10)
 driver.implicitly_wait(10)
 driver.get("https://automationbysqatools.blogspot.com/2021/05/dummy-website.html")
 
+website_title=driver.find_element(By.XPATH,"//h3[contains(text(),'Dummy Website')]").text
+print(website_title)
+
 website_name=driver.find_element(By.XPATH,"//h1[contains(text(),' Dummy Ticket Booking Website')]").text
 print("website name:",website_name) #website name: Dummy Ticket Booking Website
+
+correct_option=driver.find_element(By.XPATH,"//h3[contains(text(),'Choose the correct option:')]").text
+print(correct_option)
 
 radio1=driver.find_element(By.XPATH,"//*[contains(text(),'Dummy ticket for visa application - $200 ')]").text
 print(radio1) #Dummy ticket for visa application - $200
