@@ -253,6 +253,7 @@ except Exception as e:
 	print("An unexpected error occurred:", e)
 
 """
+'''
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -312,4 +313,24 @@ if __name__ == "__main__":
 	email = "test@example.com"
 
 	register_new_account(username, password, email)
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

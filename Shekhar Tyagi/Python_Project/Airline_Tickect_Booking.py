@@ -4,18 +4,20 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from Test_Data import *
 import time
 
-chrome_options = webdriver.ChromeOptions()
+#chrome_options = webdriver.ChromeOptions()
 prefs = {"profile.default_content_setting_values.notifications": 2}
-chrome_options.add_experimental_option("prefs", prefs)
+#chrome_options.add_experimental_option("prefs", prefs)
 
 options = Options()
 options.add_experimental_option("detach", True)
+options.add_experimental_option("prefs", prefs)
 # Verify that users can successfully register for a new account.
 
 # Function to register a new account
-def register_new_account(username,password,present=True):
+def register_new_account(username,password,email,present=True):
 
 	# Initialize the Selenium WebDriver
 	driver= webdriver.Chrome(options = options)
@@ -158,34 +160,19 @@ def register_new_account(username,password,present=True):
 
 	# Copy Residence to Office Address
 	driver.find_element(By.XPATH,"//label[text()='Yes']").click()
-	time.sleep(1)
+	time.sleep(20)
 
 	# Enter Captcha
 	captcha = driver.find_element(By.XPATH,"//input[@id='captcha']")
 	captcha.send_keys(Captcha)
-	time.sleep()
+	time.sleep(1)
+
+	# Click on Register Button
+	driver.find_element(By.XPATH,"//button[text()='REGISTER']").click()
+	time.sleep(1)
+
+register_new_account(username,password,email)
+
+#def login_with_Valied_Cred(username, password):
 
 
-	#time.sleep(15)
-	#driver.close()
-
-
-
-if __name__ == "__main__":
-	username = "shekhartyagi1996"
-	password = "Tyagi@12345"
-	email = "dhakashaka@gmail.com"
-	Mobile = "7017894223"
-	security_answer ="Royal Enfield"
-	First_Name = "Shekhar"
-	Last_Name = "Tyagi"
-	DOB = "10-07-1996"
-	Flat = "House No 18"
-	Street = "2"
-	Area = "Connaught Place"
-	PinCode = "110001"
-	City = "New Delhi"
-	PostOffice = "New Delhi G.P.O. "
-	Captcha = input("Enter the Captcha: ")
-
-	register_new_account(username, password, email)
