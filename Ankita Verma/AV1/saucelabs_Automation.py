@@ -14,4 +14,8 @@ driver.find_element(By.XPATH,"//input[@id='password']").send_keys("secret_sauce"
 time.sleep(1)
 driver.find_element(By.XPATH,"//input[@id='login-button']").click()
 time.sleep(1)
-driver.find_element(By.XPATH,"//a[@id='inventory_sidebar_link']").click()
+#driver.find_element(By.XPATH,"//a[@id='inventory_sidebar_link']").click()
+driver.find_element(By.XPATH,"//div[text()='Sauce Labs Backpack']").click()
+time.sleep(3)
+element = driver.find_element(By.XPATH,"//div[contains(text(),'Sauce Labs Backpack')]")
+assert element
