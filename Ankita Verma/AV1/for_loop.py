@@ -35,8 +35,8 @@ for i in range(odd_range):
 
 #print(type(10/2))
 
-num=int(input("Enter number of rows"))
+#num=int(input("Enter number of rows"))
 for i in range(num):
     for j in range(num):
        print('&', end='')
-    print()
+    print()"""

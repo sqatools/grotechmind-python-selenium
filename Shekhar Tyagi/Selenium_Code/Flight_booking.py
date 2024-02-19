@@ -13,9 +13,9 @@ prefs = {"profile.default_content_setting_values.notifications" : 2}
 chromeoptions.add_experimental_option("prefs",prefs)
 
 options = Options()
-options.add_experimental_option("prefs" , True)
+options.add_experimental_option("detach" , True)
 
-driver= webdriver.Chrome( options= options)
+driver= webdriver.Chrome(options=chromeoptions)
 
 driver.implicitly_wait(10)
 driver.maximize_window()
