@@ -7,32 +7,21 @@ from selenium.webdriver.chrome.options import Options
 from Test_Data import *
 import time
 
-#chrome_options = webdriver.ChromeOptions()
-prefs = {"profile.default_content_setting_values.notifications": 2}
-#chrome_options.add_experimental_option("prefs", prefs)
-
 options = Options()
+prefs = {"profile.default_content_setting_values.notifications": 2}
 options.add_experimental_option("detach", True)
 options.add_experimental_option("prefs", prefs)
-# Verify that users can successfully register for a new account.
 
-def launch_browser(url):
-	driver = webdriver.Chrome(options=options)
-	driver.maximize_window()
-	driver.implicitly_wait(10)
-	#driver.get("https://www.irctc.co.in/")
-	driver.get(url)
-	return driver
+# Verify that users can successfully register for a new account-
+#--------------------------------------------------------------
 # Function to register a new account
 def register_new_account(username,password,email,present=True):
 
 	# Initialize the Selenium WebDriver
-	# driver= webdriver.Chrome(options = options)
-	# driver.maximize_window()
-	# driver.implicitly_wait(10)
-	# driver.get("https://www.irctc.co.in/")
-	#if present:
-	driver = launch_browser("https://www.irctc.co.in/")
+	driver= webdriver.Chrome(options = options)
+	driver.maximize_window()
+	driver.implicitly_wait(10)
+	driver.get("https://www.irctc.co.in/")
 	driver.find_element(By.XPATH,"//a[text()=' REGISTER ']").click()
 	time.sleep(1)
 
@@ -169,20 +158,47 @@ def register_new_account(username,password,email,present=True):
 
 	# Copy Residence to Office Address
 	driver.find_element(By.XPATH,"//label[text()='Yes']").click()
-	time.sleep(20)
+	time.sleep(1)
 
 	# Enter Captcha
-	captcha = driver.find_element(By.XPATH,"//input[@id='captcha']")
-	captcha.send_keys(Captcha)
+	driver.find_element(By.XPATH,"//input[@id='captcha']").click()
+	time.sleep(15)
+
+	# Select the checkBox
+	driver.find_element(By.XPATH,"/html[1]/body[1]/app-root[1]/app-home[1]/div[3]/div[1]/app-user-registration[1]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[2]/p-tabview[1]/div[1]/div[1]/p-tabpanel[3]/div[1]/div[1]/div[12]/span[1]").click()
+
 	time.sleep(1)
 
 	# Click on Register Button
 	driver.find_element(By.XPATH,"//button[text()='REGISTER']").click()
 	time.sleep(1)
 
+	# Click on Ok Popup
+	driver.find_element(By.XPATH,"//button[text()=' OK']").click()
+	time.sleep(5)
+	driver.close()
 register_new_account(username,password,email)
 
+
+
+# login functionality with valid credentials:-
+#---------------------------------------------------
 def login_with_Valied_Cred(username, password):
-	driver = launch_browser()
+	# Initialize the Selenium WebDriver
+	driver = webdriver.Chrome(options=options)
+	driver.maximize_window()
+	driver.implicitly_wait(10)
+	driver.get("https://www.irctc.co.in/")
+	driver.find_element(By.XPATH, "//a[text()=' LOGIN ']").click()
+	time.sleep(1)
+
+
+
+
+
+
+
+
+
 
 
