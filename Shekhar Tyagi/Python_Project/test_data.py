@@ -12,4 +12,4 @@ Area = "Connaught Place"
 PinCode = "110001"
 City = "New Delhi"
 PostOffice = "New Delhi G.P.O. "
-Captcha = input("Enter the Captcha: ")
+Captcha = (" ")

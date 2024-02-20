@@ -16,14 +16,23 @@ options.add_experimental_option("detach", True)
 options.add_experimental_option("prefs", prefs)
 # Verify that users can successfully register for a new account.
 
+def launch_browser(url):
+	driver = webdriver.Chrome(options=options)
+	driver.maximize_window()
+	driver.implicitly_wait(10)
+	#driver.get("https://www.irctc.co.in/")
+	driver.get(url)
+	return driver
 # Function to register a new account
 def register_new_account(username,password,email,present=True):
 
 	# Initialize the Selenium WebDriver
-	driver= webdriver.Chrome(options = options)
-	driver.maximize_window()
-	driver.implicitly_wait(10)
-	driver.get("https://www.irctc.co.in/")
+	# driver= webdriver.Chrome(options = options)
+	# driver.maximize_window()
+	# driver.implicitly_wait(10)
+	# driver.get("https://www.irctc.co.in/")
+	#if present:
+	driver = launch_browser("https://www.irctc.co.in/")
 	driver.find_element(By.XPATH,"//a[text()=' REGISTER ']").click()
 	time.sleep(1)
 
@@ -173,6 +182,7 @@ def register_new_account(username,password,email,present=True):
 
 register_new_account(username,password,email)
 
-#def login_with_Valied_Cred(username, password):
+def login_with_Valied_Cred(username, password):
+	driver = launch_browser()
 
 
