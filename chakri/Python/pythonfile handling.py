@@ -37,7 +37,7 @@ def writefile(filename,c):
     a.write(c)
     a.close()
 
-writefile('chakri.txt','who are you')
+writefile('chakri.txt', 'who are you')
 
 def readfile(filename):
     a = open(filename)
@@ -52,14 +52,14 @@ def appendfile(filename,c):
     a.write(c)
     a.close()
 
-appendfile('chakri.txt',' , i am chakri')
+appendfile('chakri.txt', ' , i am chakri')
 readfile('chakri.txt')
-writefile('chakri.txt','work hard to get a good job')
+writefile('chakri.txt', 'work hard to get a good job')
 readfile('chakri.txt')
-appendfile('chakri.txt','  thanks for your concern i  am trying my level best')
+appendfile('chakri.txt', '  thanks for your concern i  am trying my level best')
 readfile('chakri.txt')
 
-writefile('chakri.txt','python file handling')
+writefile('chakri.txt', 'python file handling')
 readfile('chakri.txt')
 
 
