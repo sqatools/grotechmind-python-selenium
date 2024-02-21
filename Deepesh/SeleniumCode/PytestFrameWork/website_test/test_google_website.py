@@ -1,8 +1,8 @@
-import time
 
 import pytest
 from selenium.webdriver.common.by import By
 from ..test_data import *
+import time
 
 def test_search_on_google(browser):
     browser.get(website_url)

@@ -8,14 +8,12 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
 import time
 
-chromeoptions = webdriver.ChromeOptions()
-prefs = {"profile.default_content_setting_values.notifications" : 2}
-chromeoptions.add_experimental_option("prefs",prefs)
-
 options = Options()
-options.add_experimental_option("detach" , True)
+prefs = {"profile.default_content_setting_values.notifications": 2}
+options.add_experimental_option("detach", True)
+options.add_experimental_option("prefs", prefs)
 
-driver= webdriver.Chrome(options=chromeoptions)
+driver= webdriver.Chrome(options=options)
 
 driver.implicitly_wait(10)
 driver.maximize_window()
@@ -52,5 +50,3 @@ driver.find_element(By.ID,"noOfpaxEtc").click()
 driver.find_element(By.XPATH,"//*[@id='TravellerEconomydropdown']/div[1]/div[1]/div/a[2]/i").click()
 driver.find_element(By.XPATH,"//*[@id='noOfpaxEtc']").click()
 driver.find_element(By.XPATH,"//*[@id='carouselExampleInterval']/div[1]/div/div/div[2]/form/div[6]/button").click()
-time.sleep(15)
-driver.close()
