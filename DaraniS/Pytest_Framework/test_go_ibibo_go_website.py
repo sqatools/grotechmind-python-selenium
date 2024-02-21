@@ -16,11 +16,13 @@ def test_one_way(browser):
 
 
 def test_two_way(browser):
+    browser.get(website_url1)
     browser.find_element(By.XPATH, "//p[text()='Round-trip']").click()
     browser.find_element(By.XPATH, "(//p[text()='Enter city or airport'])[1]").click()
     time.sleep(5)
 
 def test_multple_way(browser):
+    browser.get(website_url1)
     browser.find_element(By.XPATH, "//p[text()='Multi-city']").click()
     browser.find_element(By.XPATH, "(//p[text()='Enter city or airport'])[1]").click()
     time.sleep(5)
