@@ -11,7 +11,7 @@ def test_search_on_google(browser):
 
 def test_python_website(browser):
     browser.find_element(By.LINK_TEXT, "Python For Beginners").click()
-    browser.find_element(By.LINK_TEXT, "Downloads").click()
+    browser.find_element(By.LINK_TEXT, "Downloads1").click()
     browser.find_element(By.LINK_TEXT, "Download Python 3.12.2").click()
     time.sleep(5)
 
