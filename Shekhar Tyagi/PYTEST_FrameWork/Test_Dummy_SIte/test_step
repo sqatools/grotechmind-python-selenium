@@ -1,0 +1,26 @@
+1. Take a website (goibibo website)
+   step1 : write a url in data_file.py
+   url = "https://goibibo.com"
+
+2. Create a fixture to initiate the driver
+   conftest.py
+	def open_browser():
+
+
+
+3. Create atleast three test cases to automate
+
+        file test_go_ibibo_go_website.py
+
+
+	def test_flight_book(open_browser)
+		open_browser.find_element(By.ID)
+
+	def test_hotel_book(open_browser)
+		open_browser.find_element(By.ID)
+
+	def test_car_book(open_browser)
+		open_browser.find_element(By.ID)
+
+
+# python -m pytest -v -s.\(--FileName--).py

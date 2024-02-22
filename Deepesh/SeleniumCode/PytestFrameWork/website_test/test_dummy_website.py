@@ -1,3 +1,4 @@
+
 import time
 from ..test_data import *
 
@@ -9,7 +10,4 @@ def test_dummy_website(browser):
     browser.find_element(By.XPATH, "(//input[@name='firstname'])[2]").send_keys("Shah")
     browser.find_element(By.ID, "male").click()
     time.sleep(5)
-
-
-
 

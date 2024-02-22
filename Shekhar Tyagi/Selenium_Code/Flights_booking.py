@@ -4,7 +4,9 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 options = Options()
-options.add_experimental_option("detach" , True)
+prefs = {"profile.default_content_setting_values.notifications": 2}
+options.add_experimental_option("detach", True)
+options.add_experimental_option("prefs", prefs)
 
 driver = webdriver.Chrome(options=options)
 driver.maximize_window()

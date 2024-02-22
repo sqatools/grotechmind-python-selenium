@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from Test_Data import *
+from test_data import *
 import time
 
 options = Options()
