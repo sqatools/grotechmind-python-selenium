@@ -298,6 +298,12 @@ for word in word_list:
 print("long word capital word :", long_word)
 
 
+#23 Reverse the strings.
+print("23.Reverse the strings")
+#Input string
+string="Shekhar Tyagi"
 
-
-
+out1 = reversed(string)
+print(type(out1))
+print("".join(out1))
+print(" ".join(string.split()[::-1]))
