@@ -1,0 +1,56 @@
+1. pytest.ini : this file register the markers
+
+2. fixture on test file level @pytest.fixture
+   we can call the fixture in same test file only.
+
+3. fixture scope:
+   function scope : fixtures executes at function level
+   session scope :  fixture executes at all test cases execution.
+
+4. conftest file : In this file we can defined global level
+   once it is defined we can the fixture function in any test file.
+
+
+###############
+Pytest Command
+
+pip install pytest
+
+# pytest command to execute the code
+ python -m pytest .\test_smoke_suite.py
+
+ # command for verbose output, which means shows more information while executing the test cases.
+ python -m pytest -v .\test_smoke_suite.py
+
+ # command to execute test case with specific marker mentioned in the test file.
+  python -m pytest -v -m smoke .\tests\
+
+ # python -m pytest -v -s -m smoke \tests\
+ -v : verbose to show more information
+ -s : to print the output on console
+ -m : select the markers to execute.
+
+ # command to execute specific test cases from file
+ python -m pytest -v .\website_test\test_google_website_parametrize.py::test_multibrowser_operation_action
+
+ #command to generate report
+ # first we have to install python library before running the command
+     https://pypi.org/project/pytest-html-reporter/
+
+ - python -m pytest -v .\website_test\ --html-report=report.html
+____________________________________________________________
+
+Fixture function : Fixture function executes as per the scope of the test cases defined.
+it initiates before the execution of the test cases and end of the test cases.
+
+scope of the fixture
+function scope: In this scope the fixture function executes along with each test function.
+session scope: In this scope the fixture function will execute only once for entire execution
+module scope:
+class scope
+
+
+
+
+
+
