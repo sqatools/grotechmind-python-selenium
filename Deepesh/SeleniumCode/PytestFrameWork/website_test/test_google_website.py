@@ -1,26 +1,26 @@
 import pytest
 import logging
+import os,sys
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
 from selenium.webdriver.common.by import By
-from ..test_data import *
+from test_data.test_data import *
 import time
-from .log_config import logger
+#from utilities.get_logger import logger
+from utilities.log_config import get_logger
+from module.website_module import search_on_google
 
-log = logger
+log = get_logger()
 
 def test_search_on_google(browser):
-    browser.get(website_url)
-    log.info(f"launching url : {website_url}")
-    browser.find_element(By.NAME, "q").send_keys("Python Programming")
-    log.info(f"sending data to search: Python Programming")
-    browser.find_element(By.NAME, "btnK").click()
-    log.info(f"click on google seach button : locator : btnK")
+    search_on_google(browser)
 
 
 def test_python_website(browser):
     browser.find_element(By.LINK_TEXT, "Python For Beginners").click()
-    logger.info("Search for Python for Beginners website")
+    log.info("Search for Python for Beginners website")
     browser.find_element(By.LINK_TEXT, "Downloads").click()
-    logger.info("Navigate to download section")
+    log.info("Navigate to download section")
     browser.find_element(By.LINK_TEXT, "Download Python 3.12.2").click()
-    logger.info("Click on latest python installer")
+    log.info("Click on latest python installer")
     time.sleep(5)
