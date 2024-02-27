@@ -20,27 +20,25 @@ session : In this scope the fixture function will execute only once for entire e
 
 """
 import pytest
+#from utilities.log_config import get_logger
+import datetime
 
-@pytest.fixture(scope="session")
-def setup():
-    print("\n test case execution started")
-    yield
-    print("\n test case execution completed")
+import logging
 
-@pytest.mark.smoke
-def test_addition_regression(setup):
-    num1 = 10
-    num2 = 30
-    print("Val of num1 and num2 :", num1, num2 )
-    assert num1 + num2 == 40
+dir_name = datetime.datetime.now().strftime("logs_%Y_%m_%d_%H_%M_%S")
+log_dir_path = f"./logs/{dir_name}"
+os.mkdir(log_dir_path)
+log_file_name = f"execution_{dir_name}.log"
+log_file_path = os.path.join(log_dir_path, log_file_name)
 
+logging.basicConfig(filename=log_file_path,
+                    format="%(asctime)s [%(levelname)s] %(filename)s:%(lineno)s %(message)s",
+                    level=logging.INFO,
+                    filemode="a+")
 
-@pytest.mark.sanity
-def test_multiplication_regression(setup):
-    num1 = 10
-    num2 = 30
-    print("Val of num1 and num2 :", num1, num2)
-    assert num1 * num2 == 301
+log = logging.getLogger(__name__)
+#log.info("Hello")
+
 
 
 @pytest.mark.regression
