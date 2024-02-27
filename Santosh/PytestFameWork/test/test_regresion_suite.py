@@ -1,16 +1,18 @@
-
-
-def test_addition():
+import pytest
+@pytest.mark.smoke
+def test_addition_feature1():
     num1=10
     num2=30
     assert num1 +num2==40
-
-def test_multiplication():
+@pytest.mark.sanity
+def test_multiplication_feature1():
     num1=10
     num2=30
     assert num1 * num2==301
 
-def test_division():
+
+@pytest.mark.regresion
+def test_division_feature1():
     num1=10
     num2=30
     assert num2 // num1==3

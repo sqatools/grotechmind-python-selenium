@@ -198,7 +198,7 @@ for i in char:
 
 print(result)
 
-"""
+
 
 # Create a class structure for a IT Company.
 # Create a class structure for a school Institute.
@@ -251,6 +251,85 @@ except ValueError:
 	print("Error: Please enter valid numbers!")
 except Exception as e:
 	print("An unexpected error occurred:", e)
+
+"""
+'''
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+
+# Function to register a new account
+def register_new_account(username, password, email):
+	# Initialize the Selenium WebDriver
+	driver = webdriver.Chrome()  # You need to have Chrome WebDriver installed
+	driver.get("https://www.irctc.co.in/")
+
+	try:
+		# Wait until the "Register" link is clickable
+		register_link = WebDriverWait(driver, 10).until(
+			EC.element_to_be_clickable((By.LINK_TEXT, "REGISTER"))
+		)
+		register_link.click()
+
+		# Fill out registration form
+		username_input = driver.find_element_by_id("userRegistrationForm:userName")
+		username_input.send_keys(username)
+
+		password_input = driver.find_element_by_id("userRegistrationForm:password")
+		password_input.send_keys(password)
+
+		confirm_password_input = driver.find_element_by_id("userRegistrationForm:confpasword")
+		confirm_password_input.send_keys(password)
+
+		email_input = driver.find_element_by_id("userRegistrationForm:email")
+		email_input.send_keys(email)
+
+		# Submit the registration form
+		driver.find_element_by_id("userRegistrationForm:register").click()
+
+		# Wait for registration confirmation
+		WebDriverWait(driver, 10).until(
+			EC.visibility_of_element_located((By.ID, "userRegistrationForm:errDiv"))
+		)
+
+		# Print registration status
+		print("Registration Successful!")
+
+	except Exception as e:
+		print("An error occurred during registration:", e)
+
+	finally:
+		# Close the browser
+		driver.quit()
+
+
+# Example usage
+if __name__ == "__main__":
+	username = "testuser"
+	password = "testpassword"
+	email = "test@example.com"
+
+	register_new_account(username, password, email)
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
