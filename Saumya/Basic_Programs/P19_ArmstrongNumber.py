@@ -3,7 +3,7 @@
 Example: 153 = 1*1*1 + 5*5*5 + 3*3*3
 """
 
-num = a = int(input("enter a value to test an armstrong number"))
+num = a = int(input("enter a value to tests an armstrong number"))
 rev = 0
 
 while a>0:

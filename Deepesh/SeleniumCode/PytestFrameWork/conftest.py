@@ -7,7 +7,7 @@ from selenium import  webdriver
 def initial_setup():
     print("\n Test begins")
     yield
-    print("\n End of the test")
+    print("\n End of the tests")
 
 
 @pytest.fixture(scope="session")

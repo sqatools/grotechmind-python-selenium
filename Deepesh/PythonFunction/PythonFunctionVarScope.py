@@ -1,6 +1,6 @@
 """
 Variables scope
-global variable : scope of global variable is available in entire module
+global variable : scope of global variable is available in entire modules
 local variable : local variable scope is limited to the function
 nonlocal variable :  non local variable scope is limited to the all the inner functions.
 """

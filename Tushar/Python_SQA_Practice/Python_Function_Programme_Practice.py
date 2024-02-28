@@ -285,13 +285,13 @@ def outer_fun():
 outer_fun()
 
 """
-# def test(a):
+# def tests(a):
 #         def add(b):
 #                 nonlocal a
 #                 a += 0
 #                 return a+b
 #         return add
-# func= test(10)
+# func= tests(10)
 # print(func(10))
 
 

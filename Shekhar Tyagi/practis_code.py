@@ -310,7 +310,7 @@ def register_new_account(username, password, email):
 if __name__ == "__main__":
 	username = "testuser"
 	password = "testpassword"
-	email = "test@example.com"
+	email = "tests@example.com"
 
 	register_new_account(username, password, email)
 

@@ -4,18 +4,18 @@ pip install pytest
 # pytest command to execute the code
  python -m pytest .\test_smoke_suite.py
 
- # command for verbose output, which means shows more information while executing the test cases.
+ # command for verbose output, which means shows more information while executing the tests cases.
  python -m pytest -v .\test_smoke_suite.py
 
- # command to execute test case with specific marker mentioned in the test file.
+ # command to execute tests case with specific marker mentioned in the tests file.
   python -m pytest -v -m smoke .\tests\
 
 
-Fixture function : Fixture function executes as per the scope of the test cases defined.
-it initiates before the execution of the test cases and end of the test cases.
+Fixture function : Fixture function executes as per the scope of the tests cases defined.
+it initiates before the execution of the tests cases and end of the tests cases.
 
 scope of the fixture
-function : In this scope the fixture function executes along with each test function.
+function : In this scope the fixture function executes along with each tests function.
 session : In this scope the fixture function will execute only once for entire execution
 
 """
