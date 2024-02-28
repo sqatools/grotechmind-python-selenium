@@ -6,6 +6,9 @@ class flightbookingpage(seleniumcode):
         super().__init__(driver)
 
 
+    def close_mobile_popup(self):
+        self.click_element(mobile_login_popup)
+
     def enter_source_city(self,city_name):
-        self.element_click(flight_from_field)
-        self.fill_data(flight_from_field_input,data)
+        self.click_element(flight_from_field)
+        self.fill_data(flight_from_field_input,city_name)
