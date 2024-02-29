@@ -1,0 +1,59 @@
+2024-02-29 09:35:16 - utilities.get_logger INFO Hello
+2024-02-29 09:35:23 - utilities.get_logger INFO element found: ('xpath', "//span[@class='logSprite icClose']")
+2024-02-29 09:35:23 - utilities.get_logger INFO clicked on the element: ('xpath', "//span[@class='logSprite icClose']")
+2024-02-29 09:35:23 - utilities.get_logger INFO element found: ('xpath', "//span[text()='From']//following-sibling::p")
+2024-02-29 09:35:23 - utilities.get_logger INFO clicked on the element: ('xpath', "//span[text()='From']//following-sibling::p")
+2024-02-29 09:35:23 - utilities.get_logger INFO element found: ('xpath', "//span[text()='From']//following-sibling::input")
+2024-02-29 09:35:23 - utilities.get_logger INFO enter Mumbai, India on the element: ('xpath', "//span[text()='From']//following-sibling::input")
+2024-02-29 09:35:24 - utilities.get_logger INFO element found: ('xpath', "//span[contains(text(), 'Mumbai, India')]//ancestor::li")
+2024-02-29 09:35:24 - utilities.get_logger INFO clicked on the element: ('xpath', "//span[contains(text(), 'Mumbai, India')]//ancestor::li")
+2024-02-29 09:35:45 - utilities.get_logger INFO Element not found: ('xpath', "//span[text()='To']//following-sibling::input123")
+2024-02-29 09:35:45 - utilities.get_logger INFO Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF73197AD22+56930]
+	(No symbol) [0x00007FF7318EF622]
+	(No symbol) [0x00007FF7317A42E5]
+	(No symbol) [0x00007FF7317E98ED]
+	(No symbol) [0x00007FF7317E9A2C]
+	(No symbol) [0x00007FF73182A967]
+	(No symbol) [0x00007FF73180BCDF]
+	(No symbol) [0x00007FF7318281E2]
+	(No symbol) [0x00007FF73180BA43]
+	(No symbol) [0x00007FF7317DD438]
+	(No symbol) [0x00007FF7317DE4D1]
+	GetHandleVerifier [0x00007FF731CF6AAD+3709933]
+	GetHandleVerifier [0x00007FF731D4FFED+4075821]
+	GetHandleVerifier [0x00007FF731D4817F+4043455]
+	GetHandleVerifier [0x00007FF731A19756+706710]
+	(No symbol) [0x00007FF7318FB8FF]
+	(No symbol) [0x00007FF7318F6AE4]
+	(No symbol) [0x00007FF7318F6C3C]
+	(No symbol) [0x00007FF7318E68F4]
+	BaseThreadInitThunk [0x00007FFB389C7344+20]
+	RtlUserThreadStart [0x00007FFB39E226B1+33]
+
+2024-02-29 09:36:06 - utilities.get_logger INFO Element not found: ('xpath', "//p[text()= 'Adults']//parent::div//span[3]")
+2024-02-29 09:36:06 - utilities.get_logger INFO Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF73197AD22+56930]
+	(No symbol) [0x00007FF7318EF622]
+	(No symbol) [0x00007FF7317A42E5]
+	(No symbol) [0x00007FF7317E98ED]
+	(No symbol) [0x00007FF7317E9A2C]
+	(No symbol) [0x00007FF73182A967]
+	(No symbol) [0x00007FF73180BCDF]
+	(No symbol) [0x00007FF7318281E2]
+	(No symbol) [0x00007FF73180BA43]
+	(No symbol) [0x00007FF7317DD438]
+	(No symbol) [0x00007FF7317DE4D1]
+	GetHandleVerifier [0x00007FF731CF6AAD+3709933]
+	GetHandleVerifier [0x00007FF731D4FFED+4075821]
+	GetHandleVerifier [0x00007FF731D4817F+4043455]
+	GetHandleVerifier [0x00007FF731A19756+706710]
+	(No symbol) [0x00007FF7318FB8FF]
+	(No symbol) [0x00007FF7318F6AE4]
+	(No symbol) [0x00007FF7318F6C3C]
+	(No symbol) [0x00007FF7318E68F4]
+	BaseThreadInitThunk [0x00007FFB389C7344+20]
+	RtlUserThreadStart [0x00007FFB39E226B1+33]
+
