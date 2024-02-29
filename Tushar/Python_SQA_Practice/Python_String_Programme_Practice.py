@@ -97,7 +97,7 @@ count=substr.count('my')
 print(count)
 '''
 
-#6). Python string program to test whether a passed letter is a vowel or consonant.
+#6). Python string program to tests whether a passed letter is a vowel or consonant.
 '''
 str=input("please enter letter:")
 
