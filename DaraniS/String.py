@@ -15,7 +15,7 @@
 # if len(str2)%4 ==0:
 #     print(str2[::-1])
 
-# #4.Python string program to test whether a passed letter is a vowel or consonant.
+# #4.Python string program to tests whether a passed letter is a vowel or consonant.
 # str3="grotechmind"
 # for char in str3:
 #     if char=='a' or char=='e' or char=='i' or char=='o' or char=='u':

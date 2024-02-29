@@ -31,11 +31,11 @@ file_path=target_path=r"D:\Namaste Python\Day-04"
 
 # join two path with os.path.join
 
-file_name="test.txt"
+file_name="tests.txt"
 folder_path=r"D:\Namaste Python\Day-04"
 
 file_path = os.path.join(folder_path,file_name)
-print("file path :", file_path)  #file path : D:\Namaste Python\Day-04\test.txt
+print("file path :", file_path)  #file path : D:\Namaste Python\Day-04\tests.txt
 
 # Check given folder is available on target path or not
 
