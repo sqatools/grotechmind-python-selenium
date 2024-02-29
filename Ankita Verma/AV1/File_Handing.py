@@ -16,7 +16,7 @@
     print(data)       #print data
     open_file.close() #close data
 
-readfile("test.txt")"""
+readfile("tests.txt")"""
 
 # Write content to the file
 

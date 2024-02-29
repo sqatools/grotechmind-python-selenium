@@ -1,0 +1,3 @@
+08:19:31 website_module.py 9 INFO launching url : https://www.google.co.in
+08:19:31 website_module.py 11 INFO sending data to search: Python Programming
+08:19:32 website_module.py 13 INFO click on google seach button : locator : btnK

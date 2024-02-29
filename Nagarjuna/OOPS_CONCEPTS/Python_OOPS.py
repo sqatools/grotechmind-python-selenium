@@ -15,8 +15,8 @@ constructor : Constructor which initialize the memory of the object
           2. Parametrize Constructor :
 
 self : self is nothing but the object of the current class which is being used.
-module : Each python file module name is __main__ module, once we call the file
-         in some other file, then filename will become module name.
+modules : Each python file modules name is __main__ modules, once we call the file
+         in some other file, then filename will become modules name.
 inheritance
 polymorphism
 abstraction

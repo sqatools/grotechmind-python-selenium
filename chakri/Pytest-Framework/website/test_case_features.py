@@ -3,9 +3,9 @@ import pytest
 
 @pytest.fixture(scope="function")
 def setup():
-    print("\n test started")
+    print("\n tests started")
     yield
-    print("\n test completed")
+    print("\n tests completed")
 
 
 

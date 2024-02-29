@@ -92,7 +92,7 @@ class_with_static_method.country_revenue(500)
 
 """
 
-# 7). Write a Python Class to get the class name and module name.
+# 7). Write a Python Class to get the class name and modules name.
 """
 class house:
     pass
