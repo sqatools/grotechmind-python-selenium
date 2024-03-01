@@ -26,6 +26,6 @@ def test_substraction():
 
 # to get details of the tests run
 # python -m pytest -v .\test_smoke_suite.py
-#  python -m pytest -v -m .\test_smoke_suite.py .\test_regression_suite.py
+# python -m pytest -v -m .\test_smoke_suite.py .\test_regression_suite.py
 
 # cd ..   with this we can go back path for one step

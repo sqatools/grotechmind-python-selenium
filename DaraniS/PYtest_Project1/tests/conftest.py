@@ -1,6 +1,6 @@
 import pytest
 from data.session_data import *
-from selenium import webdriver
+from selenium_base.webdriver_factory import WebdriverFactory
 
 
 @pytest.fixture(scope='class')
@@ -10,3 +10,4 @@ def launch_browser(request):
     request.cls.driver = driver
     yield
     driver.close()
+
