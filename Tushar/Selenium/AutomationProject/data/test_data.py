@@ -1,0 +1,12 @@
+f_name='Tushar'
+l_name='Aher'
+s_city='pune'
+d_city='nashik'
+
+Bi_name= 'Tushar'
+Bi_phone='9860560531'
+Bi_email='tushar@gmail.com'
+Bi_street='MG Road'
+po_code='4222003'
+prefe='12345'
+st_id='123456789'
