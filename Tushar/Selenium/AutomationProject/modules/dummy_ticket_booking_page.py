@@ -13,19 +13,24 @@ class Dummybookingticketpage(seleniumcode):
         self.click_element(radio_button4)
         self.click_element(radio_button5)
 
-    # def enter_first_name(self,fname):
-    #     self.click_element(first_name)
-    #     self.fill_data(first_name,fname)
+
 
     def enter_passenger_details(self,f_name,l_name):
-        #self.click_element(first_name)
         self.fill_data(first_name,f_name)
-        #self.click_element(last_name)
         self.fill_data(last_name,l_name)
+
+    def enter_passenger_birth_date(self,date):
+        self.click_element(Date_of_birth)
+        self.fill_data(Date_of_birth,date)
 
     def radio_button_element_sex(self):
         self.click_element(male_radio)
         self.click_element(female_radio)
+
+    # def enter_number_of_passenger(self,no_of_passenger):
+    #    passenger_selector='passenger_dropdown'
+    #    self.click_element(passenger_selector)
+
 
     def radio_button_trip(self):
         self.click_element(one_way_radio)
@@ -34,6 +39,17 @@ class Dummybookingticketpage(seleniumcode):
     def enter_passenger_source_dest(self,s_city , d_city):
         self.fill_data(from_city, s_city)
         self.fill_data(dest_city, d_city)
+
+    def enter_passenger_departure_return_date(self,date):
+        self.click_element(departure_date)
+        self.fill_data(departure_date,date)
+        self.click_element(return_date)
+        self.fill_data(return_date,date)
+
+    def enter_passenger_visa_date(self,date):
+        self.click_element(visa_date)
+        self.fill_data(visa_date,date)
+
 
 
     def ticket_radio_button(self):
