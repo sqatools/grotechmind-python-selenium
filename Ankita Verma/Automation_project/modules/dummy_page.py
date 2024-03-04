@@ -2,7 +2,7 @@ import time
 
 from selenium_base.selenium_code import SeleniumCode
 from .dummy_page_data import *
-from data .test_data import *
+from data.test_data import *
 from selenium.webdriver.support.select import Select
 class Dummy_Sqa(SeleniumCode): #selenium_code file class copied here
     def __init__(self,driver):
@@ -26,9 +26,11 @@ class Dummy_Sqa(SeleniumCode): #selenium_code file class copied here
         #self.click_element(last_name)
         self.fill_data(last_name,l_name)
 
-    def radio_button_element_sex(self):
-        self.click_element(male_radio)
-        self.click_element(female_radio)
+    def radio_button_element_sex(self, person='male'):
+        if person == 'male':
+            self.click_element(male_radio)
+        else:
+            self.click_element(female_radio)
 
     def radio_button_trip(self):
         self.click_element(one_way_radio)
@@ -68,18 +70,18 @@ class Dummy_Sqa(SeleniumCode): #selenium_code file class copied here
         self.fill_data(dob,date)
 
     def enter_depart_return(self,d_date,r_date):
-        self.click_element(depart_date)
+        #self.click_element(depart_date)
         self.fill_data(depart_date,d_date)
-        self.click_element(return_date)
+        #self.click_element(return_date)
         self.fill_data(return_date,r_date)
 
     def enter_vdate(self,date):
-        self.click_element(visa_date)
-        self.fill_data(visa_date,date)
+        #self.click_element(visa_date)
+        self.fill_data(visa_date, date)
 
-    """def enter_country_dd(self):
-        self.select_object=Select(country_path)
-        #self.select_by_visible_text('country_data')
-        #select.select_by_value(country_path,'india')
-        self.click_element(country_data)"""
+    def enter_country_dd(self, value):
+        self.select_value_from_dropdown(country_path, value)
+
+    def select_more_passenger(self, pass_option):
+        self.select_value_from_dropdown(add_more_pass_element, pass_option)
 
