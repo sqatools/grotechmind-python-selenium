@@ -1,3 +1,14 @@
+"""
+# command to run all test cases
+python -m pytest -v .\tests\test_dummy.py --html-report=report.html
+
+# command to run specific test case
+python -m pytest -v .\tests\test_dummy.py::TestDummyticketbooking::test_depart_return --html-report=report.html
+
+# command to run test with markers.
+python -m pytest -v -m smoke .\tests\test_dummy.py --html-report=report.html
+"""
+
 import pytest
 from selenium import  webdriver
 from test_datafile import *
