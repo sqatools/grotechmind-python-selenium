@@ -14,11 +14,22 @@ class TestDummyticketbooking:
         self.dw=Dummybookingticketpage(self.driver)
         self.dw.enter_passenger_details(f_name,l_name)
 
+     def test_passenger_birth_date(self):
+         self.dw=Dummybookingticketpage(self.driver)
+         self.dw.enter_passenger_birth_date(dob)
+
      def test_passenger_sex(self):
         self.dw=Dummybookingticketpage(self.driver)
         self.dw.radio_button_element_sex()
 
         time.sleep(10)
+
+     def test_passenger_count(self):
+        self.dw=Dummybookingticketpage(self.driver)
+        self.dw.select_additional_passenger()
+
+
+
 
      def test_passenger_trip(self):
         self.dw=Dummybookingticketpage(self.driver)
@@ -29,9 +40,19 @@ class TestDummyticketbooking:
      def test_passenger_city(self):
          self.dw=Dummybookingticketpage(self.driver)
          self.dw.enter_passenger_source_dest(s_city,d_city)
-         #self.dw.enter_passenger_source_dest()
+
 
          time.sleep(10)
+
+     def test_passenger_departure_return_date(self):
+         self.dw=Dummybookingticketpage(self.driver)
+         self.dw.enter_passenger_departure_return_date(d_date)
+         self.dw.enter_passenger_departure_return_date(r_date)
+
+
+     def test_passenger_visa_date(self):
+         self.dw=Dummybookingticketpage(self.driver)
+         self.dw.enter_passenger_visa_date(v_date)
 
 
      def test_passenger_ticket(self):

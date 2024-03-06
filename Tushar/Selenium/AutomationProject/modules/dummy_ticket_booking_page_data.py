@@ -31,5 +31,8 @@ city_radio_button4=(By.XPATH,"(//input[@value='checkbox'])[4]")
 city_radio_button5=(By.XPATH,"(//input[@value='checkbox'])[5]")
 city_radio_button6=(By.XPATH,"(//input[@value='checkbox'])[6]")
 city_radio_button7=(By.XPATH,"(//input[@value='checkbox'])[7]")
-
-
+Date_of_birth=(By.XPATH,"(//input[@id='birthday'])[1]")
+departure_date=(By.XPATH,"//input[@id='departdate']")
+return_date=(By.XPATH,"//input[@id='returndate']")
+visa_date=(By.XPATH,"//input[@id='visadate']")
+passenger_dropdown=(By.XPATH,"//select[@id='admorepass']")

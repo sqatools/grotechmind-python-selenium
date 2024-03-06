@@ -1,5 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.select import Select
+
 
 class seleniumcode:
     def __init__(self,driver,timeout=30):
@@ -18,4 +20,15 @@ class seleniumcode:
     def fill_data(self,locator,data):
         element = self.get_element(locator)
         element.send_keys(data)
+
+    def select_value_from_dropdown(self, locator, value):
+        element = self.get_element(locator)
+        object = Select(element)
+        object.select_by_index(1)
+
+    #def select_value_from_dropdown
+        select_obj.select_by_index(1)
+
+
+
 

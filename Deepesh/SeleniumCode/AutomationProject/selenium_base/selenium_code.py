@@ -21,6 +21,7 @@ class SeleniumCode:
             self.driver.save_screenshot(snapshot_path)
             log.info(f"Element not found: {locator}")
             log.info(f"{e}")
+            return None
 
     def click_element(self, locator):
         element = self.get_element(locator)
