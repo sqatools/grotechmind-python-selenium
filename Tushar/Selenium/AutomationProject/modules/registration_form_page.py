@@ -16,4 +16,6 @@ class Regformpage(seleniumcode):
             self.click_element(female_radio)
 
     def select_skill_dropdown(self,value):
-        self.select_value_from_dropdown(select_skil_dd,value)
+        self.click_element(select_skil_dd)
+        dd_val_locator = (By.XPATH, f"//li[text()='{value}']")
+        self.click_element(dd_val_locator)
