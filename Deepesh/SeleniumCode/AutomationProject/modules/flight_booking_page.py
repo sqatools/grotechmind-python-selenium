@@ -7,7 +7,9 @@ class FlightBookingPage(SeleniumCode):
         super().__init__(driver)
 
     def close_mobile_popup(self):
-        self.click_element(mobile_login_popup)
+        element = self.get_element(mobile_login_popup)
+        if element:
+            self.click_element(mobile_login_popup)
 
     def enter_source_city(self, city_name):
         self.click_element(flight_from_field)

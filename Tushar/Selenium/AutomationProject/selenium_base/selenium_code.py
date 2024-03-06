@@ -21,10 +21,14 @@ class seleniumcode:
         element = self.get_element(locator)
         element.send_keys(data)
 
-    def select_dropdown(self,locator):
-        element=self.get_element(locator)
-        element.click()
+    def select_value_from_dropdown(self, locator, value):
+        element = self.get_element(locator)
+        object = Select(element)
+        object.select_by_index(1)
 
-        self.select_obj=select(passenger_dropdown)
-        self.select_obj.select_by_index(1)
+    #def select_value_from_dropdown
+        select_obj.select_by_index(1)
+
+
+
 

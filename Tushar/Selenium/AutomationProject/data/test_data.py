@@ -14,3 +14,7 @@ dob='10/08/1989'
 d_date='10/03/2024'
 r_date='15/03/2024'
 v_date='20/03/2024'
+
+email_id='tushar@gmail.com'
+password='12345'
+t_value='Technical Skills'
