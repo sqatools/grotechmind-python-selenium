@@ -1,4 +1,4 @@
-from selenium_base.selenium_code import SeleniumCode
+from base.selenium_code import SeleniumCode
 from .flight_booking_page_data import *
 
 
