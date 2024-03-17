@@ -10,3 +10,11 @@ for num in range(1 ,21):
 print("sum of even numbers :", even_sum )
 print("sum of odd numbers:", odd_sum)
 
+print("&"*30)
+power = 20**2
+print(power)
+
+a= "this is the "
+print(a+"python",end="!")
+
+

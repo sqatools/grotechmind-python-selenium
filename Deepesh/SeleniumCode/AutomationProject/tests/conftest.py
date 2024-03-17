@@ -1,6 +1,6 @@
 import pytest
 from data.session_data import *
-from selenium_base.webdriver_factory import WebdriverFactory
+from base.webdriver_factory import WebdriverFactory
 
 
 @pytest.fixture(scope='class')

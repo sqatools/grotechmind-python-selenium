@@ -18,6 +18,7 @@ class TestFlightBooking:
         self.fp.select_src_dest_city(src_city_name, dest_city_name)
         self.fp.select_departure_date(depart_data)
 
+
     def test_select_travel_class(self):
         self.fp.select_number_of_adults(2)
         self.fp.select_number_of_child(1)

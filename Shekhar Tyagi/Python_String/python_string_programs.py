@@ -45,8 +45,8 @@ sub = "She"
 print(string.count("She"))
 
 
-# 6). Python string program to test whether a passed letter is a vowel or consonant.
-print("6). Python string program to test whether a passed letter is a vowel or consonant.")
+# 6). Python string program to tests whether a passed letter is a vowel or consonant.
+print("6). Python string program to tests whether a passed letter is a vowel or consonant.")
 
 letter = "shekhartyagi"
 for char in letter:
