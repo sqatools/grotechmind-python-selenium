@@ -10,20 +10,25 @@
 
 """
 
+import pytest
+
+
+
+@pytest.mark.smoke
 def test_addition():
 	num1 = 10
 	num2 = 30
 	assert num1 + num2 == 40
 
-
+@pytest.mark.sanity
 def test_multi():
 	num1 = 10
 	num2 = 30
 	assert num1 * num2 == 300
-
+@pytest.mark.regression
 def test_div():
 	num1 = 10
 	num2 = 30
-	assert num2 * num1 == 3
+	assert num2 // num1 == 3
 
 

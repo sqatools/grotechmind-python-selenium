@@ -9,7 +9,7 @@ for i in a:
     i.click()
     d.implicitly_wait(5)
     print(i.text)
-'''
+
 d = webdriver.Chrome()
 d.get("https://automationbysqatools.blogspot.com/2021/05/dummy-website.html")
 d.find_element(By.CSS_SELECTOR,"input[value='radio_123']").click()
@@ -39,7 +39,16 @@ for i in a:
 b = d.find_elements(By.XPATH,"//table[@id='cities']//td[3]")
 for city in b:
     print(city.text)
+    '''
 
-
+d = webdriver.Chrome()
+d.get("https://www.techlistic.com/2017/02/automate-demo-web-table-with-selenium.html")
+d.implicitly_wait(20)
+a = d.find_elements(By.XPATH,"//table[@id='customers']//tbody//tr//td[1]//span")
+b = d.find_elements(By.XPATH,"//table[@id='customers']//tbody//tr//td[2]//span")
+c = d.find_elements(By.XPATH,"//table[@id='customers']//tbody//tr//td[3]//span")
+for i in range(len(a)):
+    print("company names:",a[i].text,"Contact:",b[i].text,"Company location:",c[i].text)
+    
 
 

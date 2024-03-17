@@ -14,7 +14,7 @@ getpath = r"C:\Pythonseleniumautomation\gitrepo\pythonseleniumcode\grotechmind-p
 #os.mkdir(getpath)
 print(os.getcwd())
 #os.rmdir('new-folder1')
-os.chdir(r"C:\Pythonseleniumautomation\gitrepo\pythonseleniumcode\grotechmind-python-selenium\chakri\new-folder1")
+os.chdir(r"/gitrepo/pythonseleniumcode/grotechmind-python-selenium/chakri/new-folder1")
 print(os.getcwd())
 #os.mkdir('pk')
 #os.rmdir('pk')
